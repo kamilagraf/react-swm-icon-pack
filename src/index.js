@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Root from './Root';
+// import * as Icons from 'IconsComponents/Icons/index';
+// import { Air } from 'IconsComponents/Icons/index';
+import ArrowDownRound from 'IconsComponents/broken/ArrowDownRound';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <Air /> */}
+    {/* <Icons.Air /> */}
+    {/* {Object.entries(Icons).map(([name, func]) => (
+      <div key={name}>{func()}</div>
+    ))} */}
+    {<ArrowDownRound />}
+    <Root />
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
