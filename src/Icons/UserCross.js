@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const UserCross = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const UserCross = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ UserCross.propTypes = {
 };
 
 UserCross.displayName = 'SvgUserCross';
-export default UserCross;
+export default createIcon(UserCross);

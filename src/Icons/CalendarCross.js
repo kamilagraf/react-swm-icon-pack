@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const CalendarCross = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const CalendarCross = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ CalendarCross.propTypes = {
 };
 
 CalendarCross.displayName = 'SvgCalendarCross';
-export default CalendarCross;
+export default createIcon(CalendarCross);

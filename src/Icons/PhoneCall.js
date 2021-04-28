@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const PhoneCall = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const PhoneCall = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -95,4 +96,4 @@ PhoneCall.propTypes = {
 };
 
 PhoneCall.displayName = 'SvgPhoneCall';
-export default PhoneCall;
+export default createIcon(PhoneCall);

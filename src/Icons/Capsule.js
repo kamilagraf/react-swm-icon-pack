@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Capsule = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Capsule = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -91,4 +92,4 @@ Capsule.propTypes = {
 };
 
 Capsule.displayName = 'SvgCapsule';
-export default Capsule;
+export default createIcon(Capsule);

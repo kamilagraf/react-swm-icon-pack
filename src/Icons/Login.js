@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Login = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Login = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -78,4 +79,4 @@ Login.propTypes = {
 };
 
 Login.displayName = 'SvgLogin';
-export default Login;
+export default createIcon(Login);

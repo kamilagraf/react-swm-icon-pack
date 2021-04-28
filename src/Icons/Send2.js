@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Send2 = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Send2 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -67,4 +68,4 @@ Send2.propTypes = {
 };
 
 Send2.displayName = 'SvgSend2';
-export default Send2;
+export default createIcon(Send2);

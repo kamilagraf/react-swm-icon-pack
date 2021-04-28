@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const HomeHospital = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const HomeHospital = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -67,4 +68,4 @@ HomeHospital.propTypes = {
 };
 
 HomeHospital.displayName = 'SvgHomeHospital';
-export default HomeHospital;
+export default createIcon(HomeHospital);

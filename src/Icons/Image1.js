@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Image1 = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Image1 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -91,4 +92,4 @@ Image1.propTypes = {
 };
 
 Image1.displayName = 'SvgImage1';
-export default Image1;
+export default createIcon(Image1);

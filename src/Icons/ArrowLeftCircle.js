@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const ArrowLeftCircle = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const ArrowLeftCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -26,7 +27,7 @@ const ArrowLeftCircle = ({ color, secondaryColor, strokeWidth, size, set }) => {
   );
   const Duotone = () => (
     <g>
-      <path opacity={0.15} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" fill="#001A72" />
+      <path opacity={0.15} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" fill={color} />
       <path
         d="M7 12h10M7 12l4-4m-4 4l4 4m1-13a9 9 0 110 18 9 9 0 010-18z"
         stroke={color}
@@ -79,4 +80,4 @@ ArrowLeftCircle.propTypes = {
 };
 
 ArrowLeftCircle.displayName = 'SvgArrowLeftCircle';
-export default ArrowLeftCircle;
+export default createIcon(ArrowLeftCircle);

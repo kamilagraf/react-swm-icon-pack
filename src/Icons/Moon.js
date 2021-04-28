@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Moon = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Moon = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -83,4 +84,4 @@ Moon.propTypes = {
 };
 
 Moon.displayName = 'SvgMoon';
-export default Moon;
+export default createIcon(Moon);

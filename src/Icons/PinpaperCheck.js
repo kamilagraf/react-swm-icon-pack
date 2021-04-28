@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const PinpaperCheck = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const PinpaperCheck = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -79,4 +80,4 @@ PinpaperCheck.propTypes = {
 };
 
 PinpaperCheck.displayName = 'SvgPinpaperCheck';
-export default PinpaperCheck;
+export default createIcon(PinpaperCheck);

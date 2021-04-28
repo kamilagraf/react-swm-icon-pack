@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const RedoCircle = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const RedoCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ RedoCircle.propTypes = {
 };
 
 RedoCircle.displayName = 'SvgRedoCircle';
-export default RedoCircle;
+export default createIcon(RedoCircle);

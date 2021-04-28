@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Previous = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Previous = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M12 13.8L9 12l10-6v12l-4-2.4M5 6v12" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -63,4 +64,4 @@ Previous.propTypes = {
 };
 
 Previous.displayName = 'SvgPrevious';
-export default Previous;
+export default createIcon(Previous);

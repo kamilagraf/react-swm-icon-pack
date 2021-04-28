@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Tooth = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Tooth = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -95,4 +96,4 @@ Tooth.propTypes = {
 };
 
 Tooth.displayName = 'SvgTooth';
-export default Tooth;
+export default createIcon(Tooth);

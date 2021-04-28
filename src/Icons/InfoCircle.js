@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const InfoCircle = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const InfoCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -79,4 +80,4 @@ InfoCircle.propTypes = {
 };
 
 InfoCircle.displayName = 'SvgInfoCircle';
-export default InfoCircle;
+export default createIcon(InfoCircle);

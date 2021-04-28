@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const CalendarLink = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const CalendarLink = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ CalendarLink.propTypes = {
 };
 
 CalendarLink.displayName = 'SvgCalendarLink';
-export default CalendarLink;
+export default createIcon(CalendarLink);

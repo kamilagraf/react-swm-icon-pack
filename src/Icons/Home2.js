@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Home2 = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Home2 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M19 10v10H9m-4 0V10l7-7 3.5 3.5" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -61,4 +62,4 @@ Home2.propTypes = {
 };
 
 Home2.displayName = 'SvgHome2';
-export default Home2;
+export default createIcon(Home2);

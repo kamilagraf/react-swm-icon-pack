@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const UserMinus = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const UserMinus = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ UserMinus.propTypes = {
 };
 
 UserMinus.displayName = 'SvgUserMinus';
-export default UserMinus;
+export default createIcon(UserMinus);

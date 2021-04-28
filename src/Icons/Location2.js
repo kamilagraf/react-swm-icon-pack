@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Location2 = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Location2 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -79,4 +80,4 @@ Location2.propTypes = {
 };
 
 Location2.displayName = 'SvgLocation2';
-export default Location2;
+export default createIcon(Location2);

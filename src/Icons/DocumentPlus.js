@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const DocumentPlus = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const DocumentPlus = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -79,4 +80,4 @@ DocumentPlus.propTypes = {
 };
 
 DocumentPlus.displayName = 'SvgDocumentPlus';
-export default DocumentPlus;
+export default createIcon(DocumentPlus);

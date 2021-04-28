@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Forward = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Forward = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M12 13.8L5 18V6l4 2.4m9 5.6l3-2-9-6v12l3-2" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -61,4 +62,4 @@ Forward.propTypes = {
 };
 
 Forward.displayName = 'SvgForward';
-export default Forward;
+export default createIcon(Forward);

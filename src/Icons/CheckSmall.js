@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const CheckSmall = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const CheckSmall = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M17 9l-5 5m-2 2l-3-3" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -54,4 +55,4 @@ CheckSmall.propTypes = {
 };
 
 CheckSmall.displayName = 'SvgCheckSmall';
-export default CheckSmall;
+export default createIcon(CheckSmall);

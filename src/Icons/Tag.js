@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Tags = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Tags = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -76,4 +77,4 @@ Tags.propTypes = {
 };
 
 Tags.displayName = 'SvgTags';
-export default Tags;
+export default createIcon(Tags);

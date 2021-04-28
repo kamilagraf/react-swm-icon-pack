@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Navigation = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Navigation = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M12 17l7 3-7-17-7 17 3.5-1.5" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -61,4 +62,4 @@ Navigation.propTypes = {
 };
 
 Navigation.displayName = 'SvgNavigation';
-export default Navigation;
+export default createIcon(Navigation);

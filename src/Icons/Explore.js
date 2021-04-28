@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Explore = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Explore = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -100,4 +101,4 @@ Explore.propTypes = {
 };
 
 Explore.displayName = 'SvgExplore';
-export default Explore;
+export default createIcon(Explore);

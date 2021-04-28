@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const DocumentCheck = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const DocumentCheck = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -79,4 +80,4 @@ DocumentCheck.propTypes = {
 };
 
 DocumentCheck.displayName = 'SvgDocumentCheck';
-export default DocumentCheck;
+export default createIcon(DocumentCheck);

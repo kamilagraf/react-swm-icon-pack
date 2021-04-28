@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const TrendingDown = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const TrendingDown = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M3 7l6 6 4-4 8 8h-6m6-6v3" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -60,4 +61,4 @@ TrendingDown.propTypes = {
 };
 
 TrendingDown.displayName = 'SvgTrendingDown';
-export default TrendingDown;
+export default createIcon(TrendingDown);

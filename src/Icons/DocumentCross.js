@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const DocumentCross = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const DocumentCross = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -79,4 +80,4 @@ DocumentCross.propTypes = {
 };
 
 DocumentCross.displayName = 'SvgDocumentCross';
-export default DocumentCross;
+export default createIcon(DocumentCross);

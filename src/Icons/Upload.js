@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Upload = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Upload = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -84,4 +85,4 @@ Upload.propTypes = {
 };
 
 Upload.displayName = 'SvgUpload';
-export default Upload;
+export default createIcon(Upload);

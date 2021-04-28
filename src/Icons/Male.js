@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Male = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Male = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -79,4 +80,4 @@ Male.propTypes = {
 };
 
 Male.displayName = 'SvgMale';
-export default Male;
+export default createIcon(Male);

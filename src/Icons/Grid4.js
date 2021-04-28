@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Grid4 = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Grid4 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ Grid4.propTypes = {
 };
 
 Grid4.displayName = 'SvgGrid4';
-export default Grid4;
+export default createIcon(Grid4);

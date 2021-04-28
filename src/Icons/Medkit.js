@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Medkit = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Medkit = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ Medkit.propTypes = {
 };
 
 Medkit.displayName = 'SvgMedkit';
-export default Medkit;
+export default createIcon(Medkit);

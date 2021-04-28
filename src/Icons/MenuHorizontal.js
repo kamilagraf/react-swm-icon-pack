@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const MenuHorizontal = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const MenuHorizontal = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -84,4 +85,4 @@ MenuHorizontal.propTypes = {
 };
 
 MenuHorizontal.displayName = 'SvgMenuHorizontal';
-export default MenuHorizontal;
+export default createIcon(MenuHorizontal);

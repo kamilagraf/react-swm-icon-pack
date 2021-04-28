@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Screen = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Screen = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ Screen.propTypes = {
 };
 
 Screen.displayName = 'SvgScreen';
-export default Screen;
+export default createIcon(Screen);

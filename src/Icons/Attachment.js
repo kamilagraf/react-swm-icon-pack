@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Attachment = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Attachment = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -90,4 +91,4 @@ Attachment.propTypes = {
 };
 
 Attachment.displayName = 'SvgAttachment';
-export default Attachment;
+export default createIcon(Attachment);

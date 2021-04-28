@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Chart = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Chart = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -79,4 +80,4 @@ Chart.propTypes = {
 };
 
 Chart.displayName = 'SvgChart';
-export default Chart;
+export default createIcon(Chart);

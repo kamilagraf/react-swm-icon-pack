@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Download = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Download = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -78,4 +79,4 @@ Download.propTypes = {
 };
 
 Download.displayName = 'SvgDownload';
-export default Download;
+export default createIcon(Download);

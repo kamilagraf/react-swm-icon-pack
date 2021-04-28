@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Hourglass = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Hourglass = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -89,4 +90,4 @@ Hourglass.propTypes = {
 };
 
 Hourglass.displayName = 'SvgHourglass';
-export default Hourglass;
+export default createIcon(Hourglass);

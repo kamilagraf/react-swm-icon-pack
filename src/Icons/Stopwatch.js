@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Stopwatch = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Stopwatch = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M12 21a7.5 7.5 0 10-5.1-2M10 3h4m-2 7v3.5l2 2" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -79,4 +80,4 @@ Stopwatch.propTypes = {
 };
 
 Stopwatch.displayName = 'SvgStopwatch';
-export default Stopwatch;
+export default createIcon(Stopwatch);

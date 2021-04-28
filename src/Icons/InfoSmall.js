@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const InfoSmall = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const InfoSmall = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M12 17v-7m0-2.99V7" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -54,4 +55,4 @@ InfoSmall.propTypes = {
 };
 
 InfoSmall.displayName = 'SvgInfoSmall';
-export default InfoSmall;
+export default createIcon(InfoSmall);

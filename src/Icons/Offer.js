@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Offer = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Offer = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -91,4 +92,4 @@ Offer.propTypes = {
 };
 
 Offer.displayName = 'SvgOffer';
-export default Offer;
+export default createIcon(Offer);

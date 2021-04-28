@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const RotateLeft = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const RotateLeft = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -60,4 +61,4 @@ RotateLeft.propTypes = {
 };
 
 RotateLeft.displayName = 'SvgRotateLeft';
-export default RotateLeft;
+export default createIcon(RotateLeft);

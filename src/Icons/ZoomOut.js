@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const ZoomOut = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const ZoomOut = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M3 10a7 7 0 112.05 4.95M7 10h6m7 10l-3-3" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -73,4 +74,4 @@ ZoomOut.propTypes = {
 };
 
 ZoomOut.displayName = 'SvgZoomOut';
-export default ZoomOut;
+export default createIcon(ZoomOut);

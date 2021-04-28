@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Camera = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Camera = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -94,4 +95,4 @@ Camera.propTypes = {
 };
 
 Camera.displayName = 'SvgCamera';
-export default Camera;
+export default createIcon(Camera);

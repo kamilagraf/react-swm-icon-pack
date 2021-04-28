@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const QuestionCircle = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const QuestionCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ QuestionCircle.propTypes = {
 };
 
 QuestionCircle.displayName = 'SvgQuestionCircle';
-export default QuestionCircle;
+export default createIcon(QuestionCircle);

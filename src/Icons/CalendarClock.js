@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const CalendarClock = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const CalendarClock = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ CalendarClock.propTypes = {
 };
 
 CalendarClock.displayName = 'SvgCalendarClock';
-export default CalendarClock;
+export default createIcon(CalendarClock);

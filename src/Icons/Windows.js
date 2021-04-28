@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Windows = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Windows = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -91,4 +92,4 @@ Windows.propTypes = {
 };
 
 Windows.displayName = 'SvgWindows';
-export default Windows;
+export default createIcon(Windows);

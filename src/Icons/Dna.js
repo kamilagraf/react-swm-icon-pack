@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Dna = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Dna = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -95,4 +96,4 @@ Dna.propTypes = {
 };
 
 Dna.displayName = 'SvgDna';
-export default Dna;
+export default createIcon(Dna);

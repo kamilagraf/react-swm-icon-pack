@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Print = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Print = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ Print.propTypes = {
 };
 
 Print.displayName = 'SvgPrint';
-export default Print;
+export default createIcon(Print);

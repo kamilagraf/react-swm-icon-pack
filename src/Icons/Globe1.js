@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Globe1 = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Globe1 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -87,4 +88,4 @@ Globe1.propTypes = {
 };
 
 Globe1.displayName = 'SvgGlobe1';
-export default Globe1;
+export default createIcon(Globe1);

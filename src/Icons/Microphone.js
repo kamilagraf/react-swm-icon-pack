@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Microphone = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Microphone = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ Microphone.propTypes = {
 };
 
 Microphone.displayName = 'SvgMicrophone';
-export default Microphone;
+export default createIcon(Microphone);

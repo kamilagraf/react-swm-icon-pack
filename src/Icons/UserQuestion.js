@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const UserQuestion = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const UserQuestion = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ UserQuestion.propTypes = {
 };
 
 UserQuestion.displayName = 'SvgUserQuestion';
-export default UserQuestion;
+export default createIcon(UserQuestion);

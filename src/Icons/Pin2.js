@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Pin2 = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Pin2 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -67,4 +68,4 @@ Pin2.propTypes = {
 };
 
 Pin2.displayName = 'SvgPin2';
-export default Pin2;
+export default createIcon(Pin2);

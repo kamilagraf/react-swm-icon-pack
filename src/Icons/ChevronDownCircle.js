@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const ChevronDownCircle = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const ChevronDownCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M7 10l3 3m2 2l5-5m0-5.484A9 9 0 1020.064 8" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -10,20 +11,20 @@ const ChevronDownCircle = ({ color, secondaryColor, strokeWidth, size, set }) =>
   const Curved = () => (
     <g>
       <path stroke={color} strokeWidth={strokeWidth} d="M3 12a9 9 0 1118 0 9 9 0 01-18 0z" />
-      <path stroke={color} stroke-linecap="round" stroke-linejoin="round" strokeWidth={strokeWidth} d="M7 10l5 5 5-5" />
+      <path stroke={color} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth} d="M7 10l5 5 5-5" />
     </g>
   );
   const Duotone = () => (
     <g>
       <path fill={color} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" opacity=".15" />
       <path stroke={color} strokeWidth={strokeWidth} d="M3 12a9 9 0 1118 0 9 9 0 01-18 0z" />
-      <path stroke={color} stroke-linecap="round" stroke-linejoin="round" strokeWidth={strokeWidth} d="M7 10l5 5 5-5" />
+      <path stroke={color} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth} d="M7 10l5 5 5-5" />
     </g>
   );
   const Outline = () => (
     <g>
       <path stroke={color} strokeWidth={strokeWidth} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      <path stroke={color} stroke-linecap="round" stroke-linejoin="round" strokeWidth={strokeWidth} d="M7 10l5 5 5-5" />
+      <path stroke={color} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth} d="M7 10l5 5 5-5" />
     </g>
   );
   const TwoColor = () => (
@@ -58,4 +59,4 @@ ChevronDownCircle.propTypes = {
 };
 
 ChevronDownCircle.displayName = 'SvgChevronDownCircle';
-export default ChevronDownCircle;
+export default createIcon(ChevronDownCircle);

@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const EyeClosed = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const EyeClosed = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -90,4 +91,4 @@ EyeClosed.propTypes = {
 };
 
 EyeClosed.displayName = 'SvgEyeClosed';
-export default EyeClosed;
+export default createIcon(EyeClosed);

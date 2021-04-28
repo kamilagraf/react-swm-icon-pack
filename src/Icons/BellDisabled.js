@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const BellDisabled = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const BellDisabled = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -84,4 +85,4 @@ BellDisabled.propTypes = {
 };
 
 BellDisabled.displayName = 'SvgBellDisabled';
-export default BellDisabled;
+export default createIcon(BellDisabled);

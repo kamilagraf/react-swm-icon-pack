@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Cast = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Cast = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -84,4 +85,4 @@ Cast.propTypes = {
 };
 
 Cast.displayName = 'SvgCast';
-export default Cast;
+export default createIcon(Cast);

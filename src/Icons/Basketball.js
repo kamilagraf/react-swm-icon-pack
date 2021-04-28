@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Basketball = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Basketball = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -89,4 +90,4 @@ Basketball.propTypes = {
 };
 
 Basketball.displayName = 'SvgBasketball';
-export default Basketball;
+export default createIcon(Basketball);

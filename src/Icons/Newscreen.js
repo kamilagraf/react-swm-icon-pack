@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Newscreen = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Newscreen = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M10 14L20 4v6m-6-6h3m-7 0H4v16h3m13-6v6h-9" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -60,4 +61,4 @@ Newscreen.propTypes = {
 };
 
 Newscreen.displayName = 'SvgNewscreen';
-export default Newscreen;
+export default createIcon(Newscreen);

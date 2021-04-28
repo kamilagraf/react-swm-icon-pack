@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const PhoneCross = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const PhoneCross = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -95,4 +96,4 @@ PhoneCross.propTypes = {
 };
 
 PhoneCross.displayName = 'SvgPhoneCross';
-export default PhoneCross;
+export default createIcon(PhoneCross);

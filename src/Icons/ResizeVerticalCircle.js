@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const ResizeVerticalCircle = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const ResizeVerticalCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -79,4 +80,4 @@ ResizeVerticalCircle.propTypes = {
 };
 
 ResizeVerticalCircle.displayName = 'SvgResizeVerticalCircle';
-export default ResizeVerticalCircle;
+export default createIcon(ResizeVerticalCircle);

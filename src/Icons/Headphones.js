@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Headphones = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Headphones = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ Headphones.propTypes = {
 };
 
 Headphones.displayName = 'SvgHeadphones';
-export default Headphones;
+export default createIcon(Headphones);

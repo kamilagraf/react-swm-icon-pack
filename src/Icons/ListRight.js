@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const ListRight = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const ListRight = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M7 7h10M7 11h5m5 0h-2m-8 4h6m-9-3v8h16V4H4v4" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -61,4 +62,4 @@ ListRight.propTypes = {
 };
 
 ListRight.displayName = 'SvgListRight';
-export default ListRight;
+export default createIcon(ListRight);

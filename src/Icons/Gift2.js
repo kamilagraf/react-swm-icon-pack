@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Gift2 = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Gift2 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -91,4 +92,4 @@ Gift2.propTypes = {
 };
 
 Gift2.displayName = 'SvgGift2';
-export default Gift2;
+export default createIcon(Gift2);

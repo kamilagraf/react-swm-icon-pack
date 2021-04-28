@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const CalendarWarning = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const CalendarWarning = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ CalendarWarning.propTypes = {
 };
 
 CalendarWarning.displayName = 'SvgCalendarWarning';
-export default CalendarWarning;
+export default createIcon(CalendarWarning);

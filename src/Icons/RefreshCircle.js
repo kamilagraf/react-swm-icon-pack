@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const RefreshCircle = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const RefreshCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -18,8 +19,8 @@ const RefreshCircle = ({ color, secondaryColor, strokeWidth, size, set }) => {
       <path stroke={color} strokeWidth={strokeWidth} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
       <path
         stroke={color}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         strokeWidth={strokeWidth}
         d="M7 8v2.4h2.5M17 16v-2.4h-2.5m1.667-3.2c-.425-.803-1.146-1.468-2.056-1.893a5.542 5.542 0 00-2.987-.467c-1.029.122-1.983.525-2.718 1.146L7 10.255m.833 3.345c.425.803 1.146 1.468 2.056 1.893.91.426 1.958.59 2.987.467 1.029-.122 1.983-.525 2.718-1.146L17 13.745"
       />
@@ -31,8 +32,8 @@ const RefreshCircle = ({ color, secondaryColor, strokeWidth, size, set }) => {
       <path stroke={color} strokeWidth={strokeWidth} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
       <path
         stroke={color}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         strokeWidth={strokeWidth}
         d="M7 8v2.4h2.5M17 16v-2.4h-2.5m1.667-3.2c-.425-.803-1.146-1.468-2.056-1.893a5.542 5.542 0 00-2.987-.467c-1.029.122-1.983.525-2.718 1.146L7 10.255m.833 3.345c.425.803 1.146 1.468 2.056 1.893.91.426 1.958.59 2.987.467 1.029-.122 1.983-.525 2.718-1.146L17 13.745"
       />
@@ -43,8 +44,8 @@ const RefreshCircle = ({ color, secondaryColor, strokeWidth, size, set }) => {
       <path stroke={color} strokeWidth={strokeWidth} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
       <path
         stroke={color}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         strokeWidth={strokeWidth}
         d="M7 8v2.4h2.5M17 16v-2.4h-2.5m1.667-3.2c-.425-.803-1.146-1.468-2.056-1.893a5.542 5.542 0 00-2.987-.467c-1.029.122-1.983.525-2.718 1.146L7 10.255m.833 3.345c.425.803 1.146 1.468 2.056 1.893.91.426 1.958.59 2.987.467 1.029-.122 1.983-.525 2.718-1.146L17 13.745"
       />
@@ -88,4 +89,4 @@ RefreshCircle.propTypes = {
 };
 
 RefreshCircle.displayName = 'SvgRefreshCircle';
-export default RefreshCircle;
+export default createIcon(RefreshCircle);

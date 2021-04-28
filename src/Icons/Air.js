@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Air = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Air = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -78,4 +79,4 @@ Air.propTypes = {
 };
 
 Air.displayName = 'SvgAir';
-export default Air;
+export default createIcon(Air);

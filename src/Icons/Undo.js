@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Undo = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Undo = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M3 9v3m6 3H3l2.64-2.37a9 9 0 0114.574 2.692" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -72,4 +73,4 @@ Undo.propTypes = {
 };
 
 Undo.displayName = 'SvgUndo';
-export default Undo;
+export default createIcon(Undo);

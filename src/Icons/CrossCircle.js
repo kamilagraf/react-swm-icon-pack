@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const CrossCircle = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const CrossCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -79,4 +80,4 @@ CrossCircle.propTypes = {
 };
 
 CrossCircle.displayName = 'SvgCrossCircle';
-export default CrossCircle;
+export default createIcon(CrossCircle);

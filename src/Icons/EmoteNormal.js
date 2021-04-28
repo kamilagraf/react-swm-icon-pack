@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const EmoteNormal = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const EmoteNormal = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M3 12a9 9 0 102-5.657M9 9h.01M15 9h.01M8 15h8" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -73,4 +74,4 @@ EmoteNormal.propTypes = {
 };
 
 EmoteNormal.displayName = 'SvgEmoteNormal';
-export default EmoteNormal;
+export default createIcon(EmoteNormal);

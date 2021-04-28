@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const ShieldCheck = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const ShieldCheck = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ ShieldCheck.propTypes = {
 };
 
 ShieldCheck.displayName = 'SvgShieldCheck';
-export default ShieldCheck;
+export default createIcon(ShieldCheck);

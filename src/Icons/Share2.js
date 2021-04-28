@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Share2 = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Share2 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -78,4 +79,4 @@ Share2.propTypes = {
 };
 
 Share2.displayName = 'SvgShare2';
-export default Share2;
+export default createIcon(Share2);

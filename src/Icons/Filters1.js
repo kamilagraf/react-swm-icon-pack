@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Filters1 = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Filters1 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -82,4 +83,4 @@ Filters1.propTypes = {
 };
 
 Filters1.displayName = 'SvgFilters1';
-export default Filters1;
+export default createIcon(Filters1);

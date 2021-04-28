@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Shirt = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Shirt = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ Shirt.propTypes = {
 };
 
 Shirt.displayName = 'SvgShirt';
-export default Shirt;
+export default createIcon(Shirt);

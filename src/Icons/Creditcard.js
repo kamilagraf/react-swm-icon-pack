@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Creditcard = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Creditcard = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ Creditcard.propTypes = {
 };
 
 Creditcard.displayName = 'SvgCreditcard';
-export default Creditcard;
+export default createIcon(Creditcard);

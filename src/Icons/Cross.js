@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Cross = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Cross = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M19 5L5 19M5 5l4.5 4.5M19 19l-7-7" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -54,4 +55,4 @@ Cross.propTypes = {
 };
 
 Cross.displayName = 'SvgCross';
-export default Cross;
+export default createIcon(Cross);

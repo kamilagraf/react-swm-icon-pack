@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Command = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Command = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -91,4 +92,4 @@ Command.propTypes = {
 };
 
 Command.displayName = 'SvgCommand';
-export default Command;
+export default createIcon(Command);

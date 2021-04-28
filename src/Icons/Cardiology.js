@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Cardiology = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Cardiology = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -95,4 +96,4 @@ Cardiology.propTypes = {
 };
 
 Cardiology.displayName = 'SvgCardiology';
-export default Cardiology;
+export default createIcon(Cardiology);

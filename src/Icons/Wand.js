@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Wand = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Wand = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -84,4 +85,4 @@ Wand.propTypes = {
 };
 
 Wand.displayName = 'SvgWand';
-export default Wand;
+export default createIcon(Wand);

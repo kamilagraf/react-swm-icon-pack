@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const WarningSmall = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const WarningSmall = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M12 7v7m0 2.99V17" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -54,4 +55,4 @@ WarningSmall.propTypes = {
 };
 
 WarningSmall.displayName = 'SvgWarningSmall';
-export default WarningSmall;
+export default createIcon(WarningSmall);

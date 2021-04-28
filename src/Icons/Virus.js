@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Virus = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Virus = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -91,4 +92,4 @@ Virus.propTypes = {
 };
 
 Virus.displayName = 'SvgVirus';
-export default Virus;
+export default createIcon(Virus);

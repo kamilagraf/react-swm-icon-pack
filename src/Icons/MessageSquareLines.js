@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const MessageSquareLines = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const MessageSquareLines = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -67,4 +68,4 @@ MessageSquareLines.propTypes = {
 };
 
 MessageSquareLines.displayName = 'SvgMessageSquareLines';
-export default MessageSquareLines;
+export default createIcon(MessageSquareLines);

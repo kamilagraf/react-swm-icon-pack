@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Logout = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Logout = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -78,4 +79,4 @@ Logout.propTypes = {
 };
 
 Logout.displayName = 'SvgLogout';
-export default Logout;
+export default createIcon(Logout);

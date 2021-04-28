@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Crown1 = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Crown1 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M16 9l4-4v11H4V5l2 2m2 2l4-4 2 2M4 19h16" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -61,4 +62,4 @@ Crown1.propTypes = {
 };
 
 Crown1.displayName = 'SvgCrown1';
-export default Crown1;
+export default createIcon(Crown1);

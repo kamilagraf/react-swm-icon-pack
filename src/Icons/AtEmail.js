@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const AtEmail = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const AtEmail = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -91,4 +92,4 @@ AtEmail.propTypes = {
 };
 
 AtEmail.displayName = 'SvgAtEmail';
-export default AtEmail;
+export default createIcon(AtEmail);

@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const MessageCircle = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const MessageCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -89,4 +90,4 @@ MessageCircle.propTypes = {
 };
 
 MessageCircle.displayName = 'SvgMessageCircle';
-export default MessageCircle;
+export default createIcon(MessageCircle);

@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Block2 = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Block2 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -67,4 +68,4 @@ Block2.propTypes = {
 };
 
 Block2.displayName = 'SvgBlock2';
-export default Block2;
+export default createIcon(Block2);

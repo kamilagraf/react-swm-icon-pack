@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const ListCenter = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const ListCenter = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M7 8h10M7 12h2m8 0h-5m-3 4h6m5-4V4H4v16h16v-4" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -61,4 +62,4 @@ ListCenter.propTypes = {
 };
 
 ListCenter.displayName = 'SvgListCenter';
-export default ListCenter;
+export default createIcon(ListCenter);

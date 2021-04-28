@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Play = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Play = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M8 18V6l10 6-6.667 4" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -61,4 +62,4 @@ Play.propTypes = {
 };
 
 Play.displayName = 'SvgPlay';
-export default Play;
+export default createIcon(Play);

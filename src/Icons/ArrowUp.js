@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const ArrowUp = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const ArrowUp = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M12 20V4l6 6M6 10l3-3" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -54,4 +55,4 @@ ArrowUp.propTypes = {
 };
 
 ArrowUp.displayName = 'SvgArrowUp';
-export default ArrowUp;
+export default createIcon(ArrowUp);

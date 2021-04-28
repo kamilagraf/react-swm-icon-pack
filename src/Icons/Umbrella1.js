@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Umbrella1 = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Umbrella1 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -79,4 +80,4 @@ Umbrella1.propTypes = {
 };
 
 Umbrella1.displayName = 'SvgUmbrella1';
-export default Umbrella1;
+export default createIcon(Umbrella1);

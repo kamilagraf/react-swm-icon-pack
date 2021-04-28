@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const ChevronUpCircle = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const ChevronUpCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M17 14l-5-5m-5 5l3-3m0-7.777a9 9 0 11-4 2.069" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -10,20 +11,20 @@ const ChevronUpCircle = ({ color, secondaryColor, strokeWidth, size, set }) => {
   const Curved = () => (
     <g>
       <path stroke={color} strokeWidth={strokeWidth} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      <path stroke={color} stroke-linecap="round" stroke-linejoin="round" strokeWidth={strokeWidth} d="M17 14l-5-5-5 5" />
+      <path stroke={color} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth} d="M17 14l-5-5-5 5" />
     </g>
   );
   const Duotone = () => (
     <g>
       <path fill={color} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" opacity=".15" />
       <path stroke={color} strokeWidth={strokeWidth} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      <path stroke={color} stroke-linecap="round" stroke-linejoin="round" strokeWidth={strokeWidth} d="M17 14l-5-5-5 5" />
+      <path stroke={color} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth} d="M17 14l-5-5-5 5" />
     </g>
   );
   const Outline = () => (
     <g>
       <path stroke={color} strokeWidth={strokeWidth} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      <path stroke={color} stroke-linecap="round" stroke-linejoin="round" strokeWidth={strokeWidth} d="M17 14l-5-5-5 5" />
+      <path stroke={color} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth} d="M17 14l-5-5-5 5" />
     </g>
   );
   const TwoColor = () => (
@@ -58,4 +59,4 @@ ChevronUpCircle.propTypes = {
 };
 
 ChevronUpCircle.displayName = 'SvgChevronUpCircle';
-export default ChevronUpCircle;
+export default createIcon(ChevronUpCircle);

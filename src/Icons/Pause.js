@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Pause = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Pause = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M9 6v12m6-12v6m0 6v-2" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -60,4 +61,4 @@ Pause.propTypes = {
 };
 
 Pause.displayName = 'SvgPause';
-export default Pause;
+export default createIcon(Pause);

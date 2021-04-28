@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Laptop = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Laptop = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -95,4 +96,4 @@ Laptop.propTypes = {
 };
 
 Laptop.displayName = 'SvgLaptop';
-export default Laptop;
+export default createIcon(Laptop);

@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const MenuHamburger = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const MenuHamburger = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M4 7h8m8 0h-4M4 12h16M4 17h4m12 0h-8" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -54,4 +55,4 @@ MenuHamburger.propTypes = {
 };
 
 MenuHamburger.displayName = 'SvgMenuHamburger';
-export default MenuHamburger;
+export default createIcon(MenuHamburger);

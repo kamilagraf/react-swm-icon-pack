@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const EmoteSmile = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const EmoteSmile = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ EmoteSmile.propTypes = {
 };
 
 EmoteSmile.displayName = 'SvgEmoteSmile';
-export default EmoteSmile;
+export default createIcon(EmoteSmile);

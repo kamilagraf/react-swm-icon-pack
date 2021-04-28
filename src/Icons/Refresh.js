@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Refresh = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Refresh = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -84,4 +85,4 @@ Refresh.propTypes = {
 };
 
 Refresh.displayName = 'SvgRefresh';
-export default Refresh;
+export default createIcon(Refresh);

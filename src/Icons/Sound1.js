@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Sound1 = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Sound1 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -78,4 +79,4 @@ Sound1.propTypes = {
 };
 
 Sound1.displayName = 'SvgSound1';
-export default Sound1;
+export default createIcon(Sound1);

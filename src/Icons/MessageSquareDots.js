@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const MessageSquareDots = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const MessageSquareDots = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ MessageSquareDots.propTypes = {
 };
 
 MessageSquareDots.displayName = 'SvgMessageSquareDots';
-export default MessageSquareDots;
+export default createIcon(MessageSquareDots);

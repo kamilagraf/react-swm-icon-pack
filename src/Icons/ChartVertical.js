@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const ChartVertical = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const ChartVertical = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M8 17v-3m4 3v-2m0-8v5m4 5v-6m4 1v8H4V4h16v4" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -61,4 +62,4 @@ ChartVertical.propTypes = {
 };
 
 ChartVertical.displayName = 'SvgChartVertical';
-export default ChartVertical;
+export default createIcon(ChartVertical);

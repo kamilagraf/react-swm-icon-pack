@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const MessageSquare = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const MessageSquare = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M7 16H4V4h16v2M7 18.5V21l5-5h8v-6" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -61,4 +62,4 @@ MessageSquare.propTypes = {
 };
 
 MessageSquare.displayName = 'SvgMessageSquare';
-export default MessageSquare;
+export default createIcon(MessageSquare);

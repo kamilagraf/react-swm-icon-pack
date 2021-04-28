@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Rewind = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Rewind = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M12 13.8l7 4.2V6l-4 2.4M6 14l-3-2 9-6v12l-3-2" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -61,4 +62,4 @@ Rewind.propTypes = {
 };
 
 Rewind.displayName = 'SvgRewind';
-export default Rewind;
+export default createIcon(Rewind);

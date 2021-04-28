@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const ResizeVerticalSmall = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const ResizeVerticalSmall = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M15 10l-3-3m-3 3l1.5-1.5M9 14l3 3 3-3" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -54,4 +55,4 @@ ResizeVerticalSmall.propTypes = {
 };
 
 ResizeVerticalSmall.displayName = 'SvgResizeVerticalSmall';
-export default ResizeVerticalSmall;
+export default createIcon(ResizeVerticalSmall);

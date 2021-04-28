@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Bolt = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Bolt = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M13.6 10H19L8 21l2-8H6l3-9h7l-1.2 3" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -61,4 +62,4 @@ Bolt.propTypes = {
 };
 
 Bolt.displayName = 'SvgBolt';
-export default Bolt;
+export default createIcon(Bolt);

@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const MicrophoneDisabled = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const MicrophoneDisabled = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -84,4 +85,4 @@ MicrophoneDisabled.propTypes = {
 };
 
 MicrophoneDisabled.displayName = 'SvgMicrophoneDisabled';
-export default MicrophoneDisabled;
+export default createIcon(MicrophoneDisabled);

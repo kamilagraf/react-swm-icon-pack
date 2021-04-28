@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Search = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Search = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M20 20l-4.197-4.197A7.5 7.5 0 1117.85 12" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -73,4 +74,4 @@ Search.propTypes = {
 };
 
 Search.displayName = 'SvgSearch';
-export default Search;
+export default createIcon(Search);

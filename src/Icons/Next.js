@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Next = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Next = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M12 13.8l3-1.8L5 6v12l4-2.4M19 6v12" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -63,4 +64,4 @@ Next.propTypes = {
 };
 
 Next.displayName = 'SvgNext';
-export default Next;
+export default createIcon(Next);

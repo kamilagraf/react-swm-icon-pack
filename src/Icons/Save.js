@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Save = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Save = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ Save.propTypes = {
 };
 
 Save.displayName = 'SvgSave';
-export default Save;
+export default createIcon(Save);

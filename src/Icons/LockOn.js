@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const LockOn = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const LockOn = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -73,4 +74,4 @@ LockOn.propTypes = {
 };
 
 LockOn.displayName = 'SvgLockOn';
-export default LockOn;
+export default createIcon(LockOn);

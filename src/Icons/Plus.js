@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Plus = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Plus = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M12 4v16m-8-8h5m11 0h-8" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -54,4 +55,4 @@ Plus.propTypes = {
 };
 
 Plus.displayName = 'SvgPlus';
-export default Plus;
+export default createIcon(Plus);

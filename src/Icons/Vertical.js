@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Vertical = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Vertical = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M17 9l-5-5M7 9l2.5-2.5M7 15l5 5 5-5" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -54,4 +55,4 @@ Vertical.propTypes = {
 };
 
 Vertical.displayName = 'SvgVertical';
-export default Vertical;
+export default createIcon(Vertical);

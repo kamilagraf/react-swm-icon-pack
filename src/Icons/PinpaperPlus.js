@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const PinpaperPlus = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const PinpaperPlus = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -79,4 +80,4 @@ PinpaperPlus.propTypes = {
 };
 
 PinpaperPlus.displayName = 'SvgPinpaperPlus';
-export default PinpaperPlus;
+export default createIcon(PinpaperPlus);

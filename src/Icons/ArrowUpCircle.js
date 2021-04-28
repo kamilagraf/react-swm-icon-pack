@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const ArrowUpCircle = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const ArrowUpCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -79,4 +80,4 @@ ArrowUpCircle.propTypes = {
 };
 
 ArrowUpCircle.displayName = 'SvgArrowUpCircle';
-export default ArrowUpCircle;
+export default createIcon(ArrowUpCircle);

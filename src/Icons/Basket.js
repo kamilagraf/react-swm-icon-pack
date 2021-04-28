@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Basket = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Basket = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M3 10h18l-2 10H5M3 10l6-6m-6 6l1.2 6M15 4l3 3" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -61,4 +62,4 @@ Basket.propTypes = {
 };
 
 Basket.displayName = 'SvgBasket';
-export default Basket;
+export default createIcon(Basket);

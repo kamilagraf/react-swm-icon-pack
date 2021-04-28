@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const DocumentClean = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const DocumentClean = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -79,4 +80,4 @@ DocumentClean.propTypes = {
 };
 
 DocumentClean.displayName = 'SvgDocumentClean';
-export default DocumentClean;
+export default createIcon(DocumentClean);

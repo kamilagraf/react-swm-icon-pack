@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Fullscreen = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Fullscreen = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M20 10V4h-6M4 14v6h6m0-16H4v6m10 10h6v-6" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -60,4 +61,4 @@ Fullscreen.propTypes = {
 };
 
 Fullscreen.displayName = 'SvgFullscreen';
-export default Fullscreen;
+export default createIcon(Fullscreen);

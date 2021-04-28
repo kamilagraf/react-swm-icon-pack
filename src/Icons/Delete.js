@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Delete = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Delete = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ Delete.propTypes = {
 };
 
 Delete.displayName = 'SvgDelete';
-export default Delete;
+export default createIcon(Delete);

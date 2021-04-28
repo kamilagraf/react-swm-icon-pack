@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Female = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Female = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -79,4 +80,4 @@ Female.propTypes = {
 };
 
 Female.displayName = 'SvgFemale';
-export default Female;
+export default createIcon(Female);

@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const ArrowRightSmall = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const ArrowRightSmall = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M7 12h10l-4 4m0-8l2 2" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -54,4 +55,4 @@ ArrowRightSmall.propTypes = {
 };
 
 ArrowRightSmall.displayName = 'SvgArrowRightSmall';
-export default ArrowRightSmall;
+export default createIcon(ArrowRightSmall);

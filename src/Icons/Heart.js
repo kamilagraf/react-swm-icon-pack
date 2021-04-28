@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Heart = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Heart = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -67,7 +68,6 @@ const Heart = ({ color, secondaryColor, strokeWidth, size, set }) => {
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-    </svg>
     </g>
   );
 
@@ -96,4 +96,4 @@ Heart.propTypes = {
 };
 
 Heart.displayName = 'SvgHeart';
-export default Heart;
+export default createIcon(Heart);

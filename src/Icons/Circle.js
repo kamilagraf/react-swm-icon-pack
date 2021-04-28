@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Circle = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Circle = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke={color} strokeWidth={strokeWidth} />
@@ -54,4 +55,4 @@ Circle.propTypes = {
 };
 
 Circle.displayName = 'SvgCircle';
-export default Circle;
+export default createIcon(Circle);

@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const UserCheck = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const UserCheck = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ UserCheck.propTypes = {
 };
 
 UserCheck.displayName = 'SvgUserCheck';
-export default UserCheck;
+export default createIcon(UserCheck);

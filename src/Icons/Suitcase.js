@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Suitcase = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Suitcase = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -91,4 +92,4 @@ Suitcase.propTypes = {
 };
 
 Suitcase.displayName = 'SvgSuitcase';
-export default Suitcase;
+export default createIcon(Suitcase);

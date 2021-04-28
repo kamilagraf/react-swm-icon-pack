@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Like = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Like = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -91,4 +92,4 @@ Like.propTypes = {
 };
 
 Like.displayName = 'SvgLike';
-export default Like;
+export default createIcon(Like);

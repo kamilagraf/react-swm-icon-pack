@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const CameraDisabled = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const CameraDisabled = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -90,4 +91,4 @@ CameraDisabled.propTypes = {
 };
 
 CameraDisabled.displayName = 'SvgCameraDisabled';
-export default CameraDisabled;
+export default createIcon(CameraDisabled);

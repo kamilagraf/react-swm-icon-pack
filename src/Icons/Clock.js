@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Clock = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Clock = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M12 3a9 9 0 11-6.708 3M12 7v5l3 3" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -55,4 +56,4 @@ Clock.propTypes = {
 };
 
 Clock.displayName = 'SvgClock';
-export default Clock;
+export default createIcon(Clock);

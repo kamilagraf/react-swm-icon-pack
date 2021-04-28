@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const TestTube = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const TestTube = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -95,4 +96,4 @@ TestTube.propTypes = {
 };
 
 TestTube.displayName = 'SvgTestTube';
-export default TestTube;
+export default createIcon(TestTube);

@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const DocumentMinus = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const DocumentMinus = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -79,4 +80,4 @@ DocumentMinus.propTypes = {
 };
 
 DocumentMinus.displayName = 'SvgDocumentMinus';
-export default DocumentMinus;
+export default createIcon(DocumentMinus);

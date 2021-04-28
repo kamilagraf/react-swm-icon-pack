@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const BoneBroken = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const BoneBroken = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -95,4 +96,4 @@ BoneBroken.propTypes = {
 };
 
 BoneBroken.displayName = 'SvgBoneBroken';
-export default BoneBroken;
+export default createIcon(BoneBroken);

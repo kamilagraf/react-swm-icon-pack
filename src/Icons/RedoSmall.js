@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const RedoSmall = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const RedoSmall = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -84,4 +85,4 @@ RedoSmall.propTypes = {
 };
 
 RedoSmall.displayName = 'SvgRedoSmall';
-export default RedoSmall;
+export default createIcon(RedoSmall);

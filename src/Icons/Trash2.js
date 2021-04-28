@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Trash2 = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Trash2 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ Trash2.propTypes = {
 };
 
 Trash2.displayName = 'SvgTrash2';
-export default Trash2;
+export default createIcon(Trash2);

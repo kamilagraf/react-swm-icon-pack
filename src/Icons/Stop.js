@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Stop = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Stop = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M9 6H6v12h12v-3m-5-9h5v5" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -61,4 +62,4 @@ Stop.propTypes = {
 };
 
 Stop.displayName = 'SvgStop';
-export default Stop;
+export default createIcon(Stop);

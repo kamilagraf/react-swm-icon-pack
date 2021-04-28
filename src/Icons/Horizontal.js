@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Horizontal = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Horizontal = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M9 7L6.5 9.5M4 12l5 5m6 0l5-5-5-5" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -54,4 +55,4 @@ Horizontal.propTypes = {
 };
 
 Horizontal.displayName = 'SvgHorizontal';
-export default Horizontal;
+export default createIcon(Horizontal);

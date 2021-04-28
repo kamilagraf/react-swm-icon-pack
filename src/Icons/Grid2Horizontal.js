@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Grid2Horizontal = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Grid2Horizontal = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M6 3.5H3.5v7h17v-7H10m7 17h3.5v-7h-17v7H13" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -61,4 +62,4 @@ Grid2Horizontal.propTypes = {
 };
 
 Grid2Horizontal.displayName = 'SvgGrid2Horizontal';
-export default Grid2Horizontal;
+export default createIcon(Grid2Horizontal);

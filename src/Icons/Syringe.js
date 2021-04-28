@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Syringe = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Syringe = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -91,4 +92,4 @@ Syringe.propTypes = {
 };
 
 Syringe.displayName = 'SvgSyringe';
-export default Syringe;
+export default createIcon(Syringe);

@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Coin = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Coin = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ Coin.propTypes = {
 };
 
 Coin.displayName = 'SvgCoin';
-export default Coin;
+export default createIcon(Coin);

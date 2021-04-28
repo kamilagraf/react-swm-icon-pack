@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const RefreshSmall = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const RefreshSmall = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -84,4 +85,4 @@ RefreshSmall.propTypes = {
 };
 
 RefreshSmall.displayName = 'SvgRefreshSmall';
-export default RefreshSmall;
+export default createIcon(RefreshSmall);

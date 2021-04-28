@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const ChevronUpSmall = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const ChevronUpSmall = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M17 14l-5-5m-5 5l2.5-2.5" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -54,4 +55,4 @@ ChevronUpSmall.propTypes = {
 };
 
 ChevronUpSmall.displayName = 'SvgChevronUpSmall';
-export default ChevronUpSmall;
+export default createIcon(ChevronUpSmall);

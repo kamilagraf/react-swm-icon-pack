@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const ResizeHorizontalCircle = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const ResizeHorizontalCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -79,4 +80,4 @@ ResizeHorizontalCircle.propTypes = {
 };
 
 ResizeHorizontalCircle.displayName = 'SvgResizeHorizontalCircle';
-export default ResizeHorizontalCircle;
+export default createIcon(ResizeHorizontalCircle);

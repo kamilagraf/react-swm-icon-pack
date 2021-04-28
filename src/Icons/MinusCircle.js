@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const MinusCircle = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const MinusCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M3.512 9a9 9 0 103.511-4.5M8 12h4m2.5 0H16" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -55,4 +56,4 @@ MinusCircle.propTypes = {
 };
 
 MinusCircle.displayName = 'SvgMinusCircle';
-export default MinusCircle;
+export default createIcon(MinusCircle);

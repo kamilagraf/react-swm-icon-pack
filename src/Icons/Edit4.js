@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Edit4 = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Edit4 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -79,4 +80,4 @@ Edit4.propTypes = {
 };
 
 Edit4.displayName = 'SvgEdit4';
-export default Edit4;
+export default createIcon(Edit4);

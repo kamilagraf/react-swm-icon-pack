@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Power = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Power = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -60,4 +61,4 @@ Power.propTypes = {
 };
 
 Power.displayName = 'SvgPower';
-export default Power;
+export default createIcon(Power);

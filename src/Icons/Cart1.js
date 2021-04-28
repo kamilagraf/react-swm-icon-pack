@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Cart1 = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Cart1 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -89,4 +90,4 @@ Cart1.propTypes = {
 };
 
 Cart1.displayName = 'SvgCart1';
-export default Cart1;
+export default createIcon(Cart1);

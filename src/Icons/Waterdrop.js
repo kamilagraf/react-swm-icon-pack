@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Waterdrop = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Waterdrop = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ Waterdrop.propTypes = {
 };
 
 Waterdrop.displayName = 'SvgWaterdrop';
-export default Waterdrop;
+export default createIcon(Waterdrop);

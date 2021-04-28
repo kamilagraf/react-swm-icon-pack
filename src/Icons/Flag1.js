@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const Flag1 = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const Flag1 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ Flag1.propTypes = {
 };
 
 Flag1.displayName = 'SvgFlag1';
-export default Flag1;
+export default createIcon(Flag1);

@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const WarningCircle = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const WarningCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -79,4 +80,4 @@ WarningCircle.propTypes = {
 };
 
 WarningCircle.displayName = 'SvgWarningCircle';
-export default WarningCircle;
+export default createIcon(WarningCircle);

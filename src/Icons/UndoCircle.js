@@ -1,7 +1,8 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import createIcon from 'helpers/createIcon';
 
-const UndoCircle = ({ color, secondaryColor, strokeWidth, size, set }) => {
+const UndoCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -85,4 +86,4 @@ UndoCircle.propTypes = {
 };
 
 UndoCircle.displayName = 'SvgUndoCircle';
-export default UndoCircle;
+export default createIcon(UndoCircle);
