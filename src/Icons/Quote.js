@@ -1,6 +1,6 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import createIcon from 'helpers/createIcon';
+import createIcon from '../helpers/createIcon';
 
 const Quote = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (

@@ -1,5 +1,5 @@
 public
-# src
+src
 .gitignore
 .prettierrc
 jsconfig.json
