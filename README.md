@@ -1,6 +1,7 @@
 # React SWM Icon Pack
 
 [![NPM](https://img.shields.io/npm/v/react-swm-icon-pack.svg)](https://www.npmjs.com/package/react-swm-icon-pack)
+![APM](https://img.shields.io/apm/l/:react-swm-icon-pack.svg)
 
 
 **react-swm-icon-pack** is a collection of carefully designed icons for React.js to help you with icons in your projects. Completely free and ready to use.
