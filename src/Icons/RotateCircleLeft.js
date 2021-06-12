@@ -2,11 +2,11 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const ArrowUpCircle = ({ color, secondaryColor, strokeWidth, set }) => {
+const RotateCircleLeft = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M12 17V7l-4 4m8 0l-2-2M8 20.064A9 9 0 104.516 17"
+        d="M8 7v3m0 0h3m-3 0c1.083-.767 2.078-1.769 3.442-1.961a4 4 0 013.142 7.014M8.227 13.33a4 4 0 004.003 2.664M18.708 6a9 9 0 102.069 4"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -17,7 +17,7 @@ const ArrowUpCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   const Curved = () => (
     <g>
       <path
-        d="M12 7v10m0-10l4 4m-4-4l-4 4m13 1a9 9 0 11-18 0 9 9 0 0118 0z"
+        d="M8 7v3m0 0h3m-3 0c1.083-.767 2.078-1.769 3.442-1.961a4 4 0 11-3.215 5.29M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -29,7 +29,7 @@ const ArrowUpCircle = ({ color, secondaryColor, strokeWidth, set }) => {
     <g>
       <path opacity={0.15} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" fill={color} />
       <path
-        d="M12 7v10m0-10l4 4m-4-4l-4 4m13 1a9 9 0 11-18 0 9 9 0 0118 0z"
+        d="M8 7v3m0 0h3m-3 0c1.083-.767 2.078-1.769 3.442-1.961a4 4 0 11-3.215 5.29M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -40,7 +40,7 @@ const ArrowUpCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   const Outline = () => (
     <g>
       <path
-        d="M12 7v10m0-10l4 4m-4-4l-4 4m13 1a9 9 0 11-18 0 9 9 0 0118 0z"
+        d="M8 7v3m0 0h3m-3 0c1.083-.767 2.078-1.769 3.442-1.961a4 4 0 11-3.215 5.29M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -50,7 +50,13 @@ const ArrowUpCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   );
   const TwoColor = () => (
     <g>
-      <path d="M12 7v10m0-10l4 4m-4-4l-4 4" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path
+        d="M8 7v3m0 0h3m-3 0c1.083-.767 2.078-1.769 3.442-1.961a4 4 0 11-3.215 5.29"
+        stroke={secondaryColor}
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
       <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
@@ -71,7 +77,7 @@ const ArrowUpCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   }
 };
 
-ArrowUpCircle.propTypes = {
+RotateCircleLeft.propTypes = {
   color: PropTypes.string,
   secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -79,5 +85,5 @@ ArrowUpCircle.propTypes = {
   set: PropTypes.string,
 };
 
-ArrowUpCircle.displayName = 'SvgArrowUpCircle';
-export default createIcon(ArrowUpCircle);
+RotateCircleLeft.displayName = 'SvgRotateCircleLeft';
+export default createIcon(RotateCircleLeft);

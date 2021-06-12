@@ -2,11 +2,11 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const RotateLeftSmall = ({ color, secondaryColor, strokeWidth, set }) => {
+const ResizeCircleHorizontal = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M8 7v3m0 0h3m-3 0c1.083-.767 2.078-1.769 3.442-1.961a4 4 0 014.209 2.326M8.227 13.33a4 4 0 007.673-.441"
+        d="M10 9l-1.5 1.5M7 12l3 3m4 0l3-3-3-3m1 11.488a9 9 0 114-2.83"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -17,7 +17,7 @@ const RotateLeftSmall = ({ color, secondaryColor, strokeWidth, set }) => {
   const Curved = () => (
     <g>
       <path
-        d="M8 7v3m0 0h3m-3 0c1.083-.767 2.078-1.769 3.442-1.961a4 4 0 11-3.215 5.29"
+        d="M10 9l-3 3 3 3m4 0l3-3-3-3m7 3a9 9 0 11-18 0 9 9 0 0118 0z"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -27,8 +27,9 @@ const RotateLeftSmall = ({ color, secondaryColor, strokeWidth, set }) => {
   );
   const Duotone = () => (
     <g>
+      <path opacity={0.15} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" fill={color} />
       <path
-        d="M8 7v3m0 0h3m-3 0c1.083-.767 2.078-1.769 3.442-1.961a4 4 0 11-3.215 5.29"
+        d="M10 9l-3 3 3 3m4 0l3-3-3-3m7 3a9 9 0 11-18 0 9 9 0 0118 0z"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -39,7 +40,7 @@ const RotateLeftSmall = ({ color, secondaryColor, strokeWidth, set }) => {
   const Outline = () => (
     <g>
       <path
-        d="M8 7v3m0 0h3m-3 0c1.083-.767 2.078-1.769 3.442-1.961a4 4 0 11-3.215 5.29"
+        d="M10 9l-3 3 3 3m4 0l3-3-3-3m7 3a9 9 0 11-18 0 9 9 0 0118 0z"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -49,14 +50,8 @@ const RotateLeftSmall = ({ color, secondaryColor, strokeWidth, set }) => {
   );
   const TwoColor = () => (
     <g>
-      <path
-        d="M8 10c1.083-.767 2.078-1.769 3.442-1.961a4 4 0 11-3.215 5.29"
-        stroke={secondaryColor}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path d="M8 7v3h3" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M10 9l-3 3 3 3m4 0l3-3-3-3" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
 
@@ -76,7 +71,7 @@ const RotateLeftSmall = ({ color, secondaryColor, strokeWidth, set }) => {
   }
 };
 
-RotateLeftSmall.propTypes = {
+ResizeCircleHorizontal.propTypes = {
   color: PropTypes.string,
   secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -84,5 +79,5 @@ RotateLeftSmall.propTypes = {
   set: PropTypes.string,
 };
 
-RotateLeftSmall.displayName = 'SvgRotateLeftSmall';
-export default createIcon(RotateLeftSmall);
+ResizeCircleHorizontal.displayName = 'SvgResizeCircleHorizontal';
+export default createIcon(ResizeCircleHorizontal);

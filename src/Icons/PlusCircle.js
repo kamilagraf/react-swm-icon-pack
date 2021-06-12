@@ -18,7 +18,10 @@ const PlusCircle = ({ color, secondaryColor, strokeWidth, set }) => {
     <g>
       <path
         d="M11.25 8v4h1.5V8h-1.5zm0 4v4h1.5v-4h-1.5zM8 12.75h4v-1.5H8v1.5zm4 0h4v-1.5h-4v1.5zm8.25-.75A8.25 8.25 0 0112 20.25v1.5c5.385 0 9.75-4.365 9.75-9.75h-1.5zM12 20.25A8.25 8.25 0 013.75 12h-1.5c0 5.385 4.365 9.75 9.75 9.75v-1.5zM3.75 12A8.25 8.25 0 0112 3.75v-1.5c-5.385 0-9.75 4.365-9.75 9.75h1.5zM12 3.75A8.25 8.25 0 0120.25 12h1.5c0-5.385-4.365-9.75-9.75-9.75v1.5z"
-        fill={color}
+        stroke={color}
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </g>
   );
@@ -27,7 +30,10 @@ const PlusCircle = ({ color, secondaryColor, strokeWidth, set }) => {
       <path opacity={0.15} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" fill={color} />
       <path
         d="M11.25 8v4h1.5V8h-1.5zm0 4v4h1.5v-4h-1.5zM8 12.75h4v-1.5H8v1.5zm4 0h4v-1.5h-4v1.5zm8.25-.75A8.25 8.25 0 0112 20.25v1.5c5.385 0 9.75-4.365 9.75-9.75h-1.5zM12 20.25A8.25 8.25 0 013.75 12h-1.5c0 5.385 4.365 9.75 9.75 9.75v-1.5zM3.75 12A8.25 8.25 0 0112 3.75v-1.5c-5.385 0-9.75 4.365-9.75 9.75h1.5zM12 3.75A8.25 8.25 0 0120.25 12h1.5c0-5.385-4.365-9.75-9.75-9.75v1.5z"
-        fill={color}
+        stroke={color}
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </g>
   );
@@ -35,7 +41,10 @@ const PlusCircle = ({ color, secondaryColor, strokeWidth, set }) => {
     <g>
       <path
         d="M11.25 8v4h1.5V8h-1.5zm0 4v4h1.5v-4h-1.5zM8 12.75h4v-1.5H8v1.5zm4 0h4v-1.5h-4v1.5zm8.25-.75A8.25 8.25 0 0112 20.25v1.5c5.385 0 9.75-4.365 9.75-9.75h-1.5zM12 20.25A8.25 8.25 0 013.75 12h-1.5c0 5.385 4.365 9.75 9.75 9.75v-1.5zM3.75 12A8.25 8.25 0 0112 3.75v-1.5c-5.385 0-9.75 4.365-9.75 9.75h1.5zM12 3.75A8.25 8.25 0 0120.25 12h1.5c0-5.385-4.365-9.75-9.75-9.75v1.5z"
-        fill={color}
+        stroke={color}
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </g>
   );

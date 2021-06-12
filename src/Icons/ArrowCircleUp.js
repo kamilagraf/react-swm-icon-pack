@@ -2,11 +2,11 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const ResizeVerticalCircle = ({ color, secondaryColor, strokeWidth, set }) => {
+const ArrowCircleUp = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M15 10l-3-3m-3 3l1.5-1.5M9 14l3 3 3-3M7 4.516a9 9 0 11-3 3.357"
+        d="M12 17V7l-4 4m8 0l-2-2M8 20.064A9 9 0 104.516 17"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -17,7 +17,7 @@ const ResizeVerticalCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   const Curved = () => (
     <g>
       <path
-        d="M15 10l-3-3-3 3m0 4l3 3 3-3m6-2a9 9 0 11-18 0 9 9 0 0118 0z"
+        d="M12 7v10m0-10l4 4m-4-4l-4 4m13 1a9 9 0 11-18 0 9 9 0 0118 0z"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -29,7 +29,7 @@ const ResizeVerticalCircle = ({ color, secondaryColor, strokeWidth, set }) => {
     <g>
       <path opacity={0.15} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" fill={color} />
       <path
-        d="M15 10l-3-3-3 3m0 4l3 3 3-3m6-2a9 9 0 11-18 0 9 9 0 0118 0z"
+        d="M12 7v10m0-10l4 4m-4-4l-4 4m13 1a9 9 0 11-18 0 9 9 0 0118 0z"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -40,7 +40,7 @@ const ResizeVerticalCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   const Outline = () => (
     <g>
       <path
-        d="M15 10l-3-3-3 3m0 4l3 3 3-3m6-2a9 9 0 11-18 0 9 9 0 0118 0z"
+        d="M12 7v10m0-10l4 4m-4-4l-4 4m13 1a9 9 0 11-18 0 9 9 0 0118 0z"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -50,7 +50,7 @@ const ResizeVerticalCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   );
   const TwoColor = () => (
     <g>
-      <path d="M15 10l-3-3-3 3m0 4l3 3 3-3" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M12 7v10m0-10l4 4m-4-4l-4 4" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
       <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
@@ -71,7 +71,7 @@ const ResizeVerticalCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   }
 };
 
-ResizeVerticalCircle.propTypes = {
+ArrowCircleUp.propTypes = {
   color: PropTypes.string,
   secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -79,5 +79,5 @@ ResizeVerticalCircle.propTypes = {
   set: PropTypes.string,
 };
 
-ResizeVerticalCircle.displayName = 'SvgResizeVerticalCircle';
-export default createIcon(ResizeVerticalCircle);
+ArrowCircleUp.displayName = 'SvgArrowCircleUp';
+export default createIcon(ArrowCircleUp);

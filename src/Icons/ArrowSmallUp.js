@@ -2,7 +2,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const ArrowUpSmall = ({ color, secondaryColor, strokeWidth, set }) => {
+const ArrowSmallUp = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M12 17V7l4 4m-8 0l2-2" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -46,7 +46,7 @@ const ArrowUpSmall = ({ color, secondaryColor, strokeWidth, set }) => {
   }
 };
 
-ArrowUpSmall.propTypes = {
+ArrowSmallUp.propTypes = {
   color: PropTypes.string,
   secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -54,5 +54,5 @@ ArrowUpSmall.propTypes = {
   set: PropTypes.string,
 };
 
-ArrowUpSmall.displayName = 'SvgArrowUpSmall';
-export default createIcon(ArrowUpSmall);
+ArrowSmallUp.displayName = 'SvgArrowSmallUp';
+export default createIcon(ArrowSmallUp);

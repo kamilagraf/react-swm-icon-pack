@@ -2,7 +2,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const ArrowDownCircle = ({ color, secondaryColor, strokeWidth, set }) => {
+const ArrowCircleDown = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -71,7 +71,7 @@ const ArrowDownCircle = ({ color, secondaryColor, strokeWidth, set }) => {
   }
 };
 
-ArrowDownCircle.propTypes = {
+ArrowCircleDown.propTypes = {
   color: PropTypes.string,
   secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -79,5 +79,5 @@ ArrowDownCircle.propTypes = {
   set: PropTypes.string,
 };
 
-ArrowDownCircle.displayName = 'SvgArrowDownCircle';
-export default createIcon(ArrowDownCircle);
+ArrowCircleDown.displayName = 'SvgArrowCircleDown';
+export default createIcon(ArrowCircleDown);

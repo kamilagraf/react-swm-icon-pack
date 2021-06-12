@@ -2,7 +2,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const RotateRightSmall = ({ color, secondaryColor, strokeWidth, set }) => {
+const RotateSmallRight = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
@@ -76,7 +76,7 @@ const RotateRightSmall = ({ color, secondaryColor, strokeWidth, set }) => {
   }
 };
 
-RotateRightSmall.propTypes = {
+RotateSmallRight.propTypes = {
   color: PropTypes.string,
   secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -84,5 +84,5 @@ RotateRightSmall.propTypes = {
   set: PropTypes.string,
 };
 
-RotateRightSmall.displayName = 'SvgRotateRightSmall';
-export default createIcon(RotateRightSmall);
+RotateSmallRight.displayName = 'SvgRotateSmallRight';
+export default createIcon(RotateSmallRight);

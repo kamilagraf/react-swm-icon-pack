@@ -2,7 +2,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const ResizeHorizontalSmall = ({ color, secondaryColor, strokeWidth, set }) => {
+const ResizeSmallHorizontal = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M10 9l-1.5 1.5M7 12l3 3m4 0l3-3-3-3" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -46,7 +46,7 @@ const ResizeHorizontalSmall = ({ color, secondaryColor, strokeWidth, set }) => {
   }
 };
 
-ResizeHorizontalSmall.propTypes = {
+ResizeSmallHorizontal.propTypes = {
   color: PropTypes.string,
   secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -54,5 +54,5 @@ ResizeHorizontalSmall.propTypes = {
   set: PropTypes.string,
 };
 
-ResizeHorizontalSmall.displayName = 'SvgResizeHorizontalSmall';
-export default createIcon(ResizeHorizontalSmall);
+ResizeSmallHorizontal.displayName = 'SvgResizeSmallHorizontal';
+export default createIcon(ResizeSmallHorizontal);
