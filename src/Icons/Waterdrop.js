@@ -85,5 +85,5 @@ Waterdrop.propTypes = {
   set: PropTypes.string,
 };
 
-Waterdrop.displayName = 'SvgWaterdrop';
+Waterdrop.displayName = 'Waterdrop';
 export default createIcon(Waterdrop);

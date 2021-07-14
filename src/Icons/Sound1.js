@@ -78,5 +78,5 @@ Sound1.propTypes = {
   set: PropTypes.string,
 };
 
-Sound1.displayName = 'SvgSound1';
+Sound1.displayName = 'Sound1';
 export default createIcon(Sound1);

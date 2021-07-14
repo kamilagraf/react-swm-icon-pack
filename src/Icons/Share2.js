@@ -78,5 +78,5 @@ Share2.propTypes = {
   set: PropTypes.string,
 };
 
-Share2.displayName = 'SvgShare2';
+Share2.displayName = 'Share2';
 export default createIcon(Share2);

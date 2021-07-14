@@ -85,5 +85,5 @@ Microphone.propTypes = {
   set: PropTypes.string,
 };
 
-Microphone.displayName = 'SvgMicrophone';
+Microphone.displayName = 'Microphone';
 export default createIcon(Microphone);

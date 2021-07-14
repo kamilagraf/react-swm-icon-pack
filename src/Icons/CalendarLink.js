@@ -85,5 +85,5 @@ CalendarLink.propTypes = {
   set: PropTypes.string,
 };
 
-CalendarLink.displayName = 'SvgCalendarLink';
+CalendarLink.displayName = 'CalendarLink';
 export default createIcon(CalendarLink);

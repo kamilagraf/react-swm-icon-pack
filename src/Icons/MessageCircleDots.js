@@ -95,5 +95,5 @@ MessageCircleDots.propTypes = {
   set: PropTypes.string,
 };
 
-MessageCircleDots.displayName = 'SvgMessageCircleDots';
+MessageCircleDots.displayName = 'MessageCircleDots';
 export default createIcon(MessageCircleDots);

@@ -96,5 +96,5 @@ PhoneDown.propTypes = {
   set: PropTypes.string,
 };
 
-PhoneDown.displayName = 'SvgPhoneDown';
+PhoneDown.displayName = 'PhoneDown';
 export default createIcon(PhoneDown);

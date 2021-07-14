@@ -73,5 +73,5 @@ Search.propTypes = {
   set: PropTypes.string,
 };
 
-Search.displayName = 'SvgSearch';
+Search.displayName = 'Search';
 export default createIcon(Search);

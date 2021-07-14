@@ -54,5 +54,5 @@ Check.propTypes = {
   set: PropTypes.string,
 };
 
-Check.displayName = 'SvgCheck';
+Check.displayName = 'Check';
 export default createIcon(Check);

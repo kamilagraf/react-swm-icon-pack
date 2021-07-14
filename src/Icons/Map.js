@@ -79,5 +79,5 @@ Map.propTypes = {
   set: PropTypes.string,
 };
 
-Map.displayName = 'SvgMap';
+Map.displayName = 'Map';
 export default createIcon(Map);

@@ -54,5 +54,5 @@ Vertical.propTypes = {
   set: PropTypes.string,
 };
 
-Vertical.displayName = 'SvgVertical';
+Vertical.displayName = 'Vertical';
 export default createIcon(Vertical);

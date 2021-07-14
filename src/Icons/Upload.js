@@ -84,5 +84,5 @@ Upload.propTypes = {
   set: PropTypes.string,
 };
 
-Upload.displayName = 'SvgUpload';
+Upload.displayName = 'Upload';
 export default createIcon(Upload);

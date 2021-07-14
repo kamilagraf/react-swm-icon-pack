@@ -54,5 +54,5 @@ Plus.propTypes = {
   set: PropTypes.string,
 };
 
-Plus.displayName = 'SvgPlus';
+Plus.displayName = 'Plus';
 export default createIcon(Plus);

@@ -85,5 +85,5 @@ Creditcard.propTypes = {
   set: PropTypes.string,
 };
 
-Creditcard.displayName = 'SvgCreditcard';
+Creditcard.displayName = 'Creditcard';
 export default createIcon(Creditcard);

@@ -54,5 +54,5 @@ CrossSmall.propTypes = {
   set: PropTypes.string,
 };
 
-CrossSmall.displayName = 'SvgCrossSmall';
+CrossSmall.displayName = 'CrossSmall';
 export default createIcon(CrossSmall);

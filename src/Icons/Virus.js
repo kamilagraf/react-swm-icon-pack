@@ -91,5 +91,5 @@ Virus.propTypes = {
   set: PropTypes.string,
 };
 
-Virus.displayName = 'SvgVirus';
+Virus.displayName = 'Virus';
 export default createIcon(Virus);

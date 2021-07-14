@@ -85,5 +85,5 @@ QuestionCircle.propTypes = {
   set: PropTypes.string,
 };
 
-QuestionCircle.displayName = 'SvgQuestionCircle';
+QuestionCircle.displayName = 'QuestionCircle';
 export default createIcon(QuestionCircle);

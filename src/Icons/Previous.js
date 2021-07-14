@@ -63,5 +63,5 @@ Previous.propTypes = {
   set: PropTypes.string,
 };
 
-Previous.displayName = 'SvgPrevious';
+Previous.displayName = 'Previous';
 export default createIcon(Previous);

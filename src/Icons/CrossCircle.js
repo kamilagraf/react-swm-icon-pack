@@ -79,5 +79,5 @@ CrossCircle.propTypes = {
   set: PropTypes.string,
 };
 
-CrossCircle.displayName = 'SvgCrossCircle';
+CrossCircle.displayName = 'CrossCircle';
 export default createIcon(CrossCircle);

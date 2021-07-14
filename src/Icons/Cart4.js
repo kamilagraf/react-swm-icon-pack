@@ -85,5 +85,5 @@ Cart4.propTypes = {
   set: PropTypes.string,
 };
 
-Cart4.displayName = 'SvgCart4';
+Cart4.displayName = 'Cart4';
 export default createIcon(Cart4);

@@ -85,5 +85,5 @@ Inbox.propTypes = {
   set: PropTypes.string,
 };
 
-Inbox.displayName = 'SvgInbox';
+Inbox.displayName = 'Inbox';
 export default createIcon(Inbox);

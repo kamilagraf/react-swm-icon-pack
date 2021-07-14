@@ -79,5 +79,5 @@ PinpaperCross.propTypes = {
   set: PropTypes.string,
 };
 
-PinpaperCross.displayName = 'SvgPinpaperCross';
+PinpaperCross.displayName = 'PinpaperCross';
 export default createIcon(PinpaperCross);

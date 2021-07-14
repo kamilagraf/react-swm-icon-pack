@@ -79,5 +79,5 @@ Stopwatch.propTypes = {
   set: PropTypes.string,
 };
 
-Stopwatch.displayName = 'SvgStopwatch';
+Stopwatch.displayName = 'Stopwatch';
 export default createIcon(Stopwatch);

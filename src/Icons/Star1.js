@@ -79,5 +79,5 @@ Star1.propTypes = {
   set: PropTypes.string,
 };
 
-Star1.displayName = 'SvgStar1';
+Star1.displayName = 'Star1';
 export default createIcon(Star1);

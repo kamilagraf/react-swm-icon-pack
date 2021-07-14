@@ -91,5 +91,5 @@ Speaker2.propTypes = {
   set: PropTypes.string,
 };
 
-Speaker2.displayName = 'SvgSpeaker2';
+Speaker2.displayName = 'Speaker2';
 export default createIcon(Speaker2);

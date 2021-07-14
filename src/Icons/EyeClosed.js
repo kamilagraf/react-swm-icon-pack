@@ -90,5 +90,5 @@ EyeClosed.propTypes = {
   set: PropTypes.string,
 };
 
-EyeClosed.displayName = 'SvgEyeClosed';
+EyeClosed.displayName = 'EyeClosed';
 export default createIcon(EyeClosed);

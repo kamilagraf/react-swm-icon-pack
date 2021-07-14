@@ -91,5 +91,5 @@ Syringe.propTypes = {
   set: PropTypes.string,
 };
 
-Syringe.displayName = 'SvgSyringe';
+Syringe.displayName = 'Syringe';
 export default createIcon(Syringe);

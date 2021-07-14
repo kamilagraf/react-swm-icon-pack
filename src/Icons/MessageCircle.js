@@ -89,5 +89,5 @@ MessageCircle.propTypes = {
   set: PropTypes.string,
 };
 
-MessageCircle.displayName = 'SvgMessageCircle';
+MessageCircle.displayName = 'MessageCircle';
 export default createIcon(MessageCircle);

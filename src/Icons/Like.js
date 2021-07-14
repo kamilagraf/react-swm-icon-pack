@@ -91,5 +91,5 @@ Like.propTypes = {
   set: PropTypes.string,
 };
 
-Like.displayName = 'SvgLike';
+Like.displayName = 'Like';
 export default createIcon(Like);

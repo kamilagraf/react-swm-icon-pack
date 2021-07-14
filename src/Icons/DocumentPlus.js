@@ -79,5 +79,5 @@ DocumentPlus.propTypes = {
   set: PropTypes.string,
 };
 
-DocumentPlus.displayName = 'SvgDocumentPlus';
+DocumentPlus.displayName = 'DocumentPlus';
 export default createIcon(DocumentPlus);

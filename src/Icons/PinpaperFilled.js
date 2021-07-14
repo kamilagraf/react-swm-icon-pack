@@ -79,5 +79,5 @@ PinpaperFilled.propTypes = {
   set: PropTypes.string,
 };
 
-PinpaperFilled.displayName = 'SvgPinpaperFilled';
+PinpaperFilled.displayName = 'PinpaperFilled';
 export default createIcon(PinpaperFilled);

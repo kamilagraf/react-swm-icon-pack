@@ -85,5 +85,5 @@ EmoteSmile.propTypes = {
   set: PropTypes.string,
 };
 
-EmoteSmile.displayName = 'SvgEmoteSmile';
+EmoteSmile.displayName = 'EmoteSmile';
 export default createIcon(EmoteSmile);

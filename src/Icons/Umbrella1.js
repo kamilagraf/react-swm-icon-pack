@@ -79,5 +79,5 @@ Umbrella1.propTypes = {
   set: PropTypes.string,
 };
 
-Umbrella1.displayName = 'SvgUmbrella1';
+Umbrella1.displayName = 'Umbrella1';
 export default createIcon(Umbrella1);

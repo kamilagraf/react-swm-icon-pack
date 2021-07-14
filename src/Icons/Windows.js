@@ -91,5 +91,5 @@ Windows.propTypes = {
   set: PropTypes.string,
 };
 
-Windows.displayName = 'SvgWindows';
+Windows.displayName = 'Windows';
 export default createIcon(Windows);

@@ -85,5 +85,5 @@ Key.propTypes = {
   set: PropTypes.string,
 };
 
-Key.displayName = 'SvgKey';
+Key.displayName = 'Key';
 export default createIcon(Key);

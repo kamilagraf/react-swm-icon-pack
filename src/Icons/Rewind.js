@@ -61,5 +61,5 @@ Rewind.propTypes = {
   set: PropTypes.string,
 };
 
-Rewind.displayName = 'SvgRewind';
+Rewind.displayName = 'Rewind';
 export default createIcon(Rewind);

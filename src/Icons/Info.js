@@ -54,5 +54,5 @@ Info.propTypes = {
   set: PropTypes.string,
 };
 
-Info.displayName = 'SvgInfo';
+Info.displayName = 'Info';
 export default createIcon(Info);

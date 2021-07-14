@@ -78,5 +78,5 @@ Logout.propTypes = {
   set: PropTypes.string,
 };
 
-Logout.displayName = 'SvgLogout';
+Logout.displayName = 'Logout';
 export default createIcon(Logout);

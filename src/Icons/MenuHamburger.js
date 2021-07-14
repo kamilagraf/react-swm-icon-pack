@@ -54,5 +54,5 @@ MenuHamburger.propTypes = {
   set: PropTypes.string,
 };
 
-MenuHamburger.displayName = 'SvgMenuHamburger';
+MenuHamburger.displayName = 'MenuHamburger';
 export default createIcon(MenuHamburger);

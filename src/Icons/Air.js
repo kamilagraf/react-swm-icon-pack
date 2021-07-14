@@ -78,5 +78,5 @@ Air.propTypes = {
   set: PropTypes.string,
 };
 
-Air.displayName = 'SvgAir';
+Air.displayName = 'Air';
 export default createIcon(Air);

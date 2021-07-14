@@ -76,5 +76,5 @@ Tags.propTypes = {
   set: PropTypes.string,
 };
 
-Tags.displayName = 'SvgTags';
+Tags.displayName = 'Tags';
 export default createIcon(Tags);

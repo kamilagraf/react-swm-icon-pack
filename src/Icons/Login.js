@@ -78,5 +78,5 @@ Login.propTypes = {
   set: PropTypes.string,
 };
 
-Login.displayName = 'SvgLogin';
+Login.displayName = 'Login';
 export default createIcon(Login);

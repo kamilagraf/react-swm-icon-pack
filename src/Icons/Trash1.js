@@ -85,5 +85,5 @@ Trash1.propTypes = {
   set: PropTypes.string,
 };
 
-Trash1.displayName = 'SvgTrash1';
+Trash1.displayName = 'Trash1';
 export default createIcon(Trash1);

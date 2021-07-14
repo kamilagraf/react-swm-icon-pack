@@ -67,5 +67,5 @@ Bookmark.propTypes = {
   set: PropTypes.string,
 };
 
-Bookmark.displayName = 'SvgBookmark';
+Bookmark.displayName = 'Bookmark';
 export default createIcon(Bookmark);

@@ -85,5 +85,5 @@ Delete.propTypes = {
   set: PropTypes.string,
 };
 
-Delete.displayName = 'SvgDelete';
+Delete.displayName = 'Delete';
 export default createIcon(Delete);

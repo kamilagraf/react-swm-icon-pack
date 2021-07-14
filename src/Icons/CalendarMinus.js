@@ -85,5 +85,5 @@ CalendarMinus.propTypes = {
   set: PropTypes.string,
 };
 
-CalendarMinus.displayName = 'SvgCalendarMinus';
+CalendarMinus.displayName = 'CalendarMinus';
 export default createIcon(CalendarMinus);

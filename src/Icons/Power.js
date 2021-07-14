@@ -60,5 +60,5 @@ Power.propTypes = {
   set: PropTypes.string,
 };
 
-Power.displayName = 'SvgPower';
+Power.displayName = 'Power';
 export default createIcon(Power);

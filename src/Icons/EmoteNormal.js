@@ -73,5 +73,5 @@ EmoteNormal.propTypes = {
   set: PropTypes.string,
 };
 
-EmoteNormal.displayName = 'SvgEmoteNormal';
+EmoteNormal.displayName = 'EmoteNormal';
 export default createIcon(EmoteNormal);

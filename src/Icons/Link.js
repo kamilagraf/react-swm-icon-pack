@@ -78,5 +78,5 @@ Link.propTypes = {
   set: PropTypes.string,
 };
 
-Link.displayName = 'SvgLink';
+Link.displayName = 'Link';
 export default createIcon(Link);

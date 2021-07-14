@@ -88,5 +88,5 @@ Quote.propTypes = {
   set: PropTypes.string,
 };
 
-Quote.displayName = 'SvgQuote';
+Quote.displayName = 'Quote';
 export default createIcon(Quote);

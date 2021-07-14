@@ -61,5 +61,5 @@ Bolt.propTypes = {
   set: PropTypes.string,
 };
 
-Bolt.displayName = 'SvgBolt';
+Bolt.displayName = 'Bolt';
 export default createIcon(Bolt);

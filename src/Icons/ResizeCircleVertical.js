@@ -79,5 +79,5 @@ ResizeCircleVertical.propTypes = {
   set: PropTypes.string,
 };
 
-ResizeCircleVertical.displayName = 'SvgResizeCircleVertical';
+ResizeCircleVertical.displayName = 'ResizeCircleVertical';
 export default createIcon(ResizeCircleVertical);

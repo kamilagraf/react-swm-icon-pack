@@ -85,5 +85,5 @@ CalendarUser.propTypes = {
   set: PropTypes.string,
 };
 
-CalendarUser.displayName = 'SvgCalendarUser';
+CalendarUser.displayName = 'CalendarUser';
 export default createIcon(CalendarUser);

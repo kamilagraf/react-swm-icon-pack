@@ -85,5 +85,5 @@ RedoCircle.propTypes = {
   set: PropTypes.string,
 };
 
-RedoCircle.displayName = 'SvgRedoCircle';
+RedoCircle.displayName = 'RedoCircle';
 export default createIcon(RedoCircle);

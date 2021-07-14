@@ -84,5 +84,5 @@ MenuHorizontal.propTypes = {
   set: PropTypes.string,
 };
 
-MenuHorizontal.displayName = 'SvgMenuHorizontal';
+MenuHorizontal.displayName = 'MenuHorizontal';
 export default createIcon(MenuHorizontal);

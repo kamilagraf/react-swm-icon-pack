@@ -85,5 +85,5 @@ Coin.propTypes = {
   set: PropTypes.string,
 };
 
-Coin.displayName = 'SvgCoin';
+Coin.displayName = 'Coin';
 export default createIcon(Coin);

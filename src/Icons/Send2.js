@@ -67,5 +67,5 @@ Send2.propTypes = {
   set: PropTypes.string,
 };
 
-Send2.displayName = 'SvgSend2';
+Send2.displayName = 'Send2';
 export default createIcon(Send2);

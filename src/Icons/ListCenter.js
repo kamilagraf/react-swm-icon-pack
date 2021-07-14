@@ -61,5 +61,5 @@ ListCenter.propTypes = {
   set: PropTypes.string,
 };
 
-ListCenter.displayName = 'SvgListCenter';
+ListCenter.displayName = 'ListCenter';
 export default createIcon(ListCenter);

@@ -73,5 +73,5 @@ LockOn.propTypes = {
   set: PropTypes.string,
 };
 
-LockOn.displayName = 'SvgLockOn';
+LockOn.displayName = 'LockOn';
 export default createIcon(LockOn);

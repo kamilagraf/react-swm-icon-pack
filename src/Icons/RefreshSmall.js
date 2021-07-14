@@ -84,5 +84,5 @@ RefreshSmall.propTypes = {
   set: PropTypes.string,
 };
 
-RefreshSmall.displayName = 'SvgRefreshSmall';
+RefreshSmall.displayName = 'RefreshSmall';
 export default createIcon(RefreshSmall);

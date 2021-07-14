@@ -58,5 +58,5 @@ ChevronCircleDown.propTypes = {
   set: PropTypes.string,
 };
 
-ChevronCircleDown.displayName = 'SvgChevronCircleDown';
+ChevronCircleDown.displayName = 'ChevronCircleDown';
 export default createIcon(ChevronCircleDown);

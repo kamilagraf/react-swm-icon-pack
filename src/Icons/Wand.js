@@ -84,5 +84,5 @@ Wand.propTypes = {
   set: PropTypes.string,
 };
 
-Wand.displayName = 'SvgWand';
+Wand.displayName = 'Wand';
 export default createIcon(Wand);

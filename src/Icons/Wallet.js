@@ -85,5 +85,5 @@ Wallet.propTypes = {
   set: PropTypes.string,
 };
 
-Wallet.displayName = 'SvgWallet';
+Wallet.displayName = 'Wallet';
 export default createIcon(Wallet);

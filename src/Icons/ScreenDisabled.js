@@ -84,5 +84,5 @@ ScreenDisabled.propTypes = {
   set: PropTypes.string,
 };
 
-ScreenDisabled.displayName = 'SvgScreenDisabled';
+ScreenDisabled.displayName = 'ScreenDisabled';
 export default createIcon(ScreenDisabled);

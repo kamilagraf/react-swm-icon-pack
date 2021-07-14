@@ -54,5 +54,5 @@ Horizontal.propTypes = {
   set: PropTypes.string,
 };
 
-Horizontal.displayName = 'SvgHorizontal';
+Horizontal.displayName = 'Horizontal';
 export default createIcon(Horizontal);

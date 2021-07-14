@@ -85,5 +85,5 @@ Cut.propTypes = {
   set: PropTypes.string,
 };
 
-Cut.displayName = 'SvgCut';
+Cut.displayName = 'Cut';
 export default createIcon(Cut);

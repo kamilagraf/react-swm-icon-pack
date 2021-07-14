@@ -79,5 +79,5 @@ WarningCircle.propTypes = {
   set: PropTypes.string,
 };
 
-WarningCircle.displayName = 'SvgWarningCircle';
+WarningCircle.displayName = 'WarningCircle';
 export default createIcon(WarningCircle);

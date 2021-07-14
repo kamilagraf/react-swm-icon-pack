@@ -54,5 +54,5 @@ Cross.propTypes = {
   set: PropTypes.string,
 };
 
-Cross.displayName = 'SvgCross';
+Cross.displayName = 'Cross';
 export default createIcon(Cross);

@@ -61,5 +61,5 @@ Stop.propTypes = {
   set: PropTypes.string,
 };
 
-Stop.displayName = 'SvgStop';
+Stop.displayName = 'Stop';
 export default createIcon(Stop);

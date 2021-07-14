@@ -94,5 +94,5 @@ EyeOpen.propTypes = {
   set: PropTypes.string,
 };
 
-EyeOpen.displayName = 'SvgEyeOpen';
+EyeOpen.displayName = 'EyeOpen';
 export default createIcon(EyeOpen);

@@ -91,5 +91,5 @@ Offer.propTypes = {
   set: PropTypes.string,
 };
 
-Offer.displayName = 'SvgOffer';
+Offer.displayName = 'Offer';
 export default createIcon(Offer);

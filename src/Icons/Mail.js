@@ -95,5 +95,5 @@ Mail.propTypes = {
   set: PropTypes.string,
 };
 
-Mail.displayName = 'SvgMail';
+Mail.displayName = 'Mail';
 export default createIcon(Mail);

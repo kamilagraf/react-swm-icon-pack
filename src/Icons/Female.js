@@ -79,5 +79,5 @@ Female.propTypes = {
   set: PropTypes.string,
 };
 
-Female.displayName = 'SvgFemale';
+Female.displayName = 'Female';
 export default createIcon(Female);

@@ -88,5 +88,5 @@ RefreshCircle.propTypes = {
   set: PropTypes.string,
 };
 
-RefreshCircle.displayName = 'SvgRefreshCircle';
+RefreshCircle.displayName = 'RefreshCircle';
 export default createIcon(RefreshCircle);

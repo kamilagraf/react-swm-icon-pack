@@ -91,5 +91,5 @@ Image1.propTypes = {
   set: PropTypes.string,
 };
 
-Image1.displayName = 'SvgImage1';
+Image1.displayName = 'Image1';
 export default createIcon(Image1);

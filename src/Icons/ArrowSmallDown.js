@@ -54,5 +54,5 @@ ArrowSmallDown.propTypes = {
   set: PropTypes.string,
 };
 
-ArrowSmallDown.displayName = 'SvgArrowSmallDown';
+ArrowSmallDown.displayName = 'ArrowSmallDown';
 export default createIcon(ArrowSmallDown);

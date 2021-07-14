@@ -85,5 +85,5 @@ Shirt.propTypes = {
   set: PropTypes.string,
 };
 
-Shirt.displayName = 'SvgShirt';
+Shirt.displayName = 'Shirt';
 export default createIcon(Shirt);

@@ -95,5 +95,5 @@ Meds.propTypes = {
   set: PropTypes.string,
 };
 
-Meds.displayName = 'SvgMeds';
+Meds.displayName = 'Meds';
 export default createIcon(Meds);

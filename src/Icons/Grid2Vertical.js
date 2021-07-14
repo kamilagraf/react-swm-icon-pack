@@ -61,5 +61,5 @@ Grid2Vertical.propTypes = {
   set: PropTypes.string,
 };
 
-Grid2Vertical.displayName = 'SvgGrid2Vertical';
+Grid2Vertical.displayName = 'Grid2Vertical';
 export default createIcon(Grid2Vertical);

@@ -85,5 +85,5 @@ Save.propTypes = {
   set: PropTypes.string,
 };
 
-Save.displayName = 'SvgSave';
+Save.displayName = 'Save';
 export default createIcon(Save);

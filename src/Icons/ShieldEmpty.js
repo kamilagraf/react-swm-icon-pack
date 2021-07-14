@@ -79,5 +79,5 @@ ShieldEmpty.propTypes = {
   set: PropTypes.string,
 };
 
-ShieldEmpty.displayName = 'SvgShieldEmpty';
+ShieldEmpty.displayName = 'ShieldEmpty';
 export default createIcon(ShieldEmpty);

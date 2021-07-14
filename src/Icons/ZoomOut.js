@@ -73,5 +73,5 @@ ZoomOut.propTypes = {
   set: PropTypes.string,
 };
 
-ZoomOut.displayName = 'SvgZoomOut';
+ZoomOut.displayName = 'ZoomOut';
 export default createIcon(ZoomOut);

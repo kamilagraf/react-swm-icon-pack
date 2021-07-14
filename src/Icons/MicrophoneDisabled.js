@@ -84,5 +84,5 @@ MicrophoneDisabled.propTypes = {
   set: PropTypes.string,
 };
 
-MicrophoneDisabled.displayName = 'SvgMicrophoneDisabled';
+MicrophoneDisabled.displayName = 'MicrophoneDisabled';
 export default createIcon(MicrophoneDisabled);

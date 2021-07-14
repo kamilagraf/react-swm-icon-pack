@@ -95,5 +95,5 @@ Laptop.propTypes = {
   set: PropTypes.string,
 };
 
-Laptop.displayName = 'SvgLaptop';
+Laptop.displayName = 'Laptop';
 export default createIcon(Laptop);

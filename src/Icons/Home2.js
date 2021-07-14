@@ -61,5 +61,5 @@ Home2.propTypes = {
   set: PropTypes.string,
 };
 
-Home2.displayName = 'SvgHome2';
+Home2.displayName = 'Home2';
 export default createIcon(Home2);

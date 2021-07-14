@@ -91,5 +91,5 @@ Dislike.propTypes = {
   set: PropTypes.string,
 };
 
-Dislike.displayName = 'SvgDislike';
+Dislike.displayName = 'Dislike';
 export default createIcon(Dislike);

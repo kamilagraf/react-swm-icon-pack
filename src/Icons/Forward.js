@@ -61,5 +61,5 @@ Forward.propTypes = {
   set: PropTypes.string,
 };
 
-Forward.displayName = 'SvgForward';
+Forward.displayName = 'Forward';
 export default createIcon(Forward);

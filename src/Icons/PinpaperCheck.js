@@ -79,5 +79,5 @@ PinpaperCheck.propTypes = {
   set: PropTypes.string,
 };
 
-PinpaperCheck.displayName = 'SvgPinpaperCheck';
+PinpaperCheck.displayName = 'PinpaperCheck';
 export default createIcon(PinpaperCheck);

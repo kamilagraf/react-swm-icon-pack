@@ -91,5 +91,5 @@ Suitcase.propTypes = {
   set: PropTypes.string,
 };
 
-Suitcase.displayName = 'SvgSuitcase';
+Suitcase.displayName = 'Suitcase';
 export default createIcon(Suitcase);

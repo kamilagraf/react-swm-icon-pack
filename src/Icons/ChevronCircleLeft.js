@@ -58,5 +58,5 @@ ChevronCircleLeft.propTypes = {
   set: PropTypes.string,
 };
 
-ChevronCircleLeft.displayName = 'SvgChevronCircleLeft';
+ChevronCircleLeft.displayName = 'ChevronCircleLeft';
 export default createIcon(ChevronCircleLeft);

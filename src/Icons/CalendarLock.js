@@ -85,5 +85,5 @@ CalendarLock.propTypes = {
   set: PropTypes.string,
 };
 
-CalendarLock.displayName = 'SvgCalendarLock';
+CalendarLock.displayName = 'CalendarLock';
 export default createIcon(CalendarLock);

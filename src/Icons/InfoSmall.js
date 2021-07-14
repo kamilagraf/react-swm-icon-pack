@@ -54,5 +54,5 @@ InfoSmall.propTypes = {
   set: PropTypes.string,
 };
 
-InfoSmall.displayName = 'SvgInfoSmall';
+InfoSmall.displayName = 'InfoSmall';
 export default createIcon(InfoSmall);

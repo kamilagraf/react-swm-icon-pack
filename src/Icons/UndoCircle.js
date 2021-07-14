@@ -85,5 +85,5 @@ UndoCircle.propTypes = {
   set: PropTypes.string,
 };
 
-UndoCircle.displayName = 'SvgUndoCircle';
+UndoCircle.displayName = 'UndoCircle';
 export default createIcon(UndoCircle);

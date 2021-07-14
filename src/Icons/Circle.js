@@ -54,5 +54,5 @@ Circle.propTypes = {
   set: PropTypes.string,
 };
 
-Circle.displayName = 'SvgCircle';
+Circle.displayName = 'Circle';
 export default createIcon(Circle);

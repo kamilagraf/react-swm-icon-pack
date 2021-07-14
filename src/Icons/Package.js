@@ -85,5 +85,5 @@ Package.propTypes = {
   set: PropTypes.string,
 };
 
-Package.displayName = 'SvgPackage';
+Package.displayName = 'Package';
 export default createIcon(Package);

@@ -95,5 +95,5 @@ TestTube.propTypes = {
   set: PropTypes.string,
 };
 
-TestTube.displayName = 'SvgTestTube';
+TestTube.displayName = 'TestTube';
 export default createIcon(TestTube);

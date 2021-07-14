@@ -78,5 +78,5 @@ Download.propTypes = {
   set: PropTypes.string,
 };
 
-Download.displayName = 'SvgDownload';
+Download.displayName = 'Download';
 export default createIcon(Download);

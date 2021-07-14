@@ -96,5 +96,5 @@ Phone.propTypes = {
   set: PropTypes.string,
 };
 
-Phone.displayName = 'SvgPhone';
+Phone.displayName = 'Phone';
 export default createIcon(Phone);

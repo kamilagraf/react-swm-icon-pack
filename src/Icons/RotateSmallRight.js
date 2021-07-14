@@ -84,5 +84,5 @@ RotateSmallRight.propTypes = {
   set: PropTypes.string,
 };
 
-RotateSmallRight.displayName = 'SvgRotateSmallRight';
+RotateSmallRight.displayName = 'RotateSmallRight';
 export default createIcon(RotateSmallRight);

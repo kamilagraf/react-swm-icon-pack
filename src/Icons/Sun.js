@@ -85,5 +85,5 @@ Sun.propTypes = {
   set: PropTypes.string,
 };
 
-Sun.displayName = 'SvgSun';
+Sun.displayName = 'Sun';
 export default createIcon(Sun);

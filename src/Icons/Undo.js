@@ -72,5 +72,5 @@ Undo.propTypes = {
   set: PropTypes.string,
 };
 
-Undo.displayName = 'SvgUndo';
+Undo.displayName = 'Undo';
 export default createIcon(Undo);

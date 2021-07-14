@@ -95,5 +95,5 @@ PhoneCall.propTypes = {
   set: PropTypes.string,
 };
 
-PhoneCall.displayName = 'SvgPhoneCall';
+PhoneCall.displayName = 'PhoneCall';
 export default createIcon(PhoneCall);

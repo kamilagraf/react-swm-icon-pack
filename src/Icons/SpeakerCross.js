@@ -85,5 +85,5 @@ SpeakerCross.propTypes = {
   set: PropTypes.string,
 };
 
-SpeakerCross.displayName = 'SvgSpeakerCross';
+SpeakerCross.displayName = 'SpeakerCross';
 export default createIcon(SpeakerCross);

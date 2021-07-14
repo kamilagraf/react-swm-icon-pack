@@ -95,5 +95,5 @@ MessageCircleLines.propTypes = {
   set: PropTypes.string,
 };
 
-MessageCircleLines.displayName = 'SvgMessageCircleLines';
+MessageCircleLines.displayName = 'MessageCircleLines';
 export default createIcon(MessageCircleLines);

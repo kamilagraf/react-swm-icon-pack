@@ -61,5 +61,5 @@ Grid2Horizontal.propTypes = {
   set: PropTypes.string,
 };
 
-Grid2Horizontal.displayName = 'SvgGrid2Horizontal';
+Grid2Horizontal.displayName = 'Grid2Horizontal';
 export default createIcon(Grid2Horizontal);

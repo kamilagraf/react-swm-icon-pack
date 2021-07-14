@@ -54,5 +54,5 @@ ArrowUp.propTypes = {
   set: PropTypes.string,
 };
 
-ArrowUp.displayName = 'SvgArrowUp';
+ArrowUp.displayName = 'ArrowUp';
 export default createIcon(ArrowUp);

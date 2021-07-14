@@ -85,5 +85,5 @@ CalendarClock.propTypes = {
   set: PropTypes.string,
 };
 
-CalendarClock.displayName = 'SvgCalendarClock';
+CalendarClock.displayName = 'CalendarClock';
 export default createIcon(CalendarClock);

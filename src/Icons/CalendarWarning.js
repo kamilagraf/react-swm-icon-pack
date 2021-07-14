@@ -85,5 +85,5 @@ CalendarWarning.propTypes = {
   set: PropTypes.string,
 };
 
-CalendarWarning.displayName = 'SvgCalendarWarning';
+CalendarWarning.displayName = 'CalendarWarning';
 export default createIcon(CalendarWarning);

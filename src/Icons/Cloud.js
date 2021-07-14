@@ -78,5 +78,5 @@ Cloud.propTypes = {
   set: PropTypes.string,
 };
 
-Cloud.displayName = 'SvgCloud';
+Cloud.displayName = 'Cloud';
 export default createIcon(Cloud);

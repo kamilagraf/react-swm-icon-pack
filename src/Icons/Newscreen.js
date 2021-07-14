@@ -60,5 +60,5 @@ Newscreen.propTypes = {
   set: PropTypes.string,
 };
 
-Newscreen.displayName = 'SvgNewscreen';
+Newscreen.displayName = 'Newscreen';
 export default createIcon(Newscreen);

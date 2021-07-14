@@ -87,5 +87,5 @@ Globe1.propTypes = {
   set: PropTypes.string,
 };
 
-Globe1.displayName = 'SvgGlobe1';
+Globe1.displayName = 'Globe1';
 export default createIcon(Globe1);

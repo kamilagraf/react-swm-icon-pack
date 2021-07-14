@@ -61,5 +61,5 @@ Play.propTypes = {
   set: PropTypes.string,
 };
 
-Play.displayName = 'SvgPlay';
+Play.displayName = 'Play';
 export default createIcon(Play);

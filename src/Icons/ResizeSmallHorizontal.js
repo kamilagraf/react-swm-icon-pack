@@ -54,5 +54,5 @@ ResizeSmallHorizontal.propTypes = {
   set: PropTypes.string,
 };
 
-ResizeSmallHorizontal.displayName = 'SvgResizeSmallHorizontal';
+ResizeSmallHorizontal.displayName = 'ResizeSmallHorizontal';
 export default createIcon(ResizeSmallHorizontal);

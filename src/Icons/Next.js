@@ -63,5 +63,5 @@ Next.propTypes = {
   set: PropTypes.string,
 };
 
-Next.displayName = 'SvgNext';
+Next.displayName = 'Next';
 export default createIcon(Next);

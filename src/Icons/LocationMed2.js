@@ -91,5 +91,5 @@ LocationMed2.propTypes = {
   set: PropTypes.string,
 };
 
-LocationMed2.displayName = 'SvgLocationMed2';
+LocationMed2.displayName = 'LocationMed2';
 export default createIcon(LocationMed2);

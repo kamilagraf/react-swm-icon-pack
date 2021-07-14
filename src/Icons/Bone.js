@@ -95,5 +95,5 @@ Bone.propTypes = {
   set: PropTypes.string,
 };
 
-Bone.displayName = 'SvgBone';
+Bone.displayName = 'Bone';
 export default createIcon(Bone);

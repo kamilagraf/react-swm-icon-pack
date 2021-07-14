@@ -79,5 +79,5 @@ Edit4.propTypes = {
   set: PropTypes.string,
 };
 
-Edit4.displayName = 'SvgEdit4';
+Edit4.displayName = 'Edit4';
 export default createIcon(Edit4);

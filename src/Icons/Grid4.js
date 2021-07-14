@@ -85,5 +85,5 @@ Grid4.propTypes = {
   set: PropTypes.string,
 };
 
-Grid4.displayName = 'SvgGrid4';
+Grid4.displayName = 'Grid4';
 export default createIcon(Grid4);

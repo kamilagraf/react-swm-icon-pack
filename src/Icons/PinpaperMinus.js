@@ -67,5 +67,5 @@ PinpaperMinus.propTypes = {
   set: PropTypes.string,
 };
 
-PinpaperMinus.displayName = 'SvgPinpaperMinus';
+PinpaperMinus.displayName = 'PinpaperMinus';
 export default createIcon(PinpaperMinus);

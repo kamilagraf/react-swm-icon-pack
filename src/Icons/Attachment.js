@@ -90,5 +90,5 @@ Attachment.propTypes = {
   set: PropTypes.string,
 };
 
-Attachment.displayName = 'SvgAttachment';
+Attachment.displayName = 'Attachment';
 export default createIcon(Attachment);

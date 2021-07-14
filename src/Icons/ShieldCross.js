@@ -85,5 +85,5 @@ ShieldCross.propTypes = {
   set: PropTypes.string,
 };
 
-ShieldCross.displayName = 'SvgShieldCross';
+ShieldCross.displayName = 'ShieldCross';
 export default createIcon(ShieldCross);

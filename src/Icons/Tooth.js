@@ -95,5 +95,5 @@ Tooth.propTypes = {
   set: PropTypes.string,
 };
 
-Tooth.displayName = 'SvgTooth';
+Tooth.displayName = 'Tooth';
 export default createIcon(Tooth);

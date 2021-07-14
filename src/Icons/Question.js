@@ -78,5 +78,5 @@ Question.propTypes = {
   set: PropTypes.string,
 };
 
-Question.displayName = 'SvgQuestion';
+Question.displayName = 'Question';
 export default createIcon(Question);

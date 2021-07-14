@@ -85,5 +85,5 @@ ZoomIn.propTypes = {
   set: PropTypes.string,
 };
 
-ZoomIn.displayName = 'SvgZoomIn';
+ZoomIn.displayName = 'ZoomIn';
 export default createIcon(ZoomIn);

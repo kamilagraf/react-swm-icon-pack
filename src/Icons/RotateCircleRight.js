@@ -85,5 +85,5 @@ RotateCircleRight.propTypes = {
   set: PropTypes.string,
 };
 
-RotateCircleRight.displayName = 'SvgRotateCircleRight';
+RotateCircleRight.displayName = 'RotateCircleRight';
 export default createIcon(RotateCircleRight);

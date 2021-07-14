@@ -55,5 +55,5 @@ Clock.propTypes = {
   set: PropTypes.string,
 };
 
-Clock.displayName = 'SvgClock';
+Clock.displayName = 'Clock';
 export default createIcon(Clock);

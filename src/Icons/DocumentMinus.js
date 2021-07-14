@@ -79,5 +79,5 @@ DocumentMinus.propTypes = {
   set: PropTypes.string,
 };
 
-DocumentMinus.displayName = 'SvgDocumentMinus';
+DocumentMinus.displayName = 'DocumentMinus';
 export default createIcon(DocumentMinus);

@@ -54,5 +54,5 @@ ChevronUp.propTypes = {
   set: PropTypes.string,
 };
 
-ChevronUp.displayName = 'SvgChevronUp';
+ChevronUp.displayName = 'ChevronUp';
 export default createIcon(ChevronUp);

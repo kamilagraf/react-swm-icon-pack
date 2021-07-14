@@ -85,5 +85,5 @@ Print.propTypes = {
   set: PropTypes.string,
 };
 
-Print.displayName = 'SvgPrint';
+Print.displayName = 'Print';
 export default createIcon(Print);

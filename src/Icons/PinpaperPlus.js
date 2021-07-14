@@ -79,5 +79,5 @@ PinpaperPlus.propTypes = {
   set: PropTypes.string,
 };
 
-PinpaperPlus.displayName = 'SvgPinpaperPlus';
+PinpaperPlus.displayName = 'PinpaperPlus';
 export default createIcon(PinpaperPlus);

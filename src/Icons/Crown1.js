@@ -61,5 +61,5 @@ Crown1.propTypes = {
   set: PropTypes.string,
 };
 
-Crown1.displayName = 'SvgCrown1';
+Crown1.displayName = 'Crown1';
 export default createIcon(Crown1);

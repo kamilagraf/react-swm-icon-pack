@@ -79,5 +79,5 @@ PlusCircle.propTypes = {
   set: PropTypes.string,
 };
 
-PlusCircle.displayName = 'SvgPlusCircle';
+PlusCircle.displayName = 'PlusCircle';
 export default createIcon(PlusCircle);

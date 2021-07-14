@@ -61,5 +61,5 @@ Navigation.propTypes = {
   set: PropTypes.string,
 };
 
-Navigation.displayName = 'SvgNavigation';
+Navigation.displayName = 'Navigation';
 export default createIcon(Navigation);

@@ -60,5 +60,5 @@ Fullscreen.propTypes = {
   set: PropTypes.string,
 };
 
-Fullscreen.displayName = 'SvgFullscreen';
+Fullscreen.displayName = 'Fullscreen';
 export default createIcon(Fullscreen);

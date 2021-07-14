@@ -85,5 +85,5 @@ UserCross.propTypes = {
   set: PropTypes.string,
 };
 
-UserCross.displayName = 'SvgUserCross';
+UserCross.displayName = 'UserCross';
 export default createIcon(UserCross);

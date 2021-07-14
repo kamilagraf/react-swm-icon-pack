@@ -85,5 +85,5 @@ EmoteSad.propTypes = {
   set: PropTypes.string,
 };
 
-EmoteSad.displayName = 'SvgEmoteSad';
+EmoteSad.displayName = 'EmoteSad';
 export default createIcon(EmoteSad);

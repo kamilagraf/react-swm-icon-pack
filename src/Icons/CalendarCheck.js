@@ -85,5 +85,5 @@ CalendarCheck.propTypes = {
   set: PropTypes.string,
 };
 
-CalendarCheck.displayName = 'SvgCalendarCheck';
+CalendarCheck.displayName = 'CalendarCheck';
 export default createIcon(CalendarCheck);

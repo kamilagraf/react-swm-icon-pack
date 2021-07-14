@@ -85,5 +85,5 @@ CalendarCross.propTypes = {
   set: PropTypes.string,
 };
 
-CalendarCross.displayName = 'SvgCalendarCross';
+CalendarCross.displayName = 'CalendarCross';
 export default createIcon(CalendarCross);

@@ -85,5 +85,5 @@ Headphones.propTypes = {
   set: PropTypes.string,
 };
 
-Headphones.displayName = 'SvgHeadphones';
+Headphones.displayName = 'Headphones';
 export default createIcon(Headphones);

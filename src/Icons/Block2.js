@@ -67,5 +67,5 @@ Block2.propTypes = {
   set: PropTypes.string,
 };
 
-Block2.displayName = 'SvgBlock2';
+Block2.displayName = 'Block2';
 export default createIcon(Block2);

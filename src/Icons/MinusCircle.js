@@ -55,5 +55,5 @@ MinusCircle.propTypes = {
   set: PropTypes.string,
 };
 
-MinusCircle.displayName = 'SvgMinusCircle';
+MinusCircle.displayName = 'MinusCircle';
 export default createIcon(MinusCircle);

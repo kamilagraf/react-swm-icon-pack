@@ -85,5 +85,5 @@ Smartphone.propTypes = {
   set: PropTypes.string,
 };
 
-Smartphone.displayName = 'SvgSmartphone';
+Smartphone.displayName = 'Smartphone';
 export default createIcon(Smartphone);

@@ -67,5 +67,5 @@ HomeHospital.propTypes = {
   set: PropTypes.string,
 };
 
-HomeHospital.displayName = 'SvgHomeHospital';
+HomeHospital.displayName = 'HomeHospital';
 export default createIcon(HomeHospital);

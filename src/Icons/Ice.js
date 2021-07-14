@@ -90,5 +90,5 @@ Ice.propTypes = {
   set: PropTypes.string,
 };
 
-Ice.displayName = 'SvgIce';
+Ice.displayName = 'Ice';
 export default createIcon(Ice);

@@ -79,5 +79,5 @@ Alarm.propTypes = {
   set: PropTypes.string,
 };
 
-Alarm.displayName = 'SvgAlarm';
+Alarm.displayName = 'Alarm';
 export default createIcon(Alarm);

@@ -67,5 +67,5 @@ MessageSquareLines.propTypes = {
   set: PropTypes.string,
 };
 
-MessageSquareLines.displayName = 'SvgMessageSquareLines';
+MessageSquareLines.displayName = 'MessageSquareLines';
 export default createIcon(MessageSquareLines);

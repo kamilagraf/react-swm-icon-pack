@@ -84,5 +84,5 @@ Cast.propTypes = {
   set: PropTypes.string,
 };
 
-Cast.displayName = 'SvgCast';
+Cast.displayName = 'Cast';
 export default createIcon(Cast);

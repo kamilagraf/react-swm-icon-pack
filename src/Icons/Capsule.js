@@ -91,5 +91,5 @@ Capsule.propTypes = {
   set: PropTypes.string,
 };
 
-Capsule.displayName = 'SvgCapsule';
+Capsule.displayName = 'Capsule';
 export default createIcon(Capsule);

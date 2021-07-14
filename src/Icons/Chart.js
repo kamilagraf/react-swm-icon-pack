@@ -79,5 +79,5 @@ Chart.propTypes = {
   set: PropTypes.string,
 };
 
-Chart.displayName = 'SvgChart';
+Chart.displayName = 'Chart';
 export default createIcon(Chart);

@@ -84,5 +84,5 @@ QuestionSmall.propTypes = {
   set: PropTypes.string,
 };
 
-QuestionSmall.displayName = 'SvgQuestionSmall';
+QuestionSmall.displayName = 'QuestionSmall';
 export default createIcon(QuestionSmall);

@@ -91,5 +91,5 @@ UsersMore.propTypes = {
   set: PropTypes.string,
 };
 
-UsersMore.displayName = 'SvgUsersMore';
+UsersMore.displayName = 'UsersMore';
 export default createIcon(UsersMore);

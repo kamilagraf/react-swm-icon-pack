@@ -85,5 +85,5 @@ UserCheck.propTypes = {
   set: PropTypes.string,
 };
 
-UserCheck.displayName = 'SvgUserCheck';
+UserCheck.displayName = 'UserCheck';
 export default createIcon(UserCheck);

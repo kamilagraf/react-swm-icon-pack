@@ -85,5 +85,5 @@ Music.propTypes = {
   set: PropTypes.string,
 };
 
-Music.displayName = 'SvgMusic';
+Music.displayName = 'Music';
 export default createIcon(Music);

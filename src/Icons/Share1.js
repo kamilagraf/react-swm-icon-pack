@@ -87,5 +87,5 @@ Share1.propTypes = {
   set: PropTypes.string,
 };
 
-Share1.displayName = 'SvgShare1';
+Share1.displayName = 'Share1';
 export default createIcon(Share1);

@@ -61,5 +61,5 @@ Basket.propTypes = {
   set: PropTypes.string,
 };
 
-Basket.displayName = 'SvgBasket';
+Basket.displayName = 'Basket';
 export default createIcon(Basket);

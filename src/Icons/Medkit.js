@@ -85,5 +85,5 @@ Medkit.propTypes = {
   set: PropTypes.string,
 };
 
-Medkit.displayName = 'SvgMedkit';
+Medkit.displayName = 'Medkit';
 export default createIcon(Medkit);

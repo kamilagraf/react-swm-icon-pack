@@ -53,5 +53,5 @@ MinusSmall.propTypes = {
   set: PropTypes.string,
 };
 
-MinusSmall.displayName = 'SvgMinusSmall';
+MinusSmall.displayName = 'MinusSmall';
 export default createIcon(MinusSmall);

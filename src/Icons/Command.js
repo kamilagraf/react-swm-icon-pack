@@ -91,5 +91,5 @@ Command.propTypes = {
   set: PropTypes.string,
 };
 
-Command.displayName = 'SvgCommand';
+Command.displayName = 'Command';
 export default createIcon(Command);

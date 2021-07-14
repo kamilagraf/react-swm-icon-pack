@@ -60,5 +60,5 @@ Pause.propTypes = {
   set: PropTypes.string,
 };
 
-Pause.displayName = 'SvgPause';
+Pause.displayName = 'Pause';
 export default createIcon(Pause);

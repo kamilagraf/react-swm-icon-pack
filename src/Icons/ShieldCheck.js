@@ -85,5 +85,5 @@ ShieldCheck.propTypes = {
   set: PropTypes.string,
 };
 
-ShieldCheck.displayName = 'SvgShieldCheck';
+ShieldCheck.displayName = 'ShieldCheck';
 export default createIcon(ShieldCheck);

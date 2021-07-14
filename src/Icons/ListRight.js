@@ -61,5 +61,5 @@ ListRight.propTypes = {
   set: PropTypes.string,
 };
 
-ListRight.displayName = 'SvgListRight';
+ListRight.displayName = 'ListRight';
 export default createIcon(ListRight);

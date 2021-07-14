@@ -84,5 +84,5 @@ UndoSmall.propTypes = {
   set: PropTypes.string,
 };
 
-UndoSmall.displayName = 'SvgUndoSmall';
+UndoSmall.displayName = 'UndoSmall';
 export default createIcon(UndoSmall);

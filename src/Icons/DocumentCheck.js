@@ -79,5 +79,5 @@ DocumentCheck.propTypes = {
   set: PropTypes.string,
 };
 
-DocumentCheck.displayName = 'SvgDocumentCheck';
+DocumentCheck.displayName = 'DocumentCheck';
 export default createIcon(DocumentCheck);

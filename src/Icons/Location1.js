@@ -94,5 +94,5 @@ Location1.propTypes = {
   set: PropTypes.string,
 };
 
-Location1.displayName = 'SvgLocation1';
+Location1.displayName = 'Location1';
 export default createIcon(Location1);

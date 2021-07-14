@@ -90,5 +90,5 @@ CameraDisabled.propTypes = {
   set: PropTypes.string,
 };
 
-CameraDisabled.displayName = 'SvgCameraDisabled';
+CameraDisabled.displayName = 'CameraDisabled';
 export default createIcon(CameraDisabled);

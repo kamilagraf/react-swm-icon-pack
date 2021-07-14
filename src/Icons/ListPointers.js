@@ -78,5 +78,5 @@ ListPointers.propTypes = {
   set: PropTypes.string,
 };
 
-ListPointers.displayName = 'SvgListPointers';
+ListPointers.displayName = 'ListPointers';
 export default createIcon(ListPointers);

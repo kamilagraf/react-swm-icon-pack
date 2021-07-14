@@ -79,5 +79,5 @@ DocumentCross.propTypes = {
   set: PropTypes.string,
 };
 
-DocumentCross.displayName = 'SvgDocumentCross';
+DocumentCross.displayName = 'DocumentCross';
 export default createIcon(DocumentCross);

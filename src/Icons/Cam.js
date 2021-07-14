@@ -85,5 +85,5 @@ Cam.propTypes = {
   set: PropTypes.string,
 };
 
-Cam.displayName = 'SvgCam';
+Cam.displayName = 'Cam';
 export default createIcon(Cam);

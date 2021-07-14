@@ -60,5 +60,5 @@ RotateLeft.propTypes = {
   set: PropTypes.string,
 };
 
-RotateLeft.displayName = 'SvgRotateLeft';
+RotateLeft.displayName = 'RotateLeft';
 export default createIcon(RotateLeft);

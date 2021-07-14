@@ -79,5 +79,5 @@ DocumentClean.propTypes = {
   set: PropTypes.string,
 };
 
-DocumentClean.displayName = 'SvgDocumentClean';
+DocumentClean.displayName = 'DocumentClean';
 export default createIcon(DocumentClean);

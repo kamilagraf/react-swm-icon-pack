@@ -92,5 +92,5 @@ Gift1.propTypes = {
   set: PropTypes.string,
 };
 
-Gift1.displayName = 'SvgGift1';
+Gift1.displayName = 'Gift1';
 export default createIcon(Gift1);

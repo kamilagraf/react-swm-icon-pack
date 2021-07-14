@@ -91,5 +91,5 @@ Trophy.propTypes = {
   set: PropTypes.string,
 };
 
-Trophy.displayName = 'SvgTrophy';
+Trophy.displayName = 'Trophy';
 export default createIcon(Trophy);

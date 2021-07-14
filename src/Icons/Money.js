@@ -97,5 +97,5 @@ Money.propTypes = {
   set: PropTypes.string,
 };
 
-Money.displayName = 'SvgMoney';
+Money.displayName = 'Money';
 export default createIcon(Money);

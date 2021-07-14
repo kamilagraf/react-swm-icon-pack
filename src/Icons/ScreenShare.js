@@ -91,5 +91,5 @@ ScreenShare.propTypes = {
   set: PropTypes.string,
 };
 
-ScreenShare.displayName = 'SvgScreenShare';
+ScreenShare.displayName = 'ScreenShare';
 export default createIcon(ScreenShare);

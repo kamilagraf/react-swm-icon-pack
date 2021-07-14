@@ -79,5 +79,5 @@ Edit3.propTypes = {
   set: PropTypes.string,
 };
 
-Edit3.displayName = 'SvgEdit3';
+Edit3.displayName = 'Edit3';
 export default createIcon(Edit3);

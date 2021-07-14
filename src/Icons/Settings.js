@@ -87,5 +87,5 @@ Settings.propTypes = {
   set: PropTypes.string,
 };
 
-Settings.displayName = 'SvgSettings';
+Settings.displayName = 'Settings';
 export default createIcon(Settings);

@@ -91,5 +91,5 @@ AtEmail.propTypes = {
   set: PropTypes.string,
 };
 
-AtEmail.displayName = 'SvgAtEmail';
+AtEmail.displayName = 'AtEmail';
 export default createIcon(AtEmail);

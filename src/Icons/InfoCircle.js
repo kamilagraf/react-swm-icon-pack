@@ -79,5 +79,5 @@ InfoCircle.propTypes = {
   set: PropTypes.string,
 };
 
-InfoCircle.displayName = 'SvgInfoCircle';
+InfoCircle.displayName = 'InfoCircle';
 export default createIcon(InfoCircle);

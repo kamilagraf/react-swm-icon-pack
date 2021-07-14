@@ -85,5 +85,5 @@ Bell.propTypes = {
   set: PropTypes.string,
 };
 
-Bell.displayName = 'SvgBell';
+Bell.displayName = 'Bell';
 export default createIcon(Bell);

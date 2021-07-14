@@ -95,5 +95,5 @@ Dna.propTypes = {
   set: PropTypes.string,
 };
 
-Dna.displayName = 'SvgDna';
+Dna.displayName = 'Dna';
 export default createIcon(Dna);

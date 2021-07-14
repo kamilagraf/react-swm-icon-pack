@@ -83,5 +83,5 @@ Moon.propTypes = {
   set: PropTypes.string,
 };
 
-Moon.displayName = 'SvgMoon';
+Moon.displayName = 'Moon';
 export default createIcon(Moon);

@@ -84,5 +84,5 @@ Refresh.propTypes = {
   set: PropTypes.string,
 };
 
-Refresh.displayName = 'SvgRefresh';
+Refresh.displayName = 'Refresh';
 export default createIcon(Refresh);

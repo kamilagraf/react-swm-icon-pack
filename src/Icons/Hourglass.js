@@ -89,5 +89,5 @@ Hourglass.propTypes = {
   set: PropTypes.string,
 };
 
-Hourglass.displayName = 'SvgHourglass';
+Hourglass.displayName = 'Hourglass';
 export default createIcon(Hourglass);

@@ -95,5 +95,5 @@ Cardiology.propTypes = {
   set: PropTypes.string,
 };
 
-Cardiology.displayName = 'SvgCardiology';
+Cardiology.displayName = 'Cardiology';
 export default createIcon(Cardiology);

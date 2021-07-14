@@ -73,5 +73,5 @@ User1.propTypes = {
   set: PropTypes.string,
 };
 
-User1.displayName = 'SvgUser1';
+User1.displayName = 'User1';
 export default createIcon(User1);

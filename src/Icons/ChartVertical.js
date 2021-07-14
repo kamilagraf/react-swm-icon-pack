@@ -61,5 +61,5 @@ ChartVertical.propTypes = {
   set: PropTypes.string,
 };
 
-ChartVertical.displayName = 'SvgChartVertical';
+ChartVertical.displayName = 'ChartVertical';
 export default createIcon(ChartVertical);

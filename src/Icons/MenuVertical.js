@@ -84,5 +84,5 @@ MenuVertical.propTypes = {
   set: PropTypes.string,
 };
 
-MenuVertical.displayName = 'SvgMenuVertical';
+MenuVertical.displayName = 'MenuVertical';
 export default createIcon(MenuVertical);

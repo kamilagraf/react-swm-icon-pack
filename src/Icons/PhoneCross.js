@@ -95,5 +95,5 @@ PhoneCross.propTypes = {
   set: PropTypes.string,
 };
 
-PhoneCross.displayName = 'SvgPhoneCross';
+PhoneCross.displayName = 'PhoneCross';
 export default createIcon(PhoneCross);

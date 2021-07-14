@@ -58,5 +58,5 @@ ChevronCircleUp.propTypes = {
   set: PropTypes.string,
 };
 
-ChevronCircleUp.displayName = 'SvgChevronCircleUp';
+ChevronCircleUp.displayName = 'ChevronCircleUp';
 export default createIcon(ChevronCircleUp);

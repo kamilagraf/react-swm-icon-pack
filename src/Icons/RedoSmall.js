@@ -84,5 +84,5 @@ RedoSmall.propTypes = {
   set: PropTypes.string,
 };
 
-RedoSmall.displayName = 'SvgRedoSmall';
+RedoSmall.displayName = 'RedoSmall';
 export default createIcon(RedoSmall);

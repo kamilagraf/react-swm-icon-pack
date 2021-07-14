@@ -91,5 +91,5 @@ Copy.propTypes = {
   set: PropTypes.string,
 };
 
-Copy.displayName = 'SvgCopy';
+Copy.displayName = 'Copy';
 export default createIcon(Copy);

@@ -85,5 +85,5 @@ Screen.propTypes = {
   set: PropTypes.string,
 };
 
-Screen.displayName = 'SvgScreen';
+Screen.displayName = 'Screen';
 export default createIcon(Screen);

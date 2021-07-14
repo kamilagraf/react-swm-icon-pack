@@ -79,5 +79,5 @@ DocumentFilled.propTypes = {
   set: PropTypes.string,
 };
 
-DocumentFilled.displayName = 'SvgDocumentFilled';
+DocumentFilled.displayName = 'DocumentFilled';
 export default createIcon(DocumentFilled);

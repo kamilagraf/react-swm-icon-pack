@@ -85,5 +85,5 @@ Flag1.propTypes = {
   set: PropTypes.string,
 };
 
-Flag1.displayName = 'SvgFlag1';
+Flag1.displayName = 'Flag1';
 export default createIcon(Flag1);

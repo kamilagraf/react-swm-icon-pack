@@ -82,5 +82,5 @@ Filters1.propTypes = {
   set: PropTypes.string,
 };
 
-Filters1.displayName = 'SvgFilters1';
+Filters1.displayName = 'Filters1';
 export default createIcon(Filters1);

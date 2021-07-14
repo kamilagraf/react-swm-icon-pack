@@ -100,5 +100,5 @@ Explore.propTypes = {
   set: PropTypes.string,
 };
 
-Explore.displayName = 'SvgExplore';
+Explore.displayName = 'Explore';
 export default createIcon(Explore);

@@ -60,5 +60,5 @@ TrendingDown.propTypes = {
   set: PropTypes.string,
 };
 
-TrendingDown.displayName = 'SvgTrendingDown';
+TrendingDown.displayName = 'TrendingDown';
 export default createIcon(TrendingDown);

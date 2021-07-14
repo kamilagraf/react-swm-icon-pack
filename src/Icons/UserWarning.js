@@ -85,5 +85,5 @@ UserWarning.propTypes = {
   set: PropTypes.string,
 };
 
-UserWarning.displayName = 'SvgUserWarning';
+UserWarning.displayName = 'UserWarning';
 export default createIcon(UserWarning);

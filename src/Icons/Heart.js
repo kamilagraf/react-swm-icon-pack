@@ -95,5 +95,5 @@ Heart.propTypes = {
   set: PropTypes.string,
 };
 
-Heart.displayName = 'SvgHeart';
+Heart.displayName = 'Heart';
 export default createIcon(Heart);

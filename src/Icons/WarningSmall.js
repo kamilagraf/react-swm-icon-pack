@@ -54,5 +54,5 @@ WarningSmall.propTypes = {
   set: PropTypes.string,
 };
 
-WarningSmall.displayName = 'SvgWarningSmall';
+WarningSmall.displayName = 'WarningSmall';
 export default createIcon(WarningSmall);

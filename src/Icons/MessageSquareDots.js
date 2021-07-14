@@ -85,5 +85,5 @@ MessageSquareDots.propTypes = {
   set: PropTypes.string,
 };
 
-MessageSquareDots.displayName = 'SvgMessageSquareDots';
+MessageSquareDots.displayName = 'MessageSquareDots';
 export default createIcon(MessageSquareDots);

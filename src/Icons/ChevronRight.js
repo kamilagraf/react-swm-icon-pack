@@ -54,5 +54,5 @@ ChevronRight.propTypes = {
   set: PropTypes.string,
 };
 
-ChevronRight.displayName = 'SvgChevronRight';
+ChevronRight.displayName = 'ChevronRight';
 export default createIcon(ChevronRight);

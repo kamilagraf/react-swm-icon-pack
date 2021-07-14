@@ -61,5 +61,5 @@ Send1.propTypes = {
   set: PropTypes.string,
 };
 
-Send1.displayName = 'SvgSend1';
+Send1.displayName = 'Send1';
 export default createIcon(Send1);

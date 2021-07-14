@@ -85,5 +85,5 @@ CalendarEdit.propTypes = {
   set: PropTypes.string,
 };
 
-CalendarEdit.displayName = 'SvgCalendarEdit';
+CalendarEdit.displayName = 'CalendarEdit';
 export default createIcon(CalendarEdit);

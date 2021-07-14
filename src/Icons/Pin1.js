@@ -55,5 +55,5 @@ Pin1.propTypes = {
   set: PropTypes.string,
 };
 
-Pin1.displayName = 'SvgPin1';
+Pin1.displayName = 'Pin1';
 export default createIcon(Pin1);

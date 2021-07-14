@@ -54,5 +54,5 @@ CheckSmall.propTypes = {
   set: PropTypes.string,
 };
 
-CheckSmall.displayName = 'SvgCheckSmall';
+CheckSmall.displayName = 'CheckSmall';
 export default createIcon(CheckSmall);

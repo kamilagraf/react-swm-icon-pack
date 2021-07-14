@@ -54,5 +54,5 @@ ResizeSmallVertical.propTypes = {
   set: PropTypes.string,
 };
 
-ResizeSmallVertical.displayName = 'SvgResizeSmallVertical';
+ResizeSmallVertical.displayName = 'ResizeSmallVertical';
 export default createIcon(ResizeSmallVertical);

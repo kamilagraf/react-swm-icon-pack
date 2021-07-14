@@ -79,5 +79,5 @@ CheckCircle.propTypes = {
   set: PropTypes.string,
 };
 
-CheckCircle.displayName = 'SvgCheckCircle';
+CheckCircle.displayName = 'CheckCircle';
 export default createIcon(CheckCircle);

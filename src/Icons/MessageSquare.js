@@ -61,5 +61,5 @@ MessageSquare.propTypes = {
   set: PropTypes.string,
 };
 
-MessageSquare.displayName = 'SvgMessageSquare';
+MessageSquare.displayName = 'MessageSquare';
 export default createIcon(MessageSquare);
