@@ -6,7 +6,7 @@ const Block2 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M12 3a9 9 0 105.657 2m-12.021.636l12.728 12.728"
+        d="M12 3a9 9 0 106 2.292M5.636 5.636l12.728 12.728"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -17,7 +17,7 @@ const Block2 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Curved = () => (
     <g>
       <path
-        d="M5.636 5.636l12.728 12.728M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+        d="M12 21a9 9 0 100-18 9 9 0 000 18zM5.636 5.636l12.728 12.728"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -28,18 +28,14 @@ const Block2 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Duotone = () => (
     <g>
       <path opacity={0.15} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" fill={color} />
-      <path d="M5.636 5.636l12.728 12.728M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke={color} strokeWidth={strokeWidth} />
+      <path d="M12 21a9 9 0 100-18 9 9 0 000 18z" stroke={color} strokeWidth={strokeWidth} />
+      <path d="M5.636 5.636l12.728 12.728" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" />
     </g>
   );
   const Outline = () => (
     <g>
-      <path d="M5.636 5.636l12.728 12.728M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke={color} strokeWidth={strokeWidth} />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M5.636 5.636l12.728 12.728" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M12 21a9 9 0 100-18 9 9 0 000 18z" stroke={color} strokeWidth={strokeWidth} />
+      <path d="M5.636 5.636l12.728 12.728" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" />
     </g>
   );
 
@@ -52,8 +48,6 @@ const Block2 = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }

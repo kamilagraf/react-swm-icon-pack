@@ -6,7 +6,7 @@ const ArrowCircleRight = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M7 12h10l-4 4m0-8l2 2M3.936 16A9 9 0 117 19.485"
+        d="M12 21a9 9 0 100-18 9 9 0 000 18zM17 12H7M15 10l-2-2M17 12l-4 4"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -16,42 +16,21 @@ const ArrowCircleRight = ({ color, secondaryColor, strokeWidth, set }) => {
   );
   const Curved = () => (
     <g>
-      <path
-        d="M17 12H7m10 0l-4 4m4-4l-4-4m-1 13a9 9 0 110-18 9 9 0 010 18z"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <path d="M17 12H7M13 16l4-4-4-4" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M12 21a9 9 0 100-18 9 9 0 000 18z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Duotone = () => (
     <g>
       <path opacity={0.15} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" fill={color} />
-      <path
-        d="M17 12H7m10 0l-4 4m4-4l-4-4m-1 13a9 9 0 110-18 9 9 0 010 18z"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <path d="M17 12H7M13 16l4-4-4-4" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M12 21a9 9 0 100-18 9 9 0 000 18z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Outline = () => (
     <g>
-      <path
-        d="M17 12H7m10 0l-4 4m4-4l-4-4m-1 13a9 9 0 110-18 9 9 0 010 18z"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M17 12H7m10 0l-4 4m4-4l-4-4" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M17 12H7M13 16l4-4-4-4" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M12 21a9 9 0 100-18 9 9 0 000 18z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
 
@@ -64,8 +43,6 @@ const ArrowCircleRight = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }

@@ -5,13 +5,13 @@ import createIcon from '../helpers/createIcon';
 const Basket = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
-      <path d="M3 10h18l-2 10H5M3 10l6-6m-6 6l1.2 6M15 4l3 3" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M5 20h14l2-10H3l1 5M3 10l6-6M18 7l-3-3" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Curved = () => (
     <g>
       <path
-        d="M3 10h18M3 10l1.357 6.785A4 4 0 008.279 20h7.442a4 4 0 003.922-3.215L21 10M3 10l6-6m12 6l-6-6"
+        d="M21 10l-6-6M3 10l6-6M3 10h18l-1.357 6.785A4 4 0 0115.721 20H8.279a4 4 0 01-3.922-3.215L3 10z"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -22,18 +22,12 @@ const Basket = ({ color, secondaryColor, strokeWidth, set }) => {
   const Duotone = () => (
     <g>
       <path opacity={0.15} d="M3 10h18l-2 10H5L3 10z" fill={color} />
-      <path d="M3 10h18M3 10l2 10h14l2-10M3 10l6-6m12 6l-6-6" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M21 10H3l2 10h14l2-10zM3 10l6-6M21 10l-6-6" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Outline = () => (
     <g>
-      <path d="M3 10h18M3 10l2 10h14l2-10M3 10l6-6m12 6l-6-6" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M3 10l6-6m12 6l-6-6" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M3 10h18l-2 10H5L3 10z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M21 10H3l2 10h14l2-10zM3 10l6-6M21 10l-6-6" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
 
@@ -46,8 +40,6 @@ const Basket = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }

@@ -6,7 +6,14 @@ const Basketball = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M21 12a9 9 0 11-18 0m18 0a9 9 0 00-9-9m9 9h-9m-9 0a9 9 0 019-9m-9 9h6.5M12 3v15m7.233-11.324a6.001 6.001 0 00.004 10.65M4.767 6.676a6 6 0 01-.004 10.65"
+        d="M4.753 6.662A8.96 8.96 0 003 12a8.96 8.96 0 001.744 5.326A8.987 8.987 0 0012 21a8.987 8.987 0 007.237-3.65A8.96 8.96 0 0021 12a8.959 8.959 0 00-1.743-5.324A8.987 8.987 0 0012 3a8.987 8.987 0 00-7.247 3.662z"
+        stroke={color}
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M19.257 6.676c-1.226.799-2.225 1.64-2.8 3.028a6 6 0 000 4.592c.579 1.398 1.588 2.201 2.78 3.055M4.753 6.662c1.226.766 2.227 1.681 2.79 3.042a6 6 0 010 4.592c-.575 1.389-1.574 2.229-2.799 3.03M8 12H3M21 12h-9M12 17V3"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -17,7 +24,14 @@ const Basketball = ({ color, secondaryColor, strokeWidth, set }) => {
   const Curved = () => (
     <g>
       <path
-        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9V3m-9 9a9 9 0 019-9m7.233 3.676a6.001 6.001 0 00.004 10.65M4.767 6.676a6 6 0 01-.004 10.65"
+        d="M4.753 6.662A8.96 8.96 0 003 12a8.96 8.96 0 001.744 5.326A8.987 8.987 0 0012 21a8.987 8.987 0 007.237-3.65A8.96 8.96 0 0021 12a8.959 8.959 0 00-1.743-5.324A8.987 8.987 0 0012 3a8.987 8.987 0 00-7.247 3.662z"
+        stroke={color}
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M19.257 6.676c-1.226.799-2.225 1.64-2.8 3.028a6 6 0 000 4.592c.579 1.398 1.588 2.201 2.78 3.055M4.753 6.662c1.226.766 2.227 1.681 2.79 3.042a6 6 0 010 4.592c-.575 1.389-1.574 2.229-2.799 3.03M21 12H3M12 21V3"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -33,7 +47,14 @@ const Basketball = ({ color, secondaryColor, strokeWidth, set }) => {
         fill={color}
       />
       <path
-        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9V3m-9 9a9 9 0 019-9m7.233 3.676a6.001 6.001 0 00.004 10.65M4.767 6.676a6 6 0 01-.004 10.65"
+        d="M4.753 6.662A8.96 8.96 0 003 12a8.96 8.96 0 001.744 5.326A8.987 8.987 0 0012 21a8.987 8.987 0 007.237-3.65A8.96 8.96 0 0021 12a8.959 8.959 0 00-1.743-5.324A8.987 8.987 0 0012 3a8.987 8.987 0 00-7.247 3.662z"
+        stroke={color}
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M19.257 6.676c-1.226.799-2.225 1.64-2.8 3.028a6 6 0 000 4.592c.579 1.398 1.588 2.201 2.78 3.055M4.753 6.662c1.226.766 2.226 1.681 2.79 3.042a6 6 0 010 4.592c-.575 1.389-1.574 2.229-2.799 3.03M21 12H3M12 21V3"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -44,19 +65,14 @@ const Basketball = ({ color, secondaryColor, strokeWidth, set }) => {
   const Outline = () => (
     <g>
       <path
-        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9V3m-9 9a9 9 0 019-9m7.233 3.676a6.001 6.001 0 00.004 10.65M4.767 6.676a6 6 0 01-.004 10.65"
+        d="M4.753 6.662A8.96 8.96 0 003 12a8.96 8.96 0 001.744 5.326A8.987 8.987 0 0012 21a8.987 8.987 0 007.237-3.65A8.96 8.96 0 0021 12a8.959 8.959 0 00-1.743-5.324A8.987 8.987 0 0012 3a8.987 8.987 0 00-7.247 3.662z"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M21 12H3m9 9V3" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
       <path
-        d="M19.233 6.676a6.001 6.001 0 00.004 10.65M4.767 6.676a6 6 0 01-.004 10.65M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+        d="M19.257 6.676c-1.226.799-2.225 1.64-2.8 3.028a6 6 0 000 4.592c.579 1.398 1.588 2.201 2.78 3.055M4.753 6.662c1.226.766 2.227 1.681 2.79 3.042a6 6 0 010 4.592c-.575 1.389-1.574 2.229-2.799 3.03M21 12H3M12 21V3"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -74,8 +90,6 @@ const Basketball = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }

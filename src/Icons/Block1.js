@@ -6,7 +6,7 @@ const Block1 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M18.364 5.636A8.972 8.972 0 0012 3a8.972 8.972 0 00-6.364 2.636m12.728 0A9.004 9.004 0 0120.5 9.035m-2.136-3.399L12 12m0 0l-6.364 6.364M12 12l6.364 6.364m-12.728 0A8.972 8.972 0 0012 21a8.972 8.972 0 006.364-2.636m-12.728 0A8.972 8.972 0 013 12a8.972 8.972 0 012.636-6.364m14.732 9.683a9.011 9.011 0 01-2.004 3.045M5.636 5.636L10 10"
+        d="M20.5 9.035A9 9 0 1020.064 16M12 12l6.364 6.364M5.636 5.636L10 10M5.636 18.364L18.364 5.636"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -16,7 +16,7 @@ const Block1 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Curved = () => (
     <g>
       <path
-        d="M5.636 5.636l12.728 12.728m-12.728 0L18.364 5.636M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+        d="M12 21a9 9 0 100-18 9 9 0 000 18zM5.636 18.364L18.364 5.636M5.636 5.636l12.728 12.728"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -27,24 +27,14 @@ const Block1 = ({ color, secondaryColor, strokeWidth, set }) => {
   const Duotone = () => (
     <g>
       <path opacity={0.15} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" fill={color} />
-      <path d="M5.636 5.636l12.728 12.728m-12.728 0L18.364 5.636M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke={color} strokeWidth={strokeWidth} />
+      <path d="M12 21a9 9 0 100-18 9 9 0 000 18z" stroke={color} strokeWidth={strokeWidth} />
+      <path d="M5.636 5.636l12.728 12.728M5.636 18.364L18.364 5.636" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" />
     </g>
   );
   const Outline = () => (
     <g>
-      <path d="M5.636 5.636l12.728 12.728m-12.728 0L18.364 5.636M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke={color} strokeWidth={strokeWidth} />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path
-        d="M5.636 5.636l12.728 12.728m-12.728 0L18.364 5.636"
-        stroke={secondaryColor}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M12 21a9 9 0 100-18 9 9 0 000 18z" stroke={color} strokeWidth={strokeWidth} />
+      <path d="M5.636 5.636l12.728 12.728M5.636 18.364L18.364 5.636" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" />
     </g>
   );
 
@@ -57,8 +47,6 @@ const Block1 = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }

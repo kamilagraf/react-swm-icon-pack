@@ -5,7 +5,7 @@ import createIcon from '../helpers/createIcon';
 const Bolt = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
-      <path d="M13.6 10H19L8 21l2-8H6l3-9h7l-1.2 3" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M13.6 10H19L8 21l2-8H6l3-9h7l-1 2.5" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Curved = () => (
@@ -30,12 +30,6 @@ const Bolt = ({ color, secondaryColor, strokeWidth, set }) => {
       <path d="M16 4H9l-3 9h4l-2 8 11-11h-5.4L16 4z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
-  const TwoColor = () => (
-    <g>
-      <path d="M16 4l-2.4 6H19L8 21" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M16 4H9l-3 9h4l-2 8" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-    </g>
-  );
 
   switch (set) {
     case 'broken':
@@ -46,8 +40,6 @@ const Bolt = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }

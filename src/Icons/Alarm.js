@@ -6,7 +6,7 @@ const Alarm = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M20 13a8 8 0 10-2 5.292M18 3l3 3M3 6l3-3m6 6v4l2 2"
+        d="M12 9v4l2 2M20 13a8 8 0 10-2 5.292M18 3l3 3M3 6l3-3"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -16,8 +16,9 @@ const Alarm = ({ color, secondaryColor, strokeWidth, set }) => {
   );
   const Curved = () => (
     <g>
+      <path d="M12 9v4l2 2" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
       <path
-        d="M18 3l3 3M3 6l3-3m6 6v4l2 2m6-2a8 8 0 11-16 0 8 8 0 0116 0z"
+        d="M12 21a8 8 0 100-16 8 8 0 000 16zM18 3l3 3M3 6l3-3"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -28,8 +29,9 @@ const Alarm = ({ color, secondaryColor, strokeWidth, set }) => {
   const Duotone = () => (
     <g>
       <path opacity={0.15} d="M20 13a8 8 0 11-16 0 8 8 0 0116 0z" fill={color} />
+      <path d="M12 9v4l2 2" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
       <path
-        d="M18 3l3 3M3 6l3-3m6 6v4l2 2m6-2a8 8 0 11-16 0 8 8 0 0116 0z"
+        d="M12 21a8 8 0 100-16 8 8 0 000 16zM18 3l3 3M3 6l3-3"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -39,19 +41,14 @@ const Alarm = ({ color, secondaryColor, strokeWidth, set }) => {
   );
   const Outline = () => (
     <g>
+      <path d="M12 9v4l2 2" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
       <path
-        d="M18 3l3 3M3 6l3-3m6 6v4l2 2m6-2a8 8 0 11-16 0 8 8 0 0116 0z"
+        d="M12 21a8 8 0 100-16 8 8 0 000 16zM18 3l3 3M3 6l3-3"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M18 3l3 3M3 6l3-3m6 6v4l2 2" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M20 13a8 8 0 11-16 0 8 8 0 0116 0z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
 
@@ -64,8 +61,6 @@ const Alarm = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }

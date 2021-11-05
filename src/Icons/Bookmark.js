@@ -6,7 +6,7 @@ const Bookmark = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M18 12v9l-6-6-6 6v-4m12-9V6a2 2 0 00-2-2H8a2 2 0 00-2 2v7"
+        d="M18 13v8l-6-6-6 6v-4M18 8V6a2 2 0 00-2-2H8a2 2 0 00-2 2v7"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -36,12 +36,6 @@ const Bookmark = ({ color, secondaryColor, strokeWidth, set }) => {
       <path d="M6 6a2 2 0 012-2h8a2 2 0 012 2v15l-6-6-6 6V6z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
-  const TwoColor = () => (
-    <g>
-      <path d="M18 21l-6-6-6 6" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M18 21V6a2 2 0 00-2-2H8a2 2 0 00-2 2v15" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-    </g>
-  );
 
   switch (set) {
     case 'broken':
@@ -52,8 +46,6 @@ const Bookmark = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
