@@ -6,78 +6,128 @@ const Basketball = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M4.753 6.662A8.96 8.96 0 003 12a8.96 8.96 0 001.744 5.326A8.987 8.987 0 0012 21a8.987 8.987 0 007.237-3.65A8.96 8.96 0 0021 12a8.959 8.959 0 00-1.743-5.324A8.987 8.987 0 0012 3a8.987 8.987 0 00-7.247 3.662z"
+        id="shape"
+        d="M4.75313 6.66208C3.65127 8.15549 3 10.0017 3 12C3 13.9931 3.64785 15.8348 4.74444 17.3261C6.38269 19.5541 9.02249 21 12 21C14.9665 21 17.5977 19.5648 19.2373 17.3509C20.345 15.8552 21 14.0041 21 12C21 10.008 20.3529 8.1672 19.2573 6.6763C17.6192 4.44695 14.9786 3 12 3C9.02775 3 6.39201 4.4408 4.75313 6.66208Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
       <path
-        d="M19.257 6.676c-1.226.799-2.225 1.64-2.8 3.028a6 6 0 000 4.592c.579 1.398 1.588 2.201 2.78 3.055M4.753 6.662c1.226.766 2.227 1.681 2.79 3.042a6 6 0 010 4.592c-.575 1.389-1.574 2.229-2.799 3.03M8 12H3M21 12h-9M12 17V3"
+        id="shape_2"
+        d="M19.2573 6.6763C18.0306 7.47481 17.0319 8.31524 16.4567 9.7039C16.1552 10.4319 16 11.2121 16 12C16 12.7879 16.1552 13.5682 16.4567 14.2961C17.0356 15.6937 18.0451 16.4972 19.2373 17.3509"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path
+        id="shape_3"
+        d="M4.75313 6.66208C5.97869 7.42811 6.97956 8.34295 7.54328 9.7039C7.84481 10.4319 8 11.2121 8 12C8 12.7879 7.84481 13.5681 7.54328 14.2961C6.96817 15.6846 5.9687 16.5246 4.74445 17.3261"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path id="shape_4" d="M8 12H3" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path id="shape_5" d="M21 12H12" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path id="shape_6" d="M12 17V3" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Curved = () => (
     <g>
       <path
-        d="M4.753 6.662A8.96 8.96 0 003 12a8.96 8.96 0 001.744 5.326A8.987 8.987 0 0012 21a8.987 8.987 0 007.237-3.65A8.96 8.96 0 0021 12a8.959 8.959 0 00-1.743-5.324A8.987 8.987 0 0012 3a8.987 8.987 0 00-7.247 3.662z"
+        id="shape"
+        d="M4.75313 6.66208C3.65127 8.15549 3 10.0017 3 12C3 13.9931 3.64785 15.8348 4.74444 17.3261C6.38269 19.5541 9.02249 21 12 21C14.9665 21 17.5977 19.5648 19.2373 17.3509C20.345 15.8552 21 14.0041 21 12C21 10.008 20.3529 8.1672 19.2573 6.6763C17.6192 4.44695 14.9786 3 12 3C9.02775 3 6.39201 4.4408 4.75313 6.66208Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
       <path
-        d="M19.257 6.676c-1.226.799-2.225 1.64-2.8 3.028a6 6 0 000 4.592c.579 1.398 1.588 2.201 2.78 3.055M4.753 6.662c1.226.766 2.227 1.681 2.79 3.042a6 6 0 010 4.592c-.575 1.389-1.574 2.229-2.799 3.03M21 12H3M12 21V3"
+        id="shape_2"
+        d="M19.2574 6.67627C18.0306 7.47477 17.0319 8.31521 16.4567 9.70387C16.1552 10.4318 16 11.212 16 12C16 12.7879 16.1552 13.5681 16.4567 14.2961C17.0356 15.6937 18.0451 16.4972 19.2373 17.3508"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path
+        id="shape_3"
+        d="M4.75313 6.66211C5.97869 7.42814 6.97956 8.34298 7.54328 9.70393C7.84481 10.4319 8 11.2121 8 12C8 12.788 7.84481 13.5682 7.54328 14.2961C6.96817 15.6846 5.9687 16.5246 4.74445 17.3262"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path id="shape_4" d="M21 12H3" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path id="shape_5" d="M12 21V3" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Duotone = () => (
     <g>
       <path
-        opacity={0.15}
-        d="M19.25 6.666A6 6 0 0016 12a6 6 0 003.25 5.334A8.987 8.987 0 0112 21a8.987 8.987 0 01-7.25-3.666A6 6 0 008 12a6 6 0 00-3.25-5.334A8.987 8.987 0 0112 3a8.987 8.987 0 017.25 3.666z"
+        id="tone"
+        opacity="0.15"
+        d="M19.2498 6.66602C17.3196 7.66328 16 9.67755 16 12C16 14.3225 17.3196 16.3367 19.2498 17.334C17.6111 19.5575 14.974 21 12 21C9.02601 21 6.38892 19.5575 4.75024 17.334C6.68049 16.3367 8.00003 14.3225 8.00003 12C8.00003 9.67754 6.6805 7.66328 4.75025 6.66602C6.38892 4.44251 9.02602 3 12 3C14.974 3 17.6111 4.44251 19.2498 6.66602Z"
         fill={color}
       />
       <path
-        d="M4.753 6.662A8.96 8.96 0 003 12a8.96 8.96 0 001.744 5.326A8.987 8.987 0 0012 21a8.987 8.987 0 007.237-3.65A8.96 8.96 0 0021 12a8.959 8.959 0 00-1.743-5.324A8.987 8.987 0 0012 3a8.987 8.987 0 00-7.247 3.662z"
+        id="shape"
+        d="M4.75313 6.66208C3.65127 8.15549 3 10.0017 3 12C3 13.9931 3.64785 15.8348 4.74444 17.3261C6.38269 19.5541 9.02249 21 12 21C14.9665 21 17.5977 19.5648 19.2373 17.3509C20.345 15.8552 21 14.0041 21 12C21 10.008 20.3529 8.1672 19.2573 6.6763C17.6192 4.44695 14.9786 3 12 3C9.02775 3 6.39201 4.4408 4.75313 6.66208Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
       <path
-        d="M19.257 6.676c-1.226.799-2.225 1.64-2.8 3.028a6 6 0 000 4.592c.579 1.398 1.588 2.201 2.78 3.055M4.753 6.662c1.226.766 2.226 1.681 2.79 3.042a6 6 0 010 4.592c-.575 1.389-1.574 2.229-2.799 3.03M21 12H3M12 21V3"
+        id="shape_2"
+        d="M19.2574 6.6763C18.0306 7.47481 17.0319 8.31524 16.4567 9.7039C16.1552 10.4319 16 11.2121 16 12C16 12.7879 16.1552 13.5682 16.4567 14.2961C17.0356 15.6937 18.0451 16.4972 19.2373 17.3509"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path
+        id="shape_3"
+        d="M4.75307 6.66208C5.97863 7.42811 6.9795 8.34295 7.54322 9.7039C7.84475 10.4319 7.99994 11.2121 7.99994 12C7.99994 12.7879 7.84475 13.5681 7.54322 14.2961C6.9681 15.6846 5.96864 16.5246 4.74438 17.3261"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path id="shape_4" d="M21 12H3" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path id="shape_5" d="M12 21V3" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Outline = () => (
     <g>
       <path
-        d="M4.753 6.662A8.96 8.96 0 003 12a8.96 8.96 0 001.744 5.326A8.987 8.987 0 0012 21a8.987 8.987 0 007.237-3.65A8.96 8.96 0 0021 12a8.959 8.959 0 00-1.743-5.324A8.987 8.987 0 0012 3a8.987 8.987 0 00-7.247 3.662z"
+        id="shape"
+        d="M4.75313 6.66208C3.65127 8.15549 3 10.0017 3 12C3 13.9931 3.64785 15.8348 4.74444 17.3261C6.38269 19.5541 9.02249 21 12 21C14.9665 21 17.5977 19.5648 19.2373 17.3509C20.345 15.8552 21 14.0041 21 12C21 10.008 20.3529 8.1672 19.2573 6.6763C17.6192 4.44695 14.9786 3 12 3C9.02775 3 6.39201 4.4408 4.75313 6.66208Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
       <path
-        d="M19.257 6.676c-1.226.799-2.225 1.64-2.8 3.028a6 6 0 000 4.592c.579 1.398 1.588 2.201 2.78 3.055M4.753 6.662c1.226.766 2.227 1.681 2.79 3.042a6 6 0 010 4.592c-.575 1.389-1.574 2.229-2.799 3.03M21 12H3M12 21V3"
+        id="shape_2"
+        d="M19.2574 6.67627C18.0306 7.47477 17.0319 8.31521 16.4567 9.70387C16.1552 10.4318 16 11.212 16 12C16 12.7879 16.1552 13.5681 16.4567 14.2961C17.0356 15.6937 18.0451 16.4972 19.2373 17.3508"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path
+        id="shape_3"
+        d="M4.75313 6.66211C5.97869 7.42814 6.97956 8.34298 7.54328 9.70393C7.84481 10.4319 8 11.2121 8 12C8 12.788 7.84481 13.5682 7.54328 14.2961C6.96817 15.6846 5.9687 16.5246 4.74445 17.3262"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path id="shape_4" d="M21 12H3" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path id="shape_5" d="M12 21V3" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
 

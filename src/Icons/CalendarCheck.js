@@ -5,48 +5,102 @@ import createIcon from '../helpers/createIcon';
 const CalendarCheck = ({ color, secondaryColor, strokeWidth, set }) => {
   const Broken = () => (
     <g>
-      <path d="M19.857 15l-6.2 6.2L11 18.543M4 11h11M9 3v4" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M9 5h3" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" />
       <path
-        d="M15 5h3a2 2 0 012 2v2M6 5a2 2 0 00-2 2v12a2 2 0 002 2h2"
+        id="shape"
+        d="M19.8571 15L13.6572 21.1999L11 18.5428"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path id="shape_2" d="M4 11H15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path id="shape_3" d="M9 3V7" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path id="shape_4" d="M9 5H12" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" />
+      <path
+        id="shape_5"
+        d="M15 5H18C19.1046 5 20 5.89543 20 7V9"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        id="shape_6"
+        d="M6 5C4.89543 5 4 5.89543 4 7V19C4 20.1046 4.89543 21 6 21H8"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Curved = () => (
     <g>
       <path
-        d="M19.857 15l-6.2 6.2L11 18.543M15 2.5v4M9 2.5v4M3.517 11.5H9M8 20.604c-3.36-.852-4.5-3.195-4.5-8.104 0-.346.006-.68.017-1C3.726 5.793 5.846 4 12 4c5.368 0 7.667 1.364 8.305 5.5"
+        id="shape"
+        d="M19.8572 15L13.6573 21.1999L11.0001 18.5428"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path id="shape_2" d="M15 2.5V6.5" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path id="shape_3" d="M9 2.5V6.5" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path id="shape_4" d="M3.51733 11.5H9" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path
+        id="shape_5"
+        d="M8 20.6041C4.64094 19.7517 3.5 17.4094 3.5 12.5C3.5 12.154 3.50567 11.8208 3.51737 11.5C3.72564 5.79277 5.84596 4 12 4C17.3679 4 19.6668 5.36399 20.3048 9.5"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Duotone = () => (
     <g>
       <path
-        d="M19.857 15l-6.2 6.2L11 18.543M4 11h5M20 9V7a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2h2M15 3v4M9 3v4"
+        id="shape"
+        d="M19.8572 15L13.6573 21.1999L11.0001 18.5428"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path id="shape_2" d="M4 11H9" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path
+        id="shape_3"
+        d="M20 9V7C20 5.89543 19.1046 5 18 5H6C4.89543 5 4 5.89543 4 7V19C4 20.1046 4.89543 21 6 21H8"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path id="shape_4" d="M15 3V7" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path id="shape_5" d="M9 3V7" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Outline = () => (
     <g>
       <path
-        d="M19.857 15l-6.2 6.2L11 18.543M4 11h5M20 9V7a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2h2M15 3v4M9 3v4"
+        id="shape"
+        d="M19.8572 15L13.6573 21.1999L11.0001 18.5428"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path id="shape_2" d="M4 11H9" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path
+        id="shape_3"
+        d="M20 9V7C20 5.89543 19.1046 5 18 5H6C4.89543 5 4 5.89543 4 7V19C4 20.1046 4.89543 21 6 21H8"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path id="shape_4" d="M15 3V7" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path id="shape_5" d="M9 3V7" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
 
