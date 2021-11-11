@@ -2,31 +2,49 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const Circle = ({ color, secondaryColor, strokeWidth, set }) => {
+const Circle = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
-      <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke={color} strokeWidth={strokeWidth} />
+      <path
+        d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C14.8273 3 17.35 4.30367 19 6.34267"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+      />
     </g>
   );
   const Curved = () => (
     <g>
-      <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path
+        d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path opacity={0.15} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" fill={color} />
-      <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke={color} strokeWidth={strokeWidth} />
+      <path
+        opacity="0.15"
+        d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+        fill={color}
+      />
+      <path
+        d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+      />
     </g>
   );
   const Outline = () => (
     <g>
-      <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke={color} strokeWidth={strokeWidth} />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path
+        d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+      />
     </g>
   );
 
@@ -39,8 +57,6 @@ const Circle = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -48,7 +64,6 @@ const Circle = ({ color, secondaryColor, strokeWidth, set }) => {
 
 Circle.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

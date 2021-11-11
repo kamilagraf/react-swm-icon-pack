@@ -2,38 +2,51 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const Bookmark = ({ color, secondaryColor, strokeWidth, set }) => {
+const Bookmark = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
+      <path d="M18 13V21L12 15L6 21V17" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M18 13v8l-6-6-6 6v-4M18 8V6a2 2 0 00-2-2H8a2 2 0 00-2 2v7"
+        d="M18 8V6C18 4.89543 17.1046 4 16 4H8C6.89543 4 6 4.89543 6 6V13"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Curved = () => (
     <g>
       <path
-        d="M6 8c0-2.815 2-4 6-4s6 1.185 6 4v11.086c0 .89-1.077 1.337-1.707.707l-3.586-3.586a1 1 0 00-1.414 0l-3.586 3.586c-.63.63-1.707.184-1.707-.707V8z"
+        d="M6 8C6 5.18536 8 4 12 4C16 4 18 5.18537 18 8V19.0858C18 19.9767 16.9229 20.4229 16.2929 19.7929L12.7071 16.2071C12.3166 15.8166 11.6834 15.8166 11.2929 16.2071L7.70711 19.7929C7.07714 20.4229 6 19.9767 6 19.0858V8Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path opacity={0.15} d="M6 6a2 2 0 012-2h8a2 2 0 012 2v15l-6-6-6 6V6z" fill={color} />
-      <path d="M6 6a2 2 0 012-2h8a2 2 0 012 2v15l-6-6-6 6V6z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path opacity="0.15" d="M6 6C6 4.89543 6.89543 4 8 4H16C17.1046 4 18 4.89543 18 6V21L12 15L6 21V6Z" fill={color} />
+      <path
+        d="M6 6C6 4.89543 6.89543 4 8 4H16C17.1046 4 18 4.89543 18 6V21L12 15L6 21V6Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
     </g>
   );
   const Outline = () => (
     <g>
-      <path d="M6 6a2 2 0 012-2h8a2 2 0 012 2v15l-6-6-6 6V6z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path
+        d="M6 6C6 4.89543 6.89543 4 8 4H16C17.1046 4 18 4.89543 18 6V21L12 15L6 21V6Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
     </g>
   );
 
@@ -53,7 +66,6 @@ const Bookmark = ({ color, secondaryColor, strokeWidth, set }) => {
 
 Bookmark.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

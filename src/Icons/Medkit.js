@@ -2,61 +2,90 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const Medkit = ({ color, secondaryColor, strokeWidth, set }) => {
+const Medkit = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
+      <path d="M12 13.5H15.5" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M8.5 13.5H10" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12 10V17" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M20 18a2 2 0 01-2 2H6a2 2 0 01-2-2V9a2 2 0 012-2h12a2 2 0 012 2v5m-5-7V5a2 2 0 00-2-2h-2a2 2 0 00-2 2v2m3 3v7m-3.5-3.5H10m5.5 0H12"
+        d="M20 13V9C20 7.89543 19.1046 7 18 7H6C4.89543 7 4 7.89543 4 9V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V17"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M15 7V5C15 3.89543 14.1046 3 13 3H11C9.89543 3 9 3.89543 9 5V7"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Curved = () => (
     <g>
+      <path d="M8.5 13H15.5" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12 9.5V16.5" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M12 9.5v7M8.5 13h7M9 6.093A47.649 47.649 0 0112 6c1.059 0 2.079.035 3 .093m-6 0V5c0-1.775 1.637-2 3-2s3 .225 3 2v1.093m-6 0s-3.667.296-4.111.685C4.543 7.08 4.198 8.792 4.06 11 4.022 11.633 4 12.307 4 13c0 3.111.444 5.833.889 6.222.444.39 3.555.778 7.111.778 3.556 0 6.667-.389 7.111-.778.445-.389.889-3.11.889-6.222 0-.693-.022-1.367-.061-2-.137-2.208-.483-3.92-.828-4.222-.444-.39-4.111-.685-4.111-.685"
+        d="M19.1111 19.2222C19.5556 18.8333 20 16.1111 20 13C20 12.3069 19.9779 11.633 19.9387 11C19.802 8.79172 19.4565 7.08002 19.1111 6.77778C18.6667 6.38889 15 6.09322 15 6.09322C14.0786 6.0345 13.059 6 12 6C10.941 6 9.92143 6.0345 9 6.09322C9 6.09322 5.33333 6.38889 4.88889 6.77778C4.54346 7.08002 4.19804 8.79172 4.06127 11C4.02206 11.633 4 12.3069 4 13C4 16.1111 4.44444 18.8333 4.88889 19.2222C5.33333 19.6111 8.44444 20 12 20C15.5556 20 18.6667 19.6111 19.1111 19.2222Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M9 6.09322V5C9 3.22496 10.6373 3 12 3C13.3627 3 15 3.22496 15 5V6.09322"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path opacity={0.15} d="M4 9a2 2 0 012-2h12a2 2 0 012 2v9a2 2 0 01-2 2H6a2 2 0 01-2-2V9z" fill={color} />
       <path
-        d="M15 7V5a2 2 0 00-2-2h-2a2 2 0 00-2 2v2m3 3v7m-3.5-3.5h7M6 20h12a2 2 0 002-2V9a2 2 0 00-2-2H6a2 2 0 00-2 2v9a2 2 0 002 2z"
+        opacity="0.15"
+        d="M4 9C4 7.89543 4.89543 7 6 7H18C19.1046 7 20 7.89543 20 9V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V9Z"
+        fill={color}
+      />
+      <path d="M8.5 13.5H15.5" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12 10V17" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path
+        d="M18 7H6C4.89543 7 4 7.89543 4 9V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V9C20 7.89543 19.1046 7 18 7Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M15 7V5C15 3.89543 14.1046 3 13 3H11C9.89543 3 9 3.89543 9 5V7"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Outline = () => (
     <g>
+      <path d="M8.5 13.5H15.5" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12 10V17" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M15 7V5a2 2 0 00-2-2h-2a2 2 0 00-2 2v2m3 3v7m-3.5-3.5h7M6 20h12a2 2 0 002-2V9a2 2 0 00-2-2H6a2 2 0 00-2 2v9a2 2 0 002 2z"
+        d="M18 7H6C4.89543 7 4 7.89543 4 9V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V9C20 7.89543 19.1046 7 18 7Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M12 10v7m-3.5-3.5h7" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
       <path
-        d="M15 7V5a2 2 0 00-2-2h-2a2 2 0 00-2 2v2M6 20h12a2 2 0 002-2V9a2 2 0 00-2-2H6a2 2 0 00-2 2v9a2 2 0 002 2z"
+        d="M15 7V5C15 3.89543 14.1046 3 13 3H11C9.89543 3 9 3.89543 9 5V7"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
@@ -70,8 +99,6 @@ const Medkit = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -79,7 +106,6 @@ const Medkit = ({ color, secondaryColor, strokeWidth, set }) => {
 
 Medkit.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

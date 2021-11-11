@@ -2,56 +2,63 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const ResizeCircleHorizontal = ({ color, secondaryColor, strokeWidth, set }) => {
+const ResizeCircleHorizontal = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M10 9l-1.5 1.5M7 12l3 3m4 0l3-3-3-3m1 11.488a9 9 0 114-2.83"
+        d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path d="M14 15L17 12L14 9" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M8.5 10.5L10 9" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M10 15L7 12" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Curved = () => (
     <g>
+      <path d="M14 15L17 12L14 9" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M10 9L7 12L10 15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M10 9l-3 3 3 3m4 0l3-3-3-3m7 3a9 9 0 11-18 0 9 9 0 0118 0z"
+        d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path opacity={0.15} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" fill={color} />
       <path
-        d="M10 9l-3 3 3 3m4 0l3-3-3-3m7 3a9 9 0 11-18 0 9 9 0 0118 0z"
+        opacity="0.15"
+        d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+        fill={color}
+      />
+      <path d="M14 15L17 12L14 9" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M10 9L7 12L10 15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path
+        d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Outline = () => (
     <g>
+      <path d="M14 15L17 12L14 9" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M10 9L7 12L10 15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M10 9l-3 3 3 3m4 0l3-3-3-3m7 3a9 9 0 11-18 0 9 9 0 0118 0z"
+        d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M10 9l-3 3 3 3m4 0l3-3-3-3" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
 
@@ -64,8 +71,6 @@ const ResizeCircleHorizontal = ({ color, secondaryColor, strokeWidth, set }) => 
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -73,7 +78,6 @@ const ResizeCircleHorizontal = ({ color, secondaryColor, strokeWidth, set }) => 
 
 ResizeCircleHorizontal.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

@@ -2,61 +2,53 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const UndoSmall = ({ color, secondaryColor, strokeWidth, set }) => {
+const UndoSmall = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M7 10v3m0 0h3m-3 0l1.534-1.519a5.098 5.098 0 012.965-1.593M17 13c-.463-1.116-1.25-1.872-2.242-2.463"
+        d="M18 13C17.4904 11.9961 16.6247 11.1655 15.5334 10.6333C14.442 10.1011 13.1842 9.89624 11.9494 10.0495C9.93127 10.3 8.52468 11.6116 7 12.8186"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path d="M7 10V13H10" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Curved = () => (
     <g>
       <path
-        d="M7 10v3m0 0h3m-3 0l1.534-1.519a5.098 5.098 0 012.965-1.593 4.908 4.908 0 013.259.649c.992.591 1.779 1.347 2.242 2.463"
+        d="M18 13C17.4904 11.9961 16.6247 11.1655 15.5334 10.6333C14.442 10.1011 13.1842 9.89624 11.9494 10.0495C9.93127 10.3 8.52468 11.6116 7 12.8186"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path d="M7 10V13H10" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Duotone = () => (
     <g>
       <path
-        d="M7 10v3m0 0h3m-3 0l1.534-1.519a5.098 5.098 0 012.965-1.593 4.908 4.908 0 013.259.649c.992.591 1.779 1.347 2.242 2.463"
+        d="M18 13C17.4904 11.9961 16.6247 11.1655 15.5334 10.6333C14.442 10.1011 13.1842 9.89624 11.9494 10.0495C9.93127 10.3 8.52468 11.6116 7 12.8186"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path d="M7 10V13H10" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Outline = () => (
     <g>
       <path
-        d="M7 10v3m0 0h3m-3 0l1.534-1.519a5.098 5.098 0 012.965-1.593 4.908 4.908 0 013.259.649c.992.591 1.779 1.347 2.242 2.463"
+        d="M18 13C17.4904 11.9961 16.6247 11.1655 15.5334 10.6333C14.442 10.1011 13.1842 9.89624 11.9494 10.0495C9.93127 10.3 8.52468 11.6116 7 12.8186"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path
-        d="M7 13l1.534-1.519a5.098 5.098 0 012.965-1.593 4.908 4.908 0 013.259.649c.992.591 1.779 1.347 2.242 2.463"
-        stroke={secondaryColor}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path d="M7 10v3h3" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M7 10V13H10" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
 
@@ -69,8 +61,6 @@ const UndoSmall = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -78,7 +68,6 @@ const UndoSmall = ({ color, secondaryColor, strokeWidth, set }) => {
 
 UndoSmall.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

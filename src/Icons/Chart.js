@@ -2,56 +2,58 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const Chart = ({ color, secondaryColor, strokeWidth, set }) => {
+const Chart = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M21 12a9 9 0 11-9-9m0 0v9m0-9a8.983 8.983 0 017 3.343M12 12l6.355 6.355M12 12H7"
+        d="M21 12C21 14.4853 19.9926 16.7353 18.364 18.364C16.7353 19.9926 14.4853 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C14.6655 3 17.0604 4.15875 18.7083 6"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path d="M12 3V12" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M7 12H12L18.364 18.364" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Curved = () => (
     <g>
       <path
-        d="M3 12a9 9 0 109-9m-9 9a9 9 0 019-9m-9 9h9m0-9v9m0 0l6.355 6.355"
+        d="M3 12C3 16.9706 7.02944 21 12 21C14.4853 21 16.7353 19.9926 18.364 18.364C19.9926 16.7353 21 14.4853 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path d="M12 3V12" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M3 12H12L18.364 18.364" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path opacity={0.15} d="M12 21a9 9 0 100-18v9H3a9 9 0 009 9z" fill={color} />
+      <path opacity="0.15" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3V12H3C3 16.9706 7.02944 21 12 21Z" fill={color} />
       <path
-        d="M3 12a9 9 0 109-9m-9 9a9 9 0 019-9m-9 9h9m0-9v9m0 0l6.355 6.355"
+        d="M3 12C3 16.9706 7.02944 21 12 21C14.4853 21 16.7353 19.9926 18.364 18.364C19.9926 16.7353 21 14.4853 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path d="M12 3V12" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M3 12H12L18.364 18.364" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Outline = () => (
     <g>
       <path
-        d="M3 12a9 9 0 109-9m-9 9a9 9 0 019-9m-9 9h9m0-9v9m0 0l6.355 6.355"
+        d="M3 12C3 16.9706 7.02944 21 12 21C14.4853 21 16.7353 19.9926 18.364 18.364C19.9926 16.7353 21 14.4853 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M3 12h9m0-9v9m0 0l6.355 6.355" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M12 3V12" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M3 12H12L18.364 18.364" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
 
@@ -64,8 +66,6 @@ const Chart = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -73,7 +73,6 @@ const Chart = ({ color, secondaryColor, strokeWidth, set }) => {
 
 Chart.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

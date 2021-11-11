@@ -2,31 +2,35 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const MenuHamburger = ({ color, secondaryColor, strokeWidth, set }) => {
+const MenuHamburger = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
-      <path d="M4 7h8m8 0h-4M4 12h16M4 17h4m12 0h-8" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M4 17H8" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12 17H20" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M4 12H20" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M4 7H12" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M16 7H20" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Curved = () => (
     <g>
-      <path d="M4 7h16M4 12h16M4 17h16" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M4 17H20" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M4 12H20" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M4 7H20" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path d="M4 7h16M4 12h16M4 17h16" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M4 17H20" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M4 12H20" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M4 7H20" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Outline = () => (
     <g>
-      <path d="M4 7h16M4 12h16M4 17h16" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M4 12h16" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M4 7h16M4 17h16" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M4 17H20" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M4 12H20" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M4 7H20" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
 
@@ -39,8 +43,6 @@ const MenuHamburger = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -48,7 +50,6 @@ const MenuHamburger = ({ color, secondaryColor, strokeWidth, set }) => {
 
 MenuHamburger.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

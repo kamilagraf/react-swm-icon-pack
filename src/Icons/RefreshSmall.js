@@ -2,61 +2,85 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const RefreshSmall = ({ color, secondaryColor, strokeWidth, set }) => {
+const RefreshSmall = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M6 7v3h3m9 7v-3h-3m2-4c-.51-1.004-1.375-1.835-2.467-2.367M10.95 7.05c-1.234.154-2.38.657-3.262 1.434L6 9.819M7 14c.51 1.004 1.375 1.835 2.467 2.367a6.258 6.258 0 001.675.538c.625.108 1.27.125 1.909.046 1.234-.154 2.38-.657 3.262-1.434L18 14.181"
+        d="M7 14C7.50963 15.0039 8.37532 15.8345 9.46665 16.3667C10.558 16.8989 11.8158 17.1038 13.0506 16.9505C15.0687 16.7 16.4753 15.3884 18 14.1814"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path d="M18 17V14H15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path
+        d="M17 10C16.4904 8.99609 15.6247 8.16548 14.5334 7.63331C13.442 7.10113 12.1842 6.89624 10.9494 7.04949C8.93127 7.29995 7.52468 8.61162 6 9.81861"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path d="M6 7V10H9" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Curved = () => (
     <g>
       <path
-        d="M6 7v3h3m9 7v-3h-3m2-4c-.51-1.004-1.375-1.835-2.467-2.367a6.414 6.414 0 00-3.584-.584c-1.234.154-2.38.657-3.262 1.434L6 9.819M7 14c.51 1.004 1.375 1.835 2.467 2.367a6.413 6.413 0 003.584.584c1.234-.154 2.38-.657 3.262-1.434L18 14.181"
+        d="M7 14C7.50963 15.0039 8.37532 15.8345 9.46665 16.3667C10.558 16.8989 11.8158 17.1038 13.0506 16.9505C15.0687 16.7 16.4753 15.3884 18 14.1814"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path d="M18 17V14H15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path
+        d="M17 10C16.4904 8.99609 15.6247 8.16548 14.5334 7.63331C13.442 7.10113 12.1842 6.89624 10.9494 7.04949C8.93127 7.29995 7.52468 8.61162 6 9.81861"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path d="M6 7V10H9" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Duotone = () => (
     <g>
       <path
-        d="M6 7v3h3m9 7v-3h-3m2-4c-.51-1.004-1.375-1.835-2.467-2.367a6.414 6.414 0 00-3.584-.584c-1.234.154-2.38.657-3.262 1.434L6 9.819M7 14c.51 1.004 1.375 1.835 2.467 2.367a6.413 6.413 0 003.584.584c1.234-.154 2.38-.657 3.262-1.434L18 14.181"
+        d="M7 14C7.50963 15.0039 8.37532 15.8345 9.46665 16.3667C10.558 16.8989 11.8158 17.1038 13.0506 16.9505C15.0687 16.7 16.4753 15.3884 18 14.1814"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path d="M18 17V14H15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path
+        d="M17 10C16.4904 8.99609 15.6247 8.16548 14.5334 7.63331C13.442 7.10113 12.1842 6.89624 10.9494 7.04949C8.93127 7.29995 7.52468 8.61162 6 9.81861"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path d="M6 7V10H9" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Outline = () => (
     <g>
       <path
-        d="M6 7v3h3m9 7v-3h-3m2-4c-.51-1.004-1.375-1.835-2.467-2.367a6.414 6.414 0 00-3.584-.584c-1.234.154-2.38.657-3.262 1.434L6 9.819M7 14c.51 1.004 1.375 1.835 2.467 2.367a6.413 6.413 0 003.584.584c1.234-.154 2.38-.657 3.262-1.434L18 14.181"
+        d="M7 14C7.50963 15.0039 8.37532 15.8345 9.46665 16.3667C10.558 16.8989 11.8158 17.1038 13.0506 16.9505C15.0687 16.7 16.4753 15.3884 18 14.1814"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
+      <path d="M18 17V14H15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M17 10c-.51-1.004-1.375-1.835-2.467-2.367a6.414 6.414 0 00-3.584-.584c-1.234.154-2.38.657-3.262 1.434L6 9.819M7 14c.51 1.004 1.375 1.835 2.467 2.367a6.413 6.413 0 003.584.584c1.234-.154 2.38-.657 3.262-1.434L18 14.181"
-        stroke={secondaryColor}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        d="M17 10C16.4904 8.99609 15.6247 8.16548 14.5334 7.63331C13.442 7.10113 12.1842 6.89624 10.9494 7.04949C8.93127 7.29995 7.52468 8.61162 6 9.81861"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
-      <path d="M6 7v3h3m9 7v-3h-3" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M6 7V10H9" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
 
@@ -69,8 +93,6 @@ const RefreshSmall = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -78,7 +100,6 @@ const RefreshSmall = ({ color, secondaryColor, strokeWidth, set }) => {
 
 RefreshSmall.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

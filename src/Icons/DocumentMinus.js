@@ -2,56 +2,47 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const DocumentMinus = ({ color, secondaryColor, strokeWidth, set }) => {
+const DocumentMinus = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
-      <path
-        d="M13 3H5v2m8-2h1l5 5v1m-6-6v4a2 2 0 002 2h4m0 0v3m0 4v5H5V9m4 5h6"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <path d="M9 14H15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M5 5V3H13H14L19 8V9V12" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M5 10V21H19V16" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M13 3V7C13 8 14 9 15 9C16 9 18.1667 9 19 9" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Curved = () => (
     <g>
+      <path d="M9 14H15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M9 14h6M13.071 2.53c-.34-.02-.697-.03-1.071-.03-5.735 0-7.5 2.235-7.5 9.5 0 7.265 1.765 9.5 7.5 9.5s7.5-2.235 7.5-9.5a28.92 28.92 0 00-.15-3.167M13.07 2.53v4.304a2 2 0 002 2h4.278M13.072 2.53l6.278 6.304"
+        d="M13.0714 2.52927V6.83334C13.0714 7.93791 13.9668 8.83334 15.0714 8.83334H19.3494"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M12 2.5C6.26471 2.5 4.5 4.73529 4.5 12C4.5 19.2647 6.26471 21.5 12 21.5C17.7353 21.5 19.5 19.2647 19.5 12C19.5 10.8146 19.453 9.76307 19.3495 8.83333L13.0714 2.52926C12.7307 2.5095 12.3738 2.5 12 2.5Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path opacity={0.15} d="M5 21h14V9h-4a2 2 0 01-2-2V3H5v18z" fill={color} />
-      <path
-        d="M13 3h1l5 5v1m-6-6H5v18h14V9m-6-6v4c0 1.5.5 2 2 2h4M9 14h6"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <path opacity="0.15" d="M5 21H19V9H15C13.8954 9 13 8.10457 13 7V3H5V21Z" fill={color} />
+      <path d="M9 14H15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M19 21H5V3H13H14L19 8V9V21Z" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M13 3V7C13 8 14 9 15 9C16 9 18.1667 9 19 9" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Outline = () => (
     <g>
-      <path
-        d="M13 3h1l5 5v1m-6-6H5v18h14V9m-6-6v4c0 1.5.5 2 2 2h4M9 14h6"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M13 3v4a2 2 0 002 2h4" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M9 14h6M5 3v18h14V8l-5-5H5z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M9 14H15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M19 21H5V3H13H14L19 8V9V21Z" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M13 3V7C13 8 14 9 15 9C16 9 18.1667 9 19 9" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
 
@@ -64,8 +55,6 @@ const DocumentMinus = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -73,7 +62,6 @@ const DocumentMinus = ({ color, secondaryColor, strokeWidth, set }) => {
 
 DocumentMinus.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

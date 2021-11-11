@@ -2,62 +2,55 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const Delete = ({ color, secondaryColor, strokeWidth, set }) => {
+const Delete = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M9 6h11a1 1 0 011 1v10a1 1 0 01-1 1H9l-6-6 1.5-1.5L6 9m11 0l-6 6m0-6l6 6"
+        d="M9 6H20C20.5523 6 21 6.44772 21 7V17C21 17.5523 20.5523 18 20 18H9L3 12L6 9"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path d="M17 9L11 15M11.0002 9L17.0002 15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Curved = () => (
     <g>
       <path
-        d="M17 9l-6 6m0-6l6 6M9 6l-6 6 6 6s2 .5 5.5.5c5.793 0 7 0 7-6.5s-1.331-6.5-7-6.5C11 5.5 9 6 9 6z"
+        d="M3 12L9 18C9 18 11 18.5 14.5 18.5C20.2925 18.5 21.5 18.5 21.5 12C21.5 5.5 20.1685 5.5 14.5 5.5C11 5.5 9 6 9 6L3 12Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path d="M17 9L11 15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M11.0002 9L17.0002 15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path opacity={0.15} d="M9 6h11a1 1 0 011 1v10a1 1 0 01-1 1H9l-6-6 6-6z" fill={color} />
+      <path opacity="0.15" d="M9 6H20C20.5523 6 21 6.44772 21 7V17C21 17.5523 20.5523 18 20 18H9L3 12L9 6Z" fill={color} />
       <path
-        d="M17 9l-6 6m0-6l6 6M9 6h11a1 1 0 011 1v10a1 1 0 01-1 1H9l-6-6 6-6z"
+        d="M20 6H9L3 12L9 18H20C20.5523 18 21 17.5523 21 17V7C21 6.44772 20.5523 6 20 6Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path d="M17 9L11 15M11.0002 9L17.0002 15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Outline = () => (
     <g>
       <path
-        d="M17 9l-6 6m0-6l6 6M9 6h11a1 1 0 011 1v10a1 1 0 01-1 1H9l-6-6 6-6z"
+        d="M20 6H9L3 12L9 18H20C20.5523 18 21 17.5523 21 17V7C21 6.44772 20.5523 6 20 6Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M17 9l-6 6m0-6l6 6" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-      <path
-        d="M9 6h11a1 1 0 011 1v10a1 1 0 01-1 1H9l-6-6 6-6z"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <path d="M17 9L11 15M11.0002 9L17.0002 15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
 
@@ -70,8 +63,6 @@ const Delete = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -79,7 +70,6 @@ const Delete = ({ color, secondaryColor, strokeWidth, set }) => {
 
 Delete.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

@@ -2,44 +2,40 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const HomeHospital = ({ color, secondaryColor, strokeWidth, set }) => {
+const HomeHospital = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
-      <path
-        d="M19 10v10H5m7-10v6m-3-3h1m5 0h-3m3.5-6.5L12 3l-7 7v6"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <path d="M19 10L19 20H5M15.5 6.5L12 3L5 10V16" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12 11V17" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M9 14H15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Curved = () => (
     <g>
       <path
-        d="M12 10v6m-3-3h6m3.439 7c.917 0 1.71-.627 1.834-1.537.117-.864.227-2.053.227-3.463 0-3 .169-4.832-3-8-1.461-1.461-3.094-2.581-4.197-3.26a2.474 2.474 0 00-2.605 0C9.594 4.42 7.96 5.54 6.5 7c-3.168 3.168-3 5-3 8 0 1.41.11 2.599.228 3.463.123.91.916 1.537 1.834 1.537h12.877z"
+        d="M6.50008 6.99997C7.96143 5.53862 9.59363 4.41896 10.6976 3.74084C11.5022 3.24662 12.498 3.24662 13.3026 3.74085C14.4065 4.41896 16.0387 5.53862 17.5001 6.99997C20.6685 10.1683 20.5001 12 20.5001 15C20.5001 16.4098 20.3897 17.5988 20.2726 18.4631C20.1494 19.3726 19.3563 20 18.4385 20H5.56164C4.64391 20 3.85074 19.3725 3.72757 18.4631C3.61051 17.5988 3.50009 16.4098 3.50009 15C3.50009 12 3.33169 10.1684 6.50008 6.99997Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path d="M12 10V16" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M9 13H15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path opacity={0.15} d="M5 10l7-7 7 7v10H5V10z" fill={color} />
-      <path d="M12 10v6m-3-3h6M12 3l-7 7v10h14V10l-7-7z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path opacity="0.15" d="M5 10L12 3L19 10L19 20H5L5 10Z" fill={color} />
+      <path d="M5 10L12 3L19 10L19 20H5L5 10Z" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12 11V17" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M9 14H15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Outline = () => (
     <g>
-      <path d="M12 10v6m-3-3h6M12 3l-7 7v10h14V10l-7-7z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M12 10v6m-3-3h6" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M5 10l7-7 7 7v10H5V10z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M5 10L12 3L19 10L19 20H5L5 10Z" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12 11V17" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M9 14H15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
 
@@ -52,8 +48,6 @@ const HomeHospital = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -61,7 +55,6 @@ const HomeHospital = ({ color, secondaryColor, strokeWidth, set }) => {
 
 HomeHospital.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

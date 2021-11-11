@@ -2,56 +2,41 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const PinpaperCheck = ({ color, secondaryColor, strokeWidth, set }) => {
+const PinpaperCheck = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
-      <path
-        d="M15 12l-4.2 4.2L9 14.4m6-9.9h4V14M9 4.5H5V8m14 10v3H5v-9m4-9h6v3H9V3z"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <path d="M15 12L10.8 16.2L9.00003 14.4" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M15 3H9V4.5V6H15V4.5V3Z" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M9 4.5H5V14M15 4.5H19V8" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M19 13V21H5V18" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Curved = () => (
     <g>
+      <path d="M15 12L10.8 16.2L9.00004 14.4" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M9 3H15V4.27928V6H9V4.27928V3Z" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M15 12l-4.2 4.2L9 14.4m6-10.12c3.375.766 4.5 3.224 4.5 8.72 0 6.882-1.765 9-7.5 9s-7.5-2.118-7.5-9c0-5.496 1.125-7.954 4.5-8.72m6 0V3H9v1.28m6 0V6H9V4.28"
+        d="M15 4.2793C18.3745 5.04621 19.5 7.5037 19.5 13C19.5 19.8824 17.7353 22 12 22C6.26471 22 4.5 19.8824 4.5 13C4.5 7.5037 5.62549 5.04621 9 4.2793"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path opacity={0.15} d="M19 21V4.5h-4V6H9V4.5H5V21h14z" fill={color} />
-      <path
-        d="M15 12l-4.2 4.2L9 14.4m6-9.9h4V21H5V4.5h4M9 3h6v3H9V3z"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <path opacity="0.15" d="M19 21V4.5H15V6H9V4.5H5V21H19Z" fill={color} />
+      <path d="M15 12L10.7999 16.2L9 14.4" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M9 4.5H5V21H19V4.5H15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M15 3H9V4.5V6H15V4.5V3Z" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Outline = () => (
     <g>
-      <path
-        d="M15 12l-4.2 4.2L9 14.4m6-9.9h4V21H5V4.5h4M9 3h6v3H9V3z"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M15 12l-4.2 4.2L9 14.4m6-9.9h4V21H5V4.5h4" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M9 3h6v3H9V3z" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M15 12L10.8 16.2L9.00006 14.4" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M9 4.5H5V21H19V4.5H15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M15 3H9V4.5V6H15V4.5V3Z" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
 
@@ -64,8 +49,6 @@ const PinpaperCheck = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -73,7 +56,6 @@ const PinpaperCheck = ({ color, secondaryColor, strokeWidth, set }) => {
 
 PinpaperCheck.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

@@ -2,62 +2,86 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const UndoCircle = ({ color, secondaryColor, strokeWidth, set }) => {
+const UndoCircle = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M7 10v3m0 0h3m-3 0l1.534-1.519a5.098 5.098 0 012.965-1.593M17 13c-.463-1.116-1.25-1.872-2.242-2.463M14 3.223A9 9 0 1018.708 6"
+        d="M17 13C16.5367 11.9961 15.7497 11.1655 14.7576 10.6333C13.7655 10.1011 12.622 9.89624 11.4994 10.0495C9.66479 10.3 8.38607 11.6116 7 12.8186"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path d="M7 10V13H10" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path
+        d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Curved = () => (
     <g>
       <path
-        d="M7 10v3m0 0h3m-3 0l1.534-1.519a5.098 5.098 0 012.965-1.593 4.908 4.908 0 013.259.649c.992.591 1.779 1.347 2.242 2.463m4-1a9 9 0 11-18 0 9 9 0 0118 0z"
+        d="M17 13C16.5367 11.9961 15.7497 11.1655 14.7576 10.6333C13.7655 10.1011 12.622 9.89624 11.4994 10.0495C9.66479 10.3 8.38607 11.6116 7 12.8186"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path d="M7 10V13H10" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path
+        d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path opacity={0.15} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" fill={color} />
       <path
-        d="M7 10v3m0 0h3m-3 0l1.534-1.519a5.098 5.098 0 012.965-1.593 4.908 4.908 0 013.259.649c.992.591 1.779 1.347 2.242 2.463m4-1a9 9 0 11-18 0 9 9 0 0118 0z"
+        opacity="0.15"
+        d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+        fill={color}
+      />
+      <path
+        d="M17 13C16.5367 11.9961 15.7497 11.1655 14.7576 10.6333C13.7655 10.1011 12.622 9.89624 11.4994 10.0495C9.66479 10.3 8.38607 11.6116 7 12.8186"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path d="M7 10V13H10" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path
+        d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Outline = () => (
     <g>
       <path
-        d="M7 10v3m0 0h3m-3 0l1.534-1.519a5.098 5.098 0 012.965-1.593 4.908 4.908 0 013.259.649c.992.591 1.779 1.347 2.242 2.463m4-1a9 9 0 11-18 0 9 9 0 0118 0z"
+        d="M17 13C16.5367 11.9961 15.7497 11.1655 14.7576 10.6333C13.7655 10.1011 12.622 9.89624 11.4994 10.0495C9.66479 10.3 8.38607 11.6116 7 12.8186"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
+      <path d="M7 10V13H10" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M7 10v3m0 0h3m-3 0l1.534-1.519a5.098 5.098 0 012.965-1.593 4.908 4.908 0 013.259.649c.992.591 1.779 1.347 2.242 2.463"
-        stroke={secondaryColor}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
-      <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
 
@@ -70,8 +94,6 @@ const UndoCircle = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -79,7 +101,6 @@ const UndoCircle = ({ color, secondaryColor, strokeWidth, set }) => {
 
 UndoCircle.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

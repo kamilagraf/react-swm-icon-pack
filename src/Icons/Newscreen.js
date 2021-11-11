@@ -2,37 +2,41 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const Newscreen = ({ color, secondaryColor, strokeWidth, set }) => {
+const Newscreen = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
-      <path d="M10 14L20 4v6m-6-6h3m-7 0H4v16h3m13-6v6h-9" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M19.9999 4L9.99994 14" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M19.9999 4.00002L20 10" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M14 4.00009L17 4" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M20 14V20L12 20" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M10 4.00002H4V20L7 20" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Curved = () => (
     <g>
+      <path d="M21.0001 8.99999V2.99998H15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M21.0001 2.99998L9.99997 14" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M21 3L10 14M21 3v6m0-6h-6m-3 0c-4 0-7.5.5-8 1s-1 4-1 8 .5 7.5 1 8 4 1 8 1 7.5-.5 8-1 1-4 1-8"
+        d="M12.0001 2.99998C8.00006 2.99998 4.50006 3.49998 4.00006 3.99998C3.50006 4.49998 3.00006 7.99998 3.00006 12C3.00006 16 3.50006 19.5 4.00006 20C4.50006 20.5 8.00006 21 12.0001 21C16.0001 21 19.5001 20.5 20.0001 20C20.5001 19.5 21.0001 16 21.0001 12"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path d="M20 4L10 14M20 4v6m0-6h-6m-4 0H4v16h16v-6" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M19.9999 4L9.99994 14" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M20 10L19.9999 4.00001L14 4" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M10 4.00001H4V20H20V14" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Outline = () => (
     <g>
-      <path d="M20 4L10 14M20 4v6m0-6h-6m-4 0H4v16h16v-6" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M20 4L10 14M20 4v6m0-6h-6" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M10 4H4v16h16v-6" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M19.9999 4.00001L9.99994 14" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M20 10L19.9999 4.00001L14 4" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M10 4.00001H4V20H20V14" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
 
@@ -45,8 +49,6 @@ const Newscreen = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -54,7 +56,6 @@ const Newscreen = ({ color, secondaryColor, strokeWidth, set }) => {
 
 Newscreen.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

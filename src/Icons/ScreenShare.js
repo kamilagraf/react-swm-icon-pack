@@ -2,67 +2,69 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const ScreenShare = ({ color, secondaryColor, strokeWidth, set }) => {
+const ScreenShare = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
+      <path d="M16 10.5L8 10.5" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M13 13.5L16 10.5L13 7.5" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M16 20H12H8" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12 20V16" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M12 16v2m4 2H8m8-9.5H8m8 0l-3 3m3-3l-3-3m7-.5V6a1 1 0 00-1-1H5a1 1 0 00-1 1v9a1 1 0 001 1h14a1 1 0 001-1v-4"
+        d="M20 11V15C20 15.5523 19.5523 16 19 16H12H5C4.44772 16 4 15.5523 4 15V6C4 5.44771 4.44772 5 5 5H19C19.5523 5 20 5.44772 20 6V7"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Curved = () => (
     <g>
+      <path d="M13 13L16 10L13 7" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M16 10H8" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M16 10H8m8 0l-3 3m3-3l-3-3m-1 9.5c4 0 7.5-.333 8-.667.5-.333 1-3.166 1-5.833 0-2.667-.5-5.5-1-5.833-.5-.334-4-.667-8-.667s-7.5.333-8 .667C3.5 4.5 3 7.333 3 10c0 2.667.5 5.5 1 5.833.5.334 4 .667 8 .667zm0 0v4m0 0h4m-4 0H8"
+        d="M12 3.5C8 3.5 4.5 3.83333 4 4.16667C3.5 4.5 3 7.33333 3 10C3 12.6667 3.5 15.5 4 15.8333C4.5 16.1667 8 16.5 12 16.5C16 16.5 19.5 16.1667 20 15.8333C20.5 15.5 21 12.6667 21 10C21 7.33333 20.5 4.5 20 4.16667C19.5 3.83333 16 3.5 12 3.5Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path d="M12 16.5V20.5" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M16 20.5H12H8" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Duotone = () => (
     <g>
       <path
-        d="M12 16v4m0 0h4m-4 0H8m8-9.5H8m8 0l-3 3m3-3l-3-3M5 16h14a1 1 0 001-1V6a1 1 0 00-1-1H5a1 1 0 00-1 1v9a1 1 0 001 1z"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        opacity="0.15"
+        d="M4 6C4 5.44771 4.44772 5 5 5H19C19.5523 5 20 5.44772 20 6V15C20 15.5523 19.5523 16 19 16H5C4.44772 16 4 15.5523 4 15V6Z"
+        fill={color}
       />
-      <path opacity={0.15} d="M4 6a1 1 0 011-1h14a1 1 0 011 1v9a1 1 0 01-1 1H5a1 1 0 01-1-1V6z" fill={color} />
+      <path d="M16 10.5L8 10.5" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M13 13.5L16 10.5L13 7.5" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M16 20H12H8" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12 20V16" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path
+        d="M19 5H5C4.44772 5 4 5.44771 4 6V15C4 15.5523 4.44772 16 5 16H12H19C19.5523 16 20 15.5523 20 15V6C20 5.44772 19.5523 5 19 5Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
     </g>
   );
   const Outline = () => (
     <g>
+      <path d="M16 10.5L8 10.5" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M13 13.5L16 10.5L13 7.5" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M16 20H12H8" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12 20V16" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M12 16v4m0 0h4m-4 0H8m8-9.5H8m8 0l-3 3m3-3l-3-3M5 16h14a1 1 0 001-1V6a1 1 0 00-1-1H5a1 1 0 00-1 1v9a1 1 0 001 1z"
+        d="M19 5H5C4.44772 5 4 5.44771 4 6V15C4 15.5523 4.44772 16 5 16H12H19C19.5523 16 20 15.5523 20 15V6C20 5.44772 19.5523 5 19 5Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path
-        d="M12 16v4m0 0h4m-4 0H8m8-9.5H8m8 0l-3 3m3-3l-3-3"
-        stroke={secondaryColor}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M19 5H5a1 1 0 00-1 1v9a1 1 0 001 1h14a1 1 0 001-1V6a1 1 0 00-1-1z"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
@@ -76,8 +78,6 @@ const ScreenShare = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -85,7 +85,6 @@ const ScreenShare = ({ color, secondaryColor, strokeWidth, set }) => {
 
 ScreenShare.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

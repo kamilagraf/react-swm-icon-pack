@@ -2,64 +2,76 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const Globe1 = ({ color, secondaryColor, strokeWidth, set }) => {
+const Globe1 = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3a9 9 0 009 9m0 0s4-3 4-9m-4 9s-4-3-4-9 4-9 4-9m0 0s2.222 1.667 3.354 5M12 3a8.978 8.978 0 00-6.708 3"
+        d="M3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C9.3345 3 6.93964 4.15875 5.29168 6"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
       />
+      <path
+        d="M16 12C16 18 12 21 12 21C12 21 8 18 8 12C8 6 12 3 12 3C12 3 14.2222 4.66667 15.354 8"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path d="M21 12H3" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" />
     </g>
   );
   const Curved = () => (
     <g>
       <path
-        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9s4-3 4-9-4-9-4-9m0 18s-4-3-4-9 4-9 4-9m-9 9a9 9 0 019-9"
+        d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
       />
+      <path
+        d="M16 12C16 6 12 3 12 3C12 3 8 6 8 12C8 18 12 21 12 21C12 21 16 18 16 12Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linejoin="round"
+      />
+      <path d="M21 12H3" stroke={color} stroke-width={strokeWidth} />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path opacity={0.15} d="M12 21a9 9 0 100-18 9 9 0 000 18z" fill={color} />
       <path
-        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9s4-3 4-9-4-9-4-9m0 18s-4-3-4-9 4-9 4-9m-9 9a9 9 0 019-9"
-        stroke={color}
-        strokeWidth={strokeWidth}
+        opacity="0.15"
+        d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+        fill={color}
       />
+      <path
+        d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+      />
+      <path
+        d="M16 12C16 6 12 3 12 3C12 3 8 6 8 12C8 18 12 21 12 21C12 21 16 18 16 12Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linejoin="round"
+      />
+      <path d="M21 12H3" stroke={color} stroke-width={strokeWidth} />
     </g>
   );
   const Outline = () => (
     <g>
       <path
-        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9s4-3 4-9-4-9-4-9m0 18s-4-3-4-9 4-9 4-9m-9 9a9 9 0 019-9"
+        d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-      />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path
-        d="M16 12c0-6-4-9-4-9s-4 3-4 9 4 9 4 9 4-3 4-9z"
-        stroke={secondaryColor}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
       />
       <path
-        d="M21 12a9 9 0 11-18 0m18 0a9 9 0 10-18 0m18 0H3"
+        d="M16 12C16 6 12 3 12 3C12 3 8 6 8 12C8 18 12 21 12 21C12 21 16 18 16 12Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linejoin="round"
       />
+      <path d="M21 12H3" stroke={color} stroke-width={strokeWidth} />
     </g>
   );
 
@@ -72,8 +84,6 @@ const Globe1 = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -81,7 +91,6 @@ const Globe1 = ({ color, secondaryColor, strokeWidth, set }) => {
 
 Globe1.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

@@ -2,60 +2,59 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const QuestionSmall = ({ color, secondaryColor, strokeWidth, set }) => {
+const QuestionSmall = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
+      <path d="M12 17V16.9929" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M12 14.857c0-3.214 3-2.5 3-5A2.73 2.73 0 0014.863 9M12 17v-.007M9.137 9C9.52 7.84 10.657 7 12 7c.35 0 .687.057 1 .163"
+        d="M9.13733 9C9.51961 7.84083 10.6567 7 12 7C12.3507 7 12.6873 7.05731 13.0001 7.16262"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M11.9999 14.8571C11.9999 11.6429 14.9999 12.3571 14.9999 9.85714C14.9999 9.55851 14.9518 9.27058 14.8625 9"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Curved = () => (
     <g>
+      <path d="M12 17V16.9929" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M12 14.857c0-3.214 3-2.5 3-5C15 8.28 13.657 7 12 7c-1.343 0-2.48.84-2.863 2M12 17v-.007"
+        d="M12 14.8571C12 11.6429 15 12.3571 15 9.85714C15 8.27919 13.6568 7 12 7C10.6567 7 9.51961 7.84083 9.13733 9"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Duotone = () => (
     <g>
+      <path d="M12 17V16.9929" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M12 14.857c0-3.214 3-2.5 3-5C15 8.28 13.657 7 12 7c-1.343 0-2.48.84-2.863 2M12 17v-.007"
+        d="M12 14.8571C12 11.6429 15 12.3571 15 9.85714C15 8.27919 13.6568 7 12 7C10.6567 7 9.51961 7.84083 9.13733 9"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Outline = () => (
     <g>
+      <path d="M12 17V16.9929" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M12 14.857c0-3.214 3-2.5 3-5C15 8.28 13.657 7 12 7c-1.343 0-2.48.84-2.863 2M12 17v-.007"
+        d="M12 14.8571C12 11.6429 15 12.3571 15 9.85714C15 8.27919 13.6568 7 12 7C10.6567 7 9.51961 7.84083 9.13733 9"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M12 16.99V17" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-      <path
-        d="M12 14c0-2 3-2 3-4.09C15 8.301 13.683 7 12 7c-1.42 0-2.662.927-3 2.182"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
@@ -69,8 +68,6 @@ const QuestionSmall = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -78,7 +75,6 @@ const QuestionSmall = ({ color, secondaryColor, strokeWidth, set }) => {
 
 QuestionSmall.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

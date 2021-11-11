@@ -2,49 +2,78 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const Bell = ({ color, secondaryColor, strokeWidth, set }) => {
+const Bell = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M9 17v1a3 3 0 006 0v-1M18 9c0 3 2 8 2 8H9M15 3.825A5.897 5.897 0 0012 3C8.732 3 6 5.732 6 9c0 4-2 8-2 8h2"
+        d="M9 17V18C9 18.394 9.0776 18.7841 9.22836 19.1481C9.37913 19.512 9.6001 19.8427 9.87868 20.1213C10.1573 20.3999 10.488 20.6209 10.8519 20.7716C11.2159 20.9224 11.606 21 12 21C12.394 21 12.7841 20.9224 13.1481 20.7716C13.512 20.6209 13.8427 20.3999 14.1213 20.1213C14.3999 19.8427 14.6209 19.512 14.7716 19.1481C14.9224 18.7841 15 18.394 15 18V17"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path d="M18 9C18 12 20 17 20 17H9" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path
+        d="M15 3.82461C14.1129 3.30174 13.0861 3 12 3C8.732 3 6 5.732 6 9C6 13 4 17 4 17H6"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Curved = () => (
     <g>
       <path
-        d="M12 3C8.686 3 6 4.686 6 8c0 1.94-.705 4.113-1.432 5.839C3.965 15.272 4.978 17 6.532 17h10.936c1.554 0 2.567-1.728 1.964-3.161C18.705 12.113 18 9.939 18 8c0-3.314-2.686-5-6-5zM9 17v1c0 1.657 1.343 2.5 3 2.5s3-.843 3-2.5v-1"
+        d="M12 3C8.68628 3 5.99999 4.68629 5.99999 8C5.99999 9.93916 5.29493 12.1133 4.56842 13.8389C3.96518 15.2717 4.97778 17 6.53237 17H17.4676C19.0222 17 20.0348 15.2717 19.4316 13.8389C18.705 12.1133 18 9.93916 18 8C18 4.68629 15.3137 3 12 3Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M9 17V18C9 19.6569 10.3431 20.5 12 20.5C13.6569 20.5 15 19.6569 15 18V17"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path opacity={0.15} d="M12 3a6 6 0 00-6 6c0 4-2 8-2 8h16s-2-4-2-8a6 6 0 00-6-6z" fill={color} />
+      <path opacity="0.15" d="M12 3C8.68629 3 6 5.68629 6 9C6 13 4 17 4 17H20C20 17 18 13 18 9C18 5.68629 15.3137 3 12 3Z" fill={color} />
       <path
-        d="M9 17v1a3 3 0 006 0v-1M20 17s-2-5-2-8c0-3.268-2.732-6-6-6S6 5.732 6 9c0 4-2 8-2 8h16z"
+        d="M9 17V18C9 18.394 9.0776 18.7841 9.22836 19.1481C9.37913 19.512 9.6001 19.8427 9.87868 20.1213C10.1573 20.3999 10.488 20.6209 10.8519 20.7716C11.2159 20.9224 11.606 21 12 21C12.394 21 12.7841 20.9224 13.1481 20.7716C13.512 20.6209 13.8427 20.3999 14.1213 20.1213C14.3999 19.8427 14.6209 19.512 14.7716 19.1481C14.9224 18.7841 15 18.394 15 18V17"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M20 17C20 17 18 12 18 9C18 5.732 15.268 3 12 3C8.732 3 6 5.732 6 9C6 13 4 17 4 17H20Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Outline = () => (
     <g>
       <path
-        d="M9 17v1a3 3 0 006 0v-1M20 17s-2-5-2-8c0-3.268-2.732-6-6-6S6 5.732 6 9c0 4-2 8-2 8h16z"
+        d="M9 17V18C9 18.394 9.0776 18.7841 9.22836 19.1481C9.37913 19.512 9.6001 19.8427 9.87868 20.1213C10.1573 20.3999 10.488 20.6209 10.8519 20.7716C11.2159 20.9224 11.606 21 12 21C12.394 21 12.7841 20.9224 13.1481 20.7716C13.512 20.6209 13.8427 20.3999 14.1213 20.1213C14.3999 19.8427 14.6209 19.512 14.7716 19.1481C14.9224 18.7841 15 18.394 15 18V17"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M20 17C20 17 18 12 18 9C18 5.732 15.268 3 12 3C8.732 3 6 5.732 6 9C6 13 4 17 4 17H20Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
@@ -65,7 +94,6 @@ const Bell = ({ color, secondaryColor, strokeWidth, set }) => {
 
 Bell.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

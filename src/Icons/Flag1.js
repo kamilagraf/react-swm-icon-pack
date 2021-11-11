@@ -2,62 +2,55 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const Flag1 = ({ color, secondaryColor, strokeWidth, set }) => {
+const Flag1 = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
+      <path d="M4 21.1111V16.1111" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M4 12V4.125" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M4 21.111v-5s3-2.5 8 0 8 0 8 0v-12s-3 2.5-8 0-8 0-8 0V12"
+        d="M4 4.11111C4 4.11111 7 1.61111 12 4.11111C17 6.61111 20 4.11111 20 4.11111V16.1111C20 16.1111 17 18.6111 12 16.1111C7 13.6111 4 16.1111 4 16.1111"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Curved = () => (
     <g>
       <path
-        d="M4 16s1-1 4-1 5 2 8 2 4-1 4-1V4s-1 1-4 1-5-2-8-2-4 1-4 1v17"
+        d="M4 16C4 16 5 15 8 15C11 15 13 17 16 17C19 17 20 16 20 16V4C20 4 19 5 16 5C13 5 11 3 8 3C5 3 4 4 4 4"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path d="M4 4V21" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path opacity={0.15} d="M8 15c-3 0-4 1-4 1V4s1-1 4-1 5 2 8 2 4-1 4-1v12s-1 1-4 1-5-2-8-2z" fill={color} />
+      <path opacity="0.15" d="M8 15C5 15 4 16 4 16V4C4 4 5 3 8 3C11 3 13 5 16 5C19 5 20 4 20 4V16C20 16 19 17 16 17C13 17 11 15 8 15Z" fill={color} />
+      <path d="M4 21.1111V16.1111V4.11111" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M4 21.111v-5m0 0v-12s3-2.5 8 0 8 0 8 0v12s-3 2.5-8 0-8 0-8 0z"
+        d="M4 4.11111C4 4.11111 7 1.61111 12 4.11111C17 6.61111 20 4.11111 20 4.11111V16.1111C20 16.1111 17 18.6111 12 16.1111C7 13.6111 4 16.1111 4 16.1111"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Outline = () => (
     <g>
+      <path d="M4 21.1111V16.1111V4.11108" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M4 21.111v-5m0 0v-12s3-2.5 8 0 8 0 8 0v12s-3 2.5-8 0-8 0-8 0z"
+        d="M4 4.11111C4 4.11111 7 1.61111 12 4.11111C17 6.61111 20 4.11111 20 4.11111V16.1111C20 16.1111 17 18.6111 12 16.1111C7 13.6111 4 16.1111 4 16.1111"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path
-        d="M4 16s1-1 4-1 5 2 8 2 4-1 4-1V4s-1 1-4 1-5-2-8-2-4 1-4 1"
-        stroke={secondaryColor}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path d="M4 4v17" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
 
@@ -70,8 +63,6 @@ const Flag1 = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -79,7 +70,6 @@ const Flag1 = ({ color, secondaryColor, strokeWidth, set }) => {
 
 Flag1.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

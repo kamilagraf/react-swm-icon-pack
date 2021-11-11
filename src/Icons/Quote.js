@@ -2,64 +2,71 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const Quote = ({ color, secondaryColor, strokeWidth, set }) => {
+const Quote = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M3 10.5A3.5 3.5 0 006.5 14l3.5 3.5v-7a3.5 3.5 0 10-7 0zM13 10.5a3.5 3.5 0 003.5 3.5l3.5 3.5v-7a3.5 3.5 0 10-7 0z"
+        d="M13 10.5C13 12.433 14.567 14 16.5 14L20 17.5V10.5C20 8.567 18.433 7 16.5 7C14.567 7 13 8.567 13 10.5Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linejoin="round"
+      />
+      <path
+        d="M3 10.5C3 12.433 4.567 14 6.5 14L10 17.5V10.5C10 8.567 8.433 7 6.5 7C4.567 7 3 8.567 3 10.5Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linejoin="round"
       />
     </g>
   );
   const Curved = () => (
     <g>
       <path
-        d="M3 10.5A3.5 3.5 0 006.5 14l3.5 3.5v-7a3.5 3.5 0 10-7 0zM13 10.5a3.5 3.5 0 003.5 3.5l3.5 3.5v-7a3.5 3.5 0 10-7 0z"
+        d="M3 10.5C3 12.433 4.567 14 6.5 14L10 17.5V10.5C10 8.567 8.433 7 6.5 7C4.567 7 3 8.567 3 10.5Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M13 10.5C13 12.433 14.567 14 16.5 14L20 17.5V10.5C20 8.567 18.433 7 16.5 7C14.567 7 13 8.567 13 10.5Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path opacity={0.15} d="M13 10.5a3.5 3.5 0 003.5 3.5l3.5 3.5v-7a3.5 3.5 0 10-7 0z" fill={color} />
+      <path opacity="0.15" d="M13 10.5C13 12.433 14.567 14 16.5 14L20 17.5V10.5C20 8.567 18.433 7 16.5 7C14.567 7 13 8.567 13 10.5Z" fill={color} />
       <path
-        d="M3 10.5A3.5 3.5 0 006.5 14l3.5 3.5v-7a3.5 3.5 0 10-7 0zM13 10.5a3.5 3.5 0 003.5 3.5l3.5 3.5v-7a3.5 3.5 0 10-7 0z"
+        d="M13 10.5C13 12.433 14.567 14 16.5 14L20 17.5V10.5C20 8.567 18.433 7 16.5 7C14.567 7 13 8.567 13 10.5Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linejoin="round"
+      />
+      <path
+        d="M3 10.5C3 12.433 4.567 14 6.5 14L10 17.5V10.5C10 8.567 8.433 7 6.5 7C4.567 7 3 8.567 3 10.5Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linejoin="round"
       />
     </g>
   );
   const Outline = () => (
     <g>
       <path
-        d="M3 10.5A3.5 3.5 0 006.5 14l3.5 3.5v-7a3.5 3.5 0 10-7 0zM13 10.5a3.5 3.5 0 003.5 3.5l3.5 3.5v-7a3.5 3.5 0 10-7 0z"
+        d="M13 10.5C13 12.433 14.567 14 16.5 14L20 17.5V10.5C20 8.567 18.433 7 16.5 7C14.567 7 13 8.567 13 10.5Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinejoin="round"
-      />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path
-        d="M13 10.5a3.5 3.5 0 003.5 3.5l3.5 3.5v-7a3.5 3.5 0 10-7 0z"
-        stroke={secondaryColor}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linejoin="round"
       />
       <path
-        d="M3 10.5A3.5 3.5 0 006.5 14l3.5 3.5v-7a3.5 3.5 0 10-7 0z"
+        d="M3 10.5C3 12.433 4.567 14 6.5 14L10 17.5V10.5C10 8.567 8.433 7 6.5 7C4.567 7 3 8.567 3 10.5Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linejoin="round"
       />
     </g>
   );
@@ -73,8 +80,6 @@ const Quote = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -82,7 +87,6 @@ const Quote = ({ color, secondaryColor, strokeWidth, set }) => {
 
 Quote.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

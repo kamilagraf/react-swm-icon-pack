@@ -2,62 +2,58 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const Waterdrop = ({ color, secondaryColor, strokeWidth, set }) => {
+const Waterdrop = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M19 14c0 4.418-3.582 7-7 7s-7-2.582-7-7c0-3.418 2.582-8 7-11 2.834 1.924 4.912 4.499 6.038 7M11.5 16.5A2.5 2.5 0 019 14"
+        d="M19 14C19 18.4183 15.4183 21 12 21C8.58172 21 5 18.4183 5 14C5 10.5817 7.58172 6 12 3C14.4569 4.66824 16.3459 6.82559 17.5389 9"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path d="M11.5 16.5C10.1193 16.5 9 15.3807 9 14" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Curved = () => (
     <g>
       <path
-        d="M11.5 16.5A2.5 2.5 0 019 14m-4 0c0-3.126 2.158-7.224 5.905-10.196a1.759 1.759 0 012.19 0C16.841 6.776 19 10.874 19 14c0 4.418-3.582 7-7 7s-7-2.582-7-7z"
+        d="M10.9055 3.80403C7.15837 6.7764 5 10.8745 5 14C5 18.4183 8.58172 21 12 21C15.4183 21 19 18.4183 19 14C19 10.8745 16.8416 6.7764 13.0945 3.80403C12.4523 3.29457 11.5477 3.29457 10.9055 3.80403Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path d="M11.5 16.5C10.1193 16.5 9 15.3807 9 14" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path opacity={0.15} d="M5 14c0-3.418 2.582-8 7-11 4.418 3 7 7.582 7 11 0 4.418-3.582 7-7 7s-7-2.582-7-7z" fill={color} />
       <path
-        d="M11.5 16.5A2.5 2.5 0 019 14m-4 0c0-3.418 2.582-8 7-11 4.418 3 7 7.582 7 11 0 4.418-3.582 7-7 7s-7-2.582-7-7z"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        opacity="0.15"
+        d="M5 14C5 10.5817 7.58172 6 12 3C16.4183 6 19 10.5817 19 14C19 18.4183 15.4183 21 12 21C8.58172 21 5 18.4183 5 14Z"
+        fill={color}
       />
+      <path
+        d="M12 3C7.58172 6 5 10.5817 5 14C5 18.4183 8.58172 21 12 21C15.4183 21 19 18.4183 19 14C19 10.5817 16.4183 6 12 3Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path d="M11.5 16.5C10.1193 16.5 9 15.3807 9 14" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Outline = () => (
     <g>
       <path
-        d="M11.5 16.5A2.5 2.5 0 019 14m-4 0c0-3.418 2.582-8 7-11 4.418 3 7 7.582 7 11 0 4.418-3.582 7-7 7s-7-2.582-7-7z"
+        d="M12 3C7.58172 6 5 10.5817 5 14C5 18.4183 8.58172 21 12 21C15.4183 21 19 18.4183 19 14C19 10.5817 16.4183 6 12 3Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M11.5 16.5A2.5 2.5 0 019 14" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-      <path
-        d="M5 14c0-3.418 2.582-8 7-11 4.418 3 7 7.582 7 11 0 4.418-3.582 7-7 7s-7-2.582-7-7z"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <path d="M11.5 16.5C10.1193 16.5 9 15.3807 9 14" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
 
@@ -70,8 +66,6 @@ const Waterdrop = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -79,7 +73,6 @@ const Waterdrop = ({ color, secondaryColor, strokeWidth, set }) => {
 
 Waterdrop.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

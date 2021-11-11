@@ -110,7 +110,6 @@ const icons = {
   Forward: SWMIconPack.Forward,
   Fullscreen: SWMIconPack.Fullscreen,
   Gift1: SWMIconPack.Gift1,
-  Gift2: SWMIconPack.Gift2,
   Globe1: SWMIconPack.Globe1,
   Grid2Horizontal: SWMIconPack.Grid2Horizontal,
   Grid2Vertical: SWMIconPack.Grid2Vertical,

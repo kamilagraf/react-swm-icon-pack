@@ -2,68 +2,91 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const Command = ({ color, secondaryColor, strokeWidth, set }) => {
+const Command = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
+      <path d="M15 15V9H9V15H12" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" />
       <path
-        d="M9 9h6M9 9v6m0-6H6a3 3 0 113-3m6 3v6m0-6V6a3 3 0 113 3m-3 6v3a3 3 0 103-3h-3zm-6 0H6a3 3 0 103 3v-3zm0 0h3"
+        d="M6 21C7.65685 21 9 19.6569 9 18L9 15L6 15C4.34315 15 3 16.3431 3 18C3 19.6569 4.34315 21 6 21Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+      />
+      <path
+        d="M21 18C21 16.3431 19.6569 15 18 15H15V18C15 19.6569 16.3431 21 18 21C19.6569 21 21 19.6569 21 18Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+      />
+      <path
+        d="M15 9V6C15 4.34315 16.3431 3 18 3C19.6569 3 21 4.34315 21 6C21 7.65685 19.6569 9 18 9"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+      />
+      <path
+        d="M9 9H6C4.34315 9 3 7.65685 3 6C3 4.34315 4.34315 3 6 3C7.65685 3 9 4.34315 9 6"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
       />
     </g>
   );
   const Curved = () => (
     <g>
+      <path d="M9 9H15V15H9V9Z" stroke={color} stroke-width={strokeWidth} />
       <path
-        d="M9 9h6M9 9v6m0-6V6a3 3 0 10-3 3h3zm6 0v6m0-6h3a3 3 0 10-3-3v3zm0 6H9m6 0v3a3 3 0 103-3h-3zm-6 0H6a3 3 0 103 3v-3z"
+        d="M6 21C7.65685 21 9 19.6569 9 18L9 15L6 15C4.34315 15 3 16.3431 3 18C3 19.6569 4.34315 21 6 21Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
       />
+      <path
+        d="M21 18C21 16.3431 19.6569 15 18 15H15V18C15 19.6569 16.3431 21 18 21C19.6569 21 21 19.6569 21 18Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+      />
+      <path d="M18 3C16.3431 3 15 4.34315 15 6V9H18C19.6569 9 21 7.65685 21 6C21 4.34315 19.6569 3 18 3Z" stroke={color} stroke-width={strokeWidth} />
+      <path d="M3 6C3 7.65685 4.34315 9 6 9H9V6C9 4.34315 7.65685 3 6 3C4.34315 3 3 4.34315 3 6Z" stroke={color} stroke-width={strokeWidth} />
     </g>
   );
   const Duotone = () => (
     <g>
+      <g opacity="0.15">
+        <path d="M3 6C3 7.65685 4.34315 9 6 9H9V6C9 4.34315 7.65685 3 6 3C4.34315 3 3 4.34315 3 6Z" fill={color} />
+        <path d="M18 3C16.3431 3 15 4.34315 15 6V9H18C19.6569 9 21 7.65685 21 6C21 4.34315 19.6569 3 18 3Z" fill={color} />
+        <path d="M21 18C21 16.3431 19.6569 15 18 15H15V18C15 19.6569 16.3431 21 18 21C19.6569 21 21 19.6569 21 18Z" fill={color} />
+        <path d="M6 21C7.65685 21 9 19.6569 9 18L9 15L6 15C4.34315 15 3 16.3431 3 18C3 19.6569 4.34315 21 6 21Z" fill={color} />
+      </g>
+      <path d="M9 9H15V15H9V9Z" stroke={color} stroke-width={strokeWidth} />
       <path
-        d="M3 6a3 3 0 003 3h3V6a3 3 0 00-6 0zM18 3a3 3 0 00-3 3v3h3a3 3 0 100-6zM21 18a3 3 0 00-3-3h-3v3a3 3 0 106 0zM6 21a3 3 0 003-3v-3H6a3 3 0 100 6z"
-        fill={color}
-        opacity={0.15}
-      />
-      <path
-        d="M9 9h6M9 9v6m0-6V6a3 3 0 10-3 3h3zm6 0v6m0-6h3a3 3 0 10-3-3v3zm0 6H9m6 0v3a3 3 0 103-3h-3zm-6 0H6a3 3 0 103 3v-3z"
+        d="M6 21C7.65685 21 9 19.6569 9 18L9 15L6 15C4.34315 15 3 16.3431 3 18C3 19.6569 4.34315 21 6 21Z"
         stroke={color}
-        strokeWidth={strokeWidth}
+        stroke-width={strokeWidth}
       />
+      <path
+        d="M21 18C21 16.3431 19.6569 15 18 15H15V18C15 19.6569 16.3431 21 18 21C19.6569 21 21 19.6569 21 18Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+      />
+      <path d="M18 3C16.3431 3 15 4.34315 15 6V9H18C19.6569 9 21 7.65685 21 6C21 4.34315 19.6569 3 18 3Z" stroke={color} stroke-width={strokeWidth} />
+      <path d="M3 6C3 7.65685 4.34315 9 6 9H9V6C9 4.34315 7.65685 3 6 3C4.34315 3 3 4.34315 3 6Z" stroke={color} stroke-width={strokeWidth} />
     </g>
   );
   const Outline = () => (
     <g>
+      <path d="M9 9H15V15H9V9Z" stroke={color} stroke-width={strokeWidth} />
       <path
-        d="M9 9h6M9 9v6m0-6V6a3 3 0 10-3 3h3zm6 0v6m0-6h3a3 3 0 10-3-3v3zm0 6H9m6 0v3a3 3 0 103-3h-3zm-6 0H6a3 3 0 103 3v-3z"
+        d="M6 21C7.65685 21 9 19.6569 9 18L9 15L6 15C4.34315 15 3 16.3431 3 18C3 19.6569 4.34315 21 6 21Z"
         stroke={color}
-        strokeWidth={strokeWidth}
+        stroke-width={strokeWidth}
       />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
       <path
-        d="M9 9h6M9 9V6a3 3 0 10-3 3h3zm6 6H9m6 0v3a3 3 0 103-3h-3z"
+        d="M21 18C21 16.3431 19.6569 15 18 15H15V18C15 19.6569 16.3431 21 18 21C19.6569 21 21 19.6569 21 18Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
       />
-      <path
-        d="M9 9v6m6-6v6m0-6h3a3 3 0 10-3-3v3zm-6 6H6a3 3 0 103 3v-3z"
-        stroke={secondaryColor}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <path d="M18 3C16.3431 3 15 4.34315 15 6V9H18C19.6569 9 21 7.65685 21 6C21 4.34315 19.6569 3 18 3Z" stroke={color} stroke-width={strokeWidth} />
+      <path d="M3 6C3 7.65685 4.34315 9 6 9H9V6C9 4.34315 7.65685 3 6 3C4.34315 3 3 4.34315 3 6Z" stroke={color} stroke-width={strokeWidth} />
     </g>
   );
 
@@ -76,8 +99,6 @@ const Command = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -85,7 +106,6 @@ const Command = ({ color, secondaryColor, strokeWidth, set }) => {
 
 Command.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

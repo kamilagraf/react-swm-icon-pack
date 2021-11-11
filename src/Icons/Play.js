@@ -2,38 +2,32 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const Play = ({ color, secondaryColor, strokeWidth, set }) => {
+const Play = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
-      <path d="M8 18V6l10 6-6.667 4" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M8 18V6L18 12L11.3333 16" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Curved = () => (
     <g>
       <path
-        d="M7.5 6S7 8 7 12s.5 6 .5 6 2-.5 5.5-2.5 4.5-3.5 4.5-3.5-1-1.5-4.5-3.5S7.5 6 7.5 6z"
+        d="M7.5 6C7.5 6 7 8 7 12C7 16 7.5 18 7.5 18C7.5 18 9.5 17.5 13 15.5C16.5 13.5 17.5 12 17.5 12C17.5 12 16.5 10.5 13 8.5C9.5 6.5 7.5 6 7.5 6Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path opacity={0.15} d="M8 6v12l10-6L8 6z" fill={color} />
-      <path d="M8 6v12l10-6L8 6z" stroke={color} strokeWidth={strokeWidth} strokeLinejoin="round" />
+      <path opacity="0.15" d="M8 6V18L18 12L8 6Z" fill={color} />
+      <path d="M8 6V18L18 12L8 6Z" stroke={color} stroke-width={strokeWidth} stroke-linejoin="round" />
     </g>
   );
   const Outline = () => (
     <g>
-      <path d="M8 6v12l10-6L8 6z" stroke={color} strokeWidth={strokeWidth} strokeLinejoin="round" />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M8 6l10 6" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M8 6v12l10-6" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M8 6V18L18 12L8 6Z" stroke={color} stroke-width={strokeWidth} stroke-linejoin="round" />
     </g>
   );
 
@@ -46,8 +40,6 @@ const Play = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -55,7 +47,6 @@ const Play = ({ color, secondaryColor, strokeWidth, set }) => {
 
 Play.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

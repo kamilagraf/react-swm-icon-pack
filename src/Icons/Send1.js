@@ -2,38 +2,32 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const Send1 = ({ color, secondaryColor, strokeWidth, set }) => {
+const Send1 = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
-      <path d="M10 14l3 7 7-17-17 7 3.5 1.5" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M10 14L13 21L20 4L3 11L6.5 12.5" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Curved = () => (
     <g>
       <path
-        d="M10 14l2.273 5.303c.313.73 1.286.807 1.676.116A54.175 54.175 0 0017 13c2-5 3-9 3-9s-4 1-9 3a54.175 54.175 0 00-6.419 3.051c-.691.39-.614 1.363.116 1.676L10 14z"
+        d="M10 14L12.2728 19.3032C12.5856 20.0331 13.5586 20.1103 13.9486 19.4185C14.7183 18.0535 15.8591 15.8522 17 13C19 8 20 4 20 4C20 4 16 5 11 7C8.14784 8.14086 5.94647 9.28173 4.58149 10.0514C3.88975 10.4414 3.96687 11.4144 4.69678 11.7272L10 14Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path opacity={0.15} d="M20 4L3 11l7 3 3 7 7-17z" fill={color} />
-      <path d="M20 4L3 11l7 3 3 7 7-17z" stroke={color} strokeWidth={strokeWidth} strokeLinejoin="round" />
+      <path opacity="0.15" d="M20 4L3 11L10 14L13 21L20 4Z" fill={color} />
+      <path d="M20 4L3 11L10 14L13 21L20 4Z" stroke={color} stroke-width={strokeWidth} stroke-linejoin="round" />
     </g>
   );
   const Outline = () => (
     <g>
-      <path d="M20 4L3 11l7 3 3 7 7-17z" stroke={color} strokeWidth={strokeWidth} strokeLinejoin="round" />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M20 4l-7 17" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M20 4L3 11l7 3 3 7" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M20 4L3 11L10 14L13 21L20 4Z" stroke={color} stroke-width={strokeWidth} stroke-linejoin="round" />
     </g>
   );
 
@@ -46,8 +40,6 @@ const Send1 = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -55,7 +47,6 @@ const Send1 = ({ color, secondaryColor, strokeWidth, set }) => {
 
 Send1.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

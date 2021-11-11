@@ -2,59 +2,89 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const User2 = ({ color, secondaryColor, strokeWidth, set }) => {
+const User2 = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M15 15c1.657 0 3 2 3 3.5v.208m-12 0A8.967 8.967 0 0012 21a8.967 8.967 0 006-2.292m-12 0A8.977 8.977 0 013 12c0-.687.077-1.357.223-2M6 18.708V18.5C6 17 7.343 15 9 15h2m7 3.708A9 9 0 106 5.291M15 9a3 3 0 11-6 0 3 3 0 016 0z"
+        d="M3.22302 10C3.07706 10.6432 3 11.3126 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C9.69494 3 7.59227 3.86656 6 5.29168"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
       />
+      <path
+        d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+      />
+      <path d="M15 15C16.8283 15 18 17.0886 18 18.7083" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M6 18.7083C6 17.0886 7.17172 15 9 15L11 15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Curved = () => (
     <g>
       <path
-        d="M18 18.702C18 15.671 14.5 15 12 15s-6 .67-6 3.702M15 9a3 3 0 11-6 0 3 3 0 016 0zm6 3a9 9 0 11-18 0 9 9 0 0118 0z"
+        d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M18 18.7023C18 15.6706 14.5 15 12 15C9.5 15 6 15.6706 6 18.7023"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path d="M12.05 21h-.1l.05-.05.05.05z" opacity={0.15} fill={color} />
-      <path d="M17.994 18.714A3.5 3.5 0 0014.5 15h-5a3.5 3.5 0 00-3.494 3.714 9 9 0 1111.987 0zM12 12a3 3 0 100-6 3 3 0 000 6z" />
+      <g opacity="0.15">
+        <path
+          d="M12.0504 20.9999C12.0336 21 12.0168 21 12 21C11.9832 21 11.9664 21 11.9496 20.9999C11.9666 20.9832 11.9834 20.9664 12 20.9495C12.0166 20.9664 12.0334 20.9832 12.0504 20.9999Z"
+          fill={color}
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M17.9936 18.7141C17.9978 18.6433 18 18.5719 18 18.5C18 16.567 16.433 15 14.5 15H9.5C7.567 15 6 16.567 6 18.5C6 18.5719 6.00217 18.6433 6.00644 18.7141C4.16145 17.0659 3 14.6686 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 14.6686 19.8385 17.0659 17.9936 18.7141ZM12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z"
+          fill={color}
+        />
+      </g>
       <path
-        d="M6 18.708A8.967 8.967 0 0012 21a8.967 8.967 0 006-2.292m-12 0a9 9 0 1112 0m-12 0V18.5C6 17 7.343 15 9 15h6c1.657 0 3 2 3 3.5v.208M15 9a3 3 0 11-6 0 3 3 0 016 0z"
+        d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3Z"
         stroke={color}
-        strokeWidth={strokeWidth}
+        stroke-width={strokeWidth}
       />
+      <path
+        d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+      />
+      <path d="M6 18.7083C6 17.0886 7.17172 15 9 15H15C16.8283 15 18 17.0886 18 18.7083" stroke={color} stroke-width={strokeWidth} />
     </g>
   );
   const Outline = () => (
     <g>
       <path
-        d="M6 18.708A8.967 8.967 0 0012 21a8.967 8.967 0 006-2.292m-12 0a9 9 0 1112 0m-12 0V18.5C6 17 7.343 15 9 15h6c1.657 0 3 2 3 3.5v.208M15 9a3 3 0 11-6 0 3 3 0 016 0z"
+        d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3Z"
         stroke={color}
-        strokeWidth={strokeWidth}
+        stroke-width={strokeWidth}
       />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
       <path
-        d="M18 18.702A3.702 3.702 0 0014.298 15H9.702A3.702 3.702 0 006 18.702M15 9a3 3 0 11-6 0 3 3 0 016 0z"
-        stroke={secondaryColor}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z"
+        stroke={color}
+        stroke-width={strokeWidth}
       />
-      <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M6 18.7083C6 17.0886 7.17172 15 9 15H15C16.8283 15 18 17.0886 18 18.7083" stroke={color} stroke-width={strokeWidth} />
     </g>
   );
 
@@ -67,8 +97,6 @@ const User2 = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -76,7 +104,6 @@ const User2 = ({ color, secondaryColor, strokeWidth, set }) => {
 
 User2.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

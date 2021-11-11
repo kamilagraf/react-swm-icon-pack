@@ -2,61 +2,98 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const Cart4 = ({ color, secondaryColor, strokeWidth, set }) => {
+const Cart4 = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
+      <path d="M17 17H6.5L4.5 3H2" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M9 5H21.0001L19.0001 11" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M18 14H6.07141" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M15 19a2 2 0 102-2H7.367a1 1 0 01-.99-.859M18 14H6.071L4.5 3H2m7 2h12l-2 6m-8 8a2 2 0 11-4 0 2 2 0 014 0z"
+        d="M9 21C10.1046 21 11 20.1046 11 19C11 17.8954 10.1046 17 9 17C7.89543 17 7 17.8954 7 19C7 20.1046 7.89543 21 9 21Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M15 19C15 20.1046 15.8954 21 17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Curved = () => (
     <g>
       <path
-        d="M17 17a2 2 0 100 4 2 2 0 000-4zm0 0H8.235a2 2 0 01-1.98-1.717L6.07 14M2 3h.765a2 2 0 011.98 1.717l.04.283m0 0l1.286 9M4.786 5h13.44a2 2 0 011.896 2.632l-1.666 5A2 2 0 0116.558 14H6.071M11 19a2 2 0 11-4 0 2 2 0 014 0z"
+        d="M4.78571 5H18.2251C19.5903 5 20.5542 6.33739 20.1225 7.63246L18.4558 12.6325C18.1836 13.4491 17.4193 14 16.5585 14H6.07142"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M17 17H8.23459C7.23929 17 6.39545 16.2681 6.25469 15.2828L6.07143 14L4.78571 5L4.74531 4.71716C4.60455 3.73186 3.76071 3 2.76541 3H2"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M9 21C10.1046 21 11 20.1046 11 19C11 17.8954 10.1046 17 9 17C7.89543 17 7 17.8954 7 19C7 20.1046 7.89543 21 9 21Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path opacity={0.15} d="M18 14l3-9H4.786l1.285 9H18z" fill={color} />
+      <path opacity="0.15" d="M18.0001 14L21.0001 5H4.78577L6.07148 14H18.0001Z" fill={color} />
+      <path d="M17 17H6.5L4.5 3H2" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M4.78571 5H21L18 14H6.07142" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M17 17a2 2 0 100 4 2 2 0 000-4zm0 0H7.367a1 1 0 01-.99-.859L4.5 3H2m3 2h16l-3 9H6.5m4.5 5a2 2 0 11-4 0 2 2 0 014 0z"
+        d="M9 21C10.1046 21 11 20.1046 11 19C11 17.8954 10.1046 17 9 17C7.89543 17 7 17.8954 7 19C7 20.1046 7.89543 21 9 21Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Outline = () => (
     <g>
+      <path d="M17 17H6.5L4.5 3H2" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M4.78571 5H21L18 14H6.07142" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M17 17a2 2 0 100 4 2 2 0 000-4zm0 0H7.367a1 1 0 01-.99-.859L6.071 14M2 3h2.5l.286 2m0 0H21l-3 9H6.071M4.786 5l1.285 9M11 19a2 2 0 11-4 0 2 2 0 014 0z"
+        d="M9 21C10.1046 21 11 20.1046 11 19C11 17.8954 10.1046 17 9 17C7.89543 17 7 17.8954 7 19C7 20.1046 7.89543 21 9 21Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M4.786 5H21l-3 9H6.07" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
       <path
-        d="M17 17a2 2 0 100 4 2 2 0 000-4zm0 0H7.367a1 1 0 01-.99-.859L6.071 14 4.786 5 4.5 3H2m9 16a2 2 0 11-4 0 2 2 0 014 0z"
+        d="M17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
@@ -70,8 +107,6 @@ const Cart4 = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -79,7 +114,6 @@ const Cart4 = ({ color, secondaryColor, strokeWidth, set }) => {
 
 Cart4.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

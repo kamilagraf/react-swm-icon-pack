@@ -2,40 +2,42 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const Next = ({ color, secondaryColor, strokeWidth, set }) => {
+const Next = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
-      <path d="M12 13.8l3-1.8L5 6v12l4-2.4M19 6v12" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M19 6V18" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M5 18V6L15 12L8.33333 16" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />{' '}
     </g>
   );
   const Curved = () => (
     <g>
       <path
-        d="M19 6s.5 2 .5 6-.5 6-.5 6M5 6s-.5 2-.5 6 .5 6 .5 6 2-.5 5.5-2.5S15 12 15 12s-1-1.5-4.5-3.5S5 6 5 6z"
+        d="M19 6C19 6 19.5 8 19.5 12C19.5 16 19 18 19 18"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M5 6C5 6 4.5 8 4.5 12C4.5 16 5 18 5 18C5 18 7 17.5 10.5 15.5C14 13.5 15 12 15 12C15 12 14 10.5 10.5 8.5C7 6.5 5 6 5 6Z"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path opacity={0.15} d="M5 6v12l10-6L5 6z" fill={color} />
-      <path d="M5 18V6l10 6-10 6z" stroke={color} strokeWidth={strokeWidth} strokeLinejoin="round" />
-      <path d="M19 6v12" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path opacity="0.15" d="M5 6V18L15 12L5 6Z" fill={color} />
+      <path d="M5 18L5 6L15 12L5 18Z" stroke={color} stroke-width={strokeWidth} stroke-linejoin="round" />
+      <path d="M19 6V18" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Outline = () => (
     <g>
-      <path d="M5 18V6l10 6-10 6z" stroke={color} strokeWidth={strokeWidth} strokeLinejoin="round" />
-      <path d="M19 6v12" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M19 6v12" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M5 6v12l10-6L5 6z" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M5 18L5 6L15 12L5 18Z" stroke={color} stroke-width={strokeWidth} stroke-linejoin="round" />
+      <path d="M19 6V18" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
 
@@ -48,8 +50,6 @@ const Next = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -57,7 +57,6 @@ const Next = ({ color, secondaryColor, strokeWidth, set }) => {
 
 Next.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

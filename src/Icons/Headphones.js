@@ -2,62 +2,109 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const Headphones = ({ color, secondaryColor, strokeWidth, set }) => {
+const Headphones = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M3 21v-9a9 9 0 0118 0v9-7h-3a2 2 0 00-2 2v3a2 2 0 002 2M3 21h3a2 2 0 002-2v-3a2 2 0 00-2-2m-3 7v-7"
+        d="M3 21H6C7.10457 21 8 20.1046 8 19V16C8 14.8954 7.10457 14 6 14"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M21 14H18C16.8954 14 16 14.8954 16 16V19C16 20.1046 16.8954 21 18 21"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M3 14V21V12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12V21V14"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Curved = () => (
     <g>
       <path
-        d="M3 21v-9a9 9 0 0118 0v9M3 21v-8c2 0 5 .051 5 2.5v3C8 20.862 5 21 3 21zm18 0v-8c-2 0-5 .138-5 2.5v3c0 2.362 3 2.5 5 2.5z"
+        d="M3 21C5 21 8 20.862 8 18.5V15.5C8 13.0511 5 13 3 13"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M21 21C19 21 16 20.862 16 18.5V15.5C16 13.138 19 13 21 13"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M3 13V21V12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12V21V13"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path d="M3 14h3a2 2 0 012 2v3a2 2 0 01-2 2H3v-7zM21 21h-3a2 2 0 01-2-2v-3a2 2 0 012-2h3v7z" opacity={0.15} fill={color} />
+      <g opacity="0.15">
+        <path d="M3 14H6C7.10457 14 8 14.8954 8 16V19C8 20.1046 7.10457 21 6 21H3V14Z" fill={color} />
+        <path d="M21 21H18C16.8954 21 16 20.1046 16 19V16C16 14.8954 16.8954 14 18 14H21V21Z" fill={color} />
+      </g>
       <path
-        d="M3 21v-9a9 9 0 0118 0v9M3 21h3a2 2 0 002-2v-3a2 2 0 00-2-2H3v7zm18 0h-3a2 2 0 01-2-2v-3a2 2 0 012-2h3v7z"
+        d="M3 21H6C7.10457 21 8 20.1046 8 19V16C8 14.8954 7.10457 14 6 14H3"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M21 21H18C16.8954 21 16 20.1046 16 19V16C16 14.8954 16.8954 14 18 14H21"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M3 14V21V12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12V21V14"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Outline = () => (
     <g>
       <path
-        d="M3 21v-9a9 9 0 0118 0v9M3 21h3a2 2 0 002-2v-3a2 2 0 00-2-2H3v7zm18 0h-3a2 2 0 01-2-2v-3a2 2 0 012-2h3v7z"
+        d="M3 21H6C7.10457 21 8 20.1046 8 19V16C8 14.8954 7.10457 14 6 14H3"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
       <path
-        d="M3 21h3a2 2 0 002-2v-3a2 2 0 00-2-2H3m18 7h-3a2 2 0 01-2-2v-3a2 2 0 012-2h3"
-        stroke={secondaryColor}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        d="M21 21H18C16.8954 21 16 20.1046 16 19V16C16 14.8954 16.8954 14 18 14H21"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
-      <path d="M3 14v7-9a9 9 0 0118 0v9-7" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path
+        d="M3 14V21V12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12V21V14"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
     </g>
   );
 
@@ -70,8 +117,6 @@ const Headphones = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -79,7 +124,6 @@ const Headphones = ({ color, secondaryColor, strokeWidth, set }) => {
 
 Headphones.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

@@ -2,66 +2,196 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const Ice = ({ color, secondaryColor, strokeWidth, set }) => {
+const Ice = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
+      <path d="M9 20L12 17L15 20" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M15 4L12 7L9 4" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12 21V17V12" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12 9L12 8V3" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M19.7942 7.5L16.3301 9.5L12 12" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M9.40196 13.5L8.53594 14L4.20581 16.5" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M12 3v6m0 12v-9l7.794-4.5M15 4l-3 3-3-3m0 16l3-3 3 3M4.206 7.5l15.588 9M6.572 5.402L7.67 9.5l-4.098 1.098m13.856 8L16.33 14.5l4.098-1.098M4.206 16.5L10 13.155M7.67 14.5l-1.098 4.098m-3-5.196L5 13.785M16.33 9.5l1.098-4.098m3 5.196L19 10.215"
+        d="M17.4282 18.5981L16.3301 14.5L20.4282 13.4019"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M6.57178 5.40193L7.66985 9.50001L3.57178 10.5981"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M4.20581 7.5L7.66991 9.5L12 12L16.3302 14.5L19.7943 16.5"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M20.4283 10.598L16.3302 9.49995L17.4283 5.40187"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M3.57178 13.4019L7.66985 14.4999L6.57178 18.598"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Curved = () => (
     <g>
+      <path d="M9 20L12 17L15 20" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M15 4L12 7L9 4" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12 3V7V12V17V21" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M12 3v18m3-17l-3 3-3-3m0 16l3-3 3 3M4.206 7.5l15.588 9M6.572 5.402L7.67 9.5l-4.098 1.098m13.856 8L16.33 14.5l4.098-1.098M4.206 16.5l15.588-9M3.572 13.402L7.67 14.5l-1.098 4.098m13.856-8L16.33 9.5l1.098-4.098"
+        d="M17.4282 18.598L16.3301 14.4999L20.4282 13.4019"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M6.57178 5.40187L7.66985 9.49995L3.57178 10.598"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M4.20581 7.5L7.66991 9.5L12 12L16.3302 14.5L19.7943 16.5"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M20.4282 10.598L16.3301 9.49995L17.4282 5.40187"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M3.57178 13.4019L7.66985 14.4999L6.57178 18.598"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M4.20581 16.5L7.66991 14.5L12 12L16.3302 9.5L19.7943 7.5"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Duotone = () => (
     <g>
+      <path d="M9 20L12 17L15 20" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M15 4L12 7L9 4" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12 3V7V12V17V21" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M12 3v18m3-17l-3 3-3-3m0 16l3-3 3 3M4.206 7.5l15.588 9M6.572 5.402L7.67 9.5l-4.098 1.098m13.856 8L16.33 14.5l4.098-1.098M4.206 16.5l15.588-9M3.572 13.402L7.67 14.5l-1.098 4.098m13.856-8L16.33 9.5l1.098-4.098"
+        d="M17.4282 18.5981L16.3301 14.5L20.4282 13.4019"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M6.57181 5.40193L7.66988 9.50001L3.57181 10.5981"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M4.20578 7.5L7.66988 9.5L12 12L16.3301 14.5L19.7942 16.5"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M20.4282 10.598L16.3301 9.49995L17.4282 5.40187"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M3.57181 13.4019L7.66988 14.4999L6.57181 18.598"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M4.20584 16.5L7.66994 14.5L12.0001 12L16.3302 9.5L19.7943 7.5"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Outline = () => (
     <g>
+      <path d="M9 20L12 17L15 20" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M15 4L12 7L9 4" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12 3V7V12V17V21" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M12 3v18m3-17l-3 3-3-3m0 16l3-3 3 3M4.206 7.5l15.588 9M6.572 5.402L7.67 9.5l-4.098 1.098m13.856 8L16.33 14.5l4.098-1.098M4.206 16.5l15.588-9M3.572 13.402L7.67 14.5l-1.098 4.098m13.856-8L16.33 9.5l1.098-4.098"
+        d="M17.4282 18.598L16.3301 14.4999L20.4282 13.4019"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path
-        d="M15 4l-3 3-3-3m0 16l3-3 3 3M6.572 5.402L7.67 9.5l-4.098 1.098m13.856 8L16.33 14.5l4.098-1.098m-16.856 0L7.67 14.5l-1.098 4.098m13.856-8L16.33 9.5l1.098-4.098"
-        stroke={secondaryColor}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
       <path
-        d="M12 3v18M4.206 7.5l15.588 9m-15.588 0l15.588-9"
+        d="M6.57181 5.40187L7.66988 9.49995L3.57181 10.598"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M4.20578 7.5L7.66988 9.5L12 12L16.3301 14.5L19.7942 16.5"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M20.4282 10.598L16.3301 9.49995L17.4282 5.40187"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M3.57181 13.4019L7.66988 14.4999L6.57181 18.598"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M4.20584 16.5L7.66994 14.5L12.0001 12L16.3302 9.5L19.7943 7.5"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
@@ -75,8 +205,6 @@ const Ice = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -84,7 +212,6 @@ const Ice = ({ color, secondaryColor, strokeWidth, set }) => {
 
 Ice.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

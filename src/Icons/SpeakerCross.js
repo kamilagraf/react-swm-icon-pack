@@ -2,61 +2,57 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const SpeakerCross = ({ color, secondaryColor, strokeWidth, set }) => {
+const SpeakerCross = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M7 16H5a2 2 0 01-2-2v-4a2 2 0 012-2h2l6-5v18l-3-2.5M22 9l-6 6m0-6l6 6"
+        d="M7 16H5C3.89543 16 3 15.1046 3 14V10C3 8.89543 3.89543 8 5 8H7L13 3V21L10 18.5"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
+      <path d="M16 9L22 15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M22 9L16 15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
     </g>
   );
   const Curved = () => (
     <g>
+      <path d="M22 9L16 15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M16 9L22 15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M22 9l-6 6m0-6l6 6M12 3c2 0 2 18 0 18-3 0-4.5-4.5-6.5-5S3 14.605 3 13.5v-3c0-1.105.5-2 2.5-2.5S9 3 12 3z"
+        d="M3 13.5V10.5C3 9.39543 3.5 8.5 5.5 8C7.5 7.5 9 3 12 3C14 3 14 21 12 21C9 21 7.5 16.5 5.5 16C3.5 15.5 3 14.6046 3 13.5Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path opacity={0.15} d="M13 3L7 8H5a2 2 0 00-2 2v4a2 2 0 002 2h2l6 5V3z" fill={color} />
+      <path opacity="0.15" d="M13 3L7 8H5C3.89543 8 3 8.89543 3 10V14C3 15.1046 3.89543 16 5 16H7L13 21V3Z" fill={color} />
+      <path d="M16 9L22 15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M22 9L16 15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M22 9l-6 6m0-6l6 6M13 3L7 8H5a2 2 0 00-2 2v4a2 2 0 002 2h2l6 5V3z"
+        d="M7 8L13 3V21L7 16H5C3.89543 16 3 15.1046 3 14V10C3 8.89543 3.89543 8 5 8H7Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Outline = () => (
     <g>
+      <path d="M16 9L22 15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M22 9L16 15" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M22 9l-6 6m0-6l6 6M13 3L7 8H5a2 2 0 00-2 2v4a2 2 0 002 2h2l6 5V3z"
+        d="M7 8L13 3V21L7 16H5C3.89543 16 3 15.1046 3 14V10C3 8.89543 3.89543 8 5 8H7Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M22 9l-6 6m0-6l6 6" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-      <path
-        d="M13 3L7 8H5a2 2 0 00-2 2v4a2 2 0 002 2h2l6 5V3z"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
@@ -70,8 +66,6 @@ const SpeakerCross = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -79,7 +73,6 @@ const SpeakerCross = ({ color, secondaryColor, strokeWidth, set }) => {
 
 SpeakerCross.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

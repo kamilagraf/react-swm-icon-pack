@@ -2,67 +2,59 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const Like = ({ color, secondaryColor, strokeWidth, set }) => {
+const Like = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
+      <path d="M8 14V20" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M8 20H4V10h4l5.196-6.062a2 2 0 012.003-.638l.048.012a2 2 0 011.179 3.05L14 10h4.56a2 2 0 011.962 2.392l-1.2 6A2 2 0 0117.36 20M8 20v-6m0 6h4.68"
+        d="M17.3604 20C18.3138 20 19.1346 19.3271 19.3216 18.3922L20.5216 12.3922C20.7691 11.1546 19.8225 9.99998 18.5604 9.99998H14L16.4258 6.36135C17.1929 5.21057 16.5885 3.64711 15.2467 3.31166L15.1992 3.29977C14.4642 3.11604 13.6886 3.3633 13.1956 3.93847L8 9.99998H4V20H8L12 20"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Curved = () => (
     <g>
+      <path d="M8 10V20" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M8 10H4v10h4m0-10v10m0-10l5.196-6.062a2 2 0 012.003-.638l.048.012a2 2 0 011.179 3.05L14 10h4.56a2 2 0 011.962 2.392l-1.2 6A2 2 0 0117.36 20H8"
+        d="M17.3604 20H8H4V9.99998H8L13.1956 3.93847C13.6886 3.3633 14.4642 3.11604 15.1992 3.29977L15.2467 3.31166C16.5885 3.64711 17.1929 5.21057 16.4258 6.36135L14 9.99998H18.5604C19.8225 9.99998 20.7691 11.1546 20.5216 12.3922L19.3216 18.3922C19.1346 19.3271 18.3138 20 17.3604 20Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Duotone = () => (
     <g>
       <path
-        opacity={0.15}
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M8 10v10h9.36a2 2 0 001.962-1.608l1.2-6A2 2 0 0018.56 10H14l2.426-3.639a2 2 0 00-1.18-3.05L15.2 3.3a2 2 0 00-2.003.638L8 10z"
+        opacity="0.15"
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M8 10V20H17.3604C18.3138 20 19.1346 19.3271 19.3216 18.3922L20.5216 12.3922C20.7691 11.1547 19.8225 10 18.5604 10H14L16.4258 6.36138C17.1929 5.2106 16.5885 3.64714 15.2467 3.31169L15.1992 3.2998C14.4642 3.11607 13.6886 3.36333 13.1956 3.9385L8 10Z"
         fill={color}
       />
+      <path d="M8 10V20" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M8 10H4v10h4m0-10v10m0-10l5.196-6.062a2 2 0 012.003-.638l.048.012a2 2 0 011.179 3.05L14 10h4.56a2 2 0 011.962 2.392l-1.2 6A2 2 0 0117.36 20H8"
+        d="M17.3604 20H8H4V9.99998H8L13.1956 3.93847C13.6886 3.3633 14.4642 3.11604 15.1992 3.29977L15.2467 3.31166C16.5885 3.64711 17.1929 5.21057 16.4258 6.36135L14 9.99998H18.5604C19.8225 9.99998 20.7691 11.1546 20.5216 12.3922L19.3216 18.3922C19.1346 19.3271 18.3138 20 17.3604 20Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Outline = () => (
     <g>
+      <path d="M8 10V20" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M8 10H4v10h4m0-10v10m0-10l5.196-6.062a2 2 0 012.003-.638l.048.012a2 2 0 011.179 3.05L14 10h4.56a2 2 0 011.962 2.392l-1.2 6A2 2 0 0117.36 20H8"
+        d="M17.3604 20H8H4V9.99998H8L13.1956 3.93847C13.6886 3.3633 14.4642 3.11604 15.1992 3.29977L15.2467 3.31166C16.5885 3.64711 17.1929 5.21057 16.4258 6.36135L14 9.99998H18.5604C19.8225 9.99998 20.7691 11.1546 20.5216 12.3922L19.3216 18.3922C19.1346 19.3271 18.3138 20 17.3604 20Z"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M8 10v10" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-      <path
-        d="M17.36 20H4V10h4l5.196-6.062a2 2 0 012.003-.638l.048.012a2 2 0 011.179 3.05L14 10h4.56a2 2 0 011.962 2.392l-1.2 6A2 2 0 0117.36 20z"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
@@ -76,8 +68,6 @@ const Like = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -85,7 +75,6 @@ const Like = ({ color, secondaryColor, strokeWidth, set }) => {
 
 Like.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,

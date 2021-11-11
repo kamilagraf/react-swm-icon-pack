@@ -2,55 +2,89 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import createIcon from '../helpers/createIcon';
 
-const Air = ({ color, secondaryColor, strokeWidth, set }) => {
+const Air = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
+      <path id="shape" d="M8 12H14" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M5 9h2m-3 6h12a2 2 0 110 4m.5-15a2.5 2.5 0 010 5H11m-4 3h8"
+        id="shape_2"
+        d="M5 9H10M16.5 4C17.8807 4 19 5.11929 19 6.5C19 7.88071 17.8807 9 16.5 9H14"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        id="shape_3"
+        d="M4 15H7M17 19C18.1046 19 19 18.1046 19 17C19 15.8954 18.1046 15 17 15H11"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Curved = () => (
     <g>
+      <path id="shape" d="M8 12H14" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M5 9h11.5a2.5 2.5 0 000-5M4 15h12a2 2 0 110 4m-9-7h8"
+        id="shape_2"
+        d="M5 9H16.5C17.8807 9 19 7.88071 19 6.5C19 5.11929 17.8807 4 16.5 4"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        id="shape_3"
+        d="M4 15H17C18.1046 15 19 15.8954 19 17C19 18.1046 18.1046 19 17 19"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Duotone = () => (
     <g>
+      <path id="shape" d="M8 12H14" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M5 9h11.5a2.5 2.5 0 000-5M4 15h12a2 2 0 110 4m-9-7h8"
+        id="shape_2"
+        d="M5 9H16.5C17.8807 9 19 7.88071 19 6.5C19 5.11929 17.8807 4 16.5 4"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        id="shape_3"
+        d="M4 15H17C18.1046 15 19 15.8954 19 17C19 18.1046 18.1046 19 17 19"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </g>
   );
   const Outline = () => (
     <g>
+      <path id="shape" d="M8 12H14" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
       <path
-        d="M5 9h11.5a2.5 2.5 0 000-5M4 15h12a2 2 0 110 4m-9-7h8"
+        id="shape_2"
+        d="M5 9H16.5C17.8807 9 19 7.88071 19 6.5C19 5.11929 17.8807 4 16.5 4"
         stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
-    </g>
-  );
-  const TwoColor = () => (
-    <g>
-      <path d="M7 12h8" stroke={secondaryColor} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M5 9h11.5a2.5 2.5 0 000-5M4 15h12a2 2 0 110 4" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path
+        id="shape_3"
+        d="M4 15H17C18.1046 15 19 15.8954 19 17C19 18.1046 18.1046 19 17 19"
+        stroke={color}
+        stroke-width={strokeWidth}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
     </g>
   );
 
@@ -63,8 +97,6 @@ const Air = ({ color, secondaryColor, strokeWidth, set }) => {
       return <Duotone />;
     case 'outline':
       return <Outline />;
-    case 'twocolor':
-      return <TwoColor />;
     default:
       return <Outline />;
   }
@@ -72,7 +104,6 @@ const Air = ({ color, secondaryColor, strokeWidth, set }) => {
 
 Air.propTypes = {
   color: PropTypes.string,
-  secondaryColor: PropTypes.string,
   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   set: PropTypes.string,
