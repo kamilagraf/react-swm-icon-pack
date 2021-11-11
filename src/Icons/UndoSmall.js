@@ -8,11 +8,11 @@ const UndoSmall = ({ color, strokeWidth, set }) => {
       <path
         d="M18 13C17.4904 11.9961 16.6247 11.1655 15.5334 10.6333C14.442 10.1011 13.1842 9.89624 11.9494 10.0495C9.93127 10.3 8.52468 11.6116 7 12.8186"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
-      <path d="M7 10V13H10" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M7 10V13H10" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Curved = () => (
@@ -20,11 +20,11 @@ const UndoSmall = ({ color, strokeWidth, set }) => {
       <path
         d="M18 13C17.4904 11.9961 16.6247 11.1655 15.5334 10.6333C14.442 10.1011 13.1842 9.89624 11.9494 10.0495C9.93127 10.3 8.52468 11.6116 7 12.8186"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
-      <path d="M7 10V13H10" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M7 10V13H10" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Duotone = () => (
@@ -32,11 +32,11 @@ const UndoSmall = ({ color, strokeWidth, set }) => {
       <path
         d="M18 13C17.4904 11.9961 16.6247 11.1655 15.5334 10.6333C14.442 10.1011 13.1842 9.89624 11.9494 10.0495C9.93127 10.3 8.52468 11.6116 7 12.8186"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
-      <path d="M7 10V13H10" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M7 10V13H10" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Outline = () => (
@@ -44,11 +44,11 @@ const UndoSmall = ({ color, strokeWidth, set }) => {
       <path
         d="M18 13C17.4904 11.9961 16.6247 11.1655 15.5334 10.6333C14.442 10.1011 13.1842 9.89624 11.9494 10.0495C9.93127 10.3 8.52468 11.6116 7 12.8186"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
-      <path d="M7 10V13H10" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M7 10V13H10" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
 

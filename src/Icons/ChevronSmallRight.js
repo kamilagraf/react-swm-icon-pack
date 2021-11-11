@@ -5,23 +5,23 @@ import createIcon from '../helpers/createIcon';
 const ChevronSmallRight = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
-      <path d="M12.5 9.5L10 7" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M10 17L15 12" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.5 9.5L10 7" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M10 17L15 12" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Curved = () => (
     <g>
-      <path d="M10 17L15 12L10 7" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M10 17L15 12L10 7" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path d="M10 17L15 12L10 7" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M10 17L15 12L10 7" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Outline = () => (
     <g>
-      <path d="M10 17L15 12L10 7" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M10 17L15 12L10 7" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
 

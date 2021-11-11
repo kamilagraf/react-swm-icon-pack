@@ -8,13 +8,13 @@ const LocationMed1 = ({ color, strokeWidth, set }) => {
       <path
         d="M12 21C16.4183 19 20 15.4183 20 11C20 6.58172 16.4183 3 12 3C7.58172 3 4 6.58172 4 11C4 13.7034 5.34096 16.0937 7.39403 18"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
-      <path d="M12 7.5V14.5" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M8.5 11H10" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M12 11H15.5" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12 7.5V14.5" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M8.5 11H10" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M12 11H15.5" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Curved = () => (
@@ -22,12 +22,12 @@ const LocationMed1 = ({ color, strokeWidth, set }) => {
       <path
         d="M12.8159 20.6077C16.8509 18.5502 20 15.1429 20 11C20 6.58172 16.4183 3 12 3C7.58172 3 4 6.58172 4 11C4 15.1429 7.14909 18.5502 11.1841 20.6077C11.6968 20.8691 12.3032 20.8691 12.8159 20.6077Z"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
-      <path d="M8.5 11L15.5 11" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M12 7.5V14.5" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M8.5 11L15.5 11" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M12 7.5V14.5" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Duotone = () => (
@@ -40,12 +40,12 @@ const LocationMed1 = ({ color, strokeWidth, set }) => {
       <path
         d="M12 21C16.4183 19 20 15.4183 20 11C20 6.58172 16.4183 3 12 3C7.58172 3 4 6.58172 4 11C4 15.4183 7.58172 19 12 21Z"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
-      <path d="M12 7.5V14.5" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M8.5 11L15.5 11" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12 7.5V14.5" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M8.5 11L15.5 11" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Outline = () => (
@@ -53,12 +53,12 @@ const LocationMed1 = ({ color, strokeWidth, set }) => {
       <path
         d="M12 21C16.4183 19 20 15.4183 20 11C20 6.58172 16.4183 3 12 3C7.58172 3 4 6.58172 4 11C4 15.4183 7.58172 19 12 21Z"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
-      <path d="M12 7.5V14.5" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M8.5 11L15.5 11" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12 7.5V14.5" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M8.5 11L15.5 11" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
 

@@ -8,17 +8,17 @@ const RedoCircle = ({ color, strokeWidth, set }) => {
       <path
         d="M7 13C7.4633 11.9961 8.25029 11.1655 9.2424 10.6333C10.2345 10.1011 11.378 9.89624 12.5006 10.0495C14.3352 10.3 15.6139 11.6116 17 12.8186"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
-      <path d="M17 10V13H14" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M17 10V13H14" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
       <path
         d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </g>
   );
@@ -27,17 +27,17 @@ const RedoCircle = ({ color, strokeWidth, set }) => {
       <path
         d="M7 13C7.4633 11.9961 8.25029 11.1655 9.2424 10.6333C10.2345 10.1011 11.378 9.89624 12.5006 10.0495C14.3352 10.3 15.6139 11.6116 17 12.8186"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
-      <path d="M17 10V13H14" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M17 10V13H14" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
       <path
         d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </g>
   );
@@ -51,17 +51,17 @@ const RedoCircle = ({ color, strokeWidth, set }) => {
       <path
         d="M7 13C7.4633 11.9961 8.25029 11.1655 9.2424 10.6333C10.2345 10.1011 11.378 9.89624 12.5006 10.0495C14.3352 10.3 15.6139 11.6116 17 12.8186"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
-      <path d="M17 10V13H14" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M17 10V13H14" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
       <path
         d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </g>
   );
@@ -70,17 +70,17 @@ const RedoCircle = ({ color, strokeWidth, set }) => {
       <path
         d="M7 13C7.4633 11.9961 8.25029 11.1655 9.2424 10.6333C10.2345 10.1011 11.378 9.89624 12.5006 10.0495C14.3352 10.3 15.6139 11.6116 17 12.8186"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
-      <path d="M17 10V13H14" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M17 10V13H14" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
       <path
         d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </g>
   );

@@ -5,27 +5,27 @@ import createIcon from '../helpers/createIcon';
 const ArrowSmallRight = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
-      <path d="M17 12L7 12" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M15 10L13 8" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M17 12L13 16" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M17 12L7 12" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoinn="round" />
+      <path d="M15 10L13 8" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoinn="round" />
+      <path d="M17 12L13 16" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoinn="round" />
     </g>
   );
   const Curved = () => (
     <g>
-      <path d="M17 12L7 12" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M13 16L17 12L13 8" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M17 12L7 12" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoinn="round" />
+      <path d="M13 16L17 12L13 8" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoinn="round" />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path d="M17 12L7 12" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M13 16L17 12L13 8" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M17 12L7 12" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoinn="round" />
+      <path d="M13 16L17 12L13 8" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoinn="round" />
     </g>
   );
   const Outline = () => (
     <g>
-      <path d="M17 12L7 12" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M13 16L17 12L13 8" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />{' '}
+      <path d="M17 12L7 12" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoinn="round" />
+      <path d="M13 16L17 12L13 8" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoinn="round" />{' '}
     </g>
   );
 

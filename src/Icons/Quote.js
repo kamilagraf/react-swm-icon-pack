@@ -8,14 +8,14 @@ const Quote = ({ color, strokeWidth, set }) => {
       <path
         d="M13 10.5C13 12.433 14.567 14 16.5 14L20 17.5V10.5C20 8.567 18.433 7 16.5 7C14.567 7 13 8.567 13 10.5Z"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinejoin="round"
       />
       <path
         d="M3 10.5C3 12.433 4.567 14 6.5 14L10 17.5V10.5C10 8.567 8.433 7 6.5 7C4.567 7 3 8.567 3 10.5Z"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinejoin="round"
       />
     </g>
   );
@@ -24,16 +24,16 @@ const Quote = ({ color, strokeWidth, set }) => {
       <path
         d="M3 10.5C3 12.433 4.567 14 6.5 14L10 17.5V10.5C10 8.567 8.433 7 6.5 7C4.567 7 3 8.567 3 10.5Z"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M13 10.5C13 12.433 14.567 14 16.5 14L20 17.5V10.5C20 8.567 18.433 7 16.5 7C14.567 7 13 8.567 13 10.5Z"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </g>
   );
@@ -43,14 +43,14 @@ const Quote = ({ color, strokeWidth, set }) => {
       <path
         d="M13 10.5C13 12.433 14.567 14 16.5 14L20 17.5V10.5C20 8.567 18.433 7 16.5 7C14.567 7 13 8.567 13 10.5Z"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinejoin="round"
       />
       <path
         d="M3 10.5C3 12.433 4.567 14 6.5 14L10 17.5V10.5C10 8.567 8.433 7 6.5 7C4.567 7 3 8.567 3 10.5Z"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinejoin="round"
       />
     </g>
   );
@@ -59,14 +59,14 @@ const Quote = ({ color, strokeWidth, set }) => {
       <path
         d="M13 10.5C13 12.433 14.567 14 16.5 14L20 17.5V10.5C20 8.567 18.433 7 16.5 7C14.567 7 13 8.567 13 10.5Z"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinejoin="round"
       />
       <path
         d="M3 10.5C3 12.433 4.567 14 6.5 14L10 17.5V10.5C10 8.567 8.433 7 6.5 7C4.567 7 3 8.567 3 10.5Z"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinejoin="round"
       />
     </g>
   );

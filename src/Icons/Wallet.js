@@ -6,89 +6,89 @@ const Wallet = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path
-        d="M12 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18H7"
+        d="M12 5H4.61111C3.44518 5 2.5 6.04467 2.5 7.33333V16.6667C2.5 17.9553 3.44518 19 4.61111 19H8"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
-        d="M21 9V15M16 6H19C20.1046 6 21 6.89543 21 8V16C21 17.1046 20.1046 18 19 18H11"
+        d="M21.5 8.5V15.5M17 5H19.3889C20.5548 5 21.5 6.04467 21.5 7.33333V16.6667C21.5 17.9553 20.5548 19 19.3889 19H12"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
-        d="M21 9H14C12.3431 9 11 10.3431 11 12C11 13.6569 12.3431 15 14 15H21"
+        d="M21.5 9H14C12.3431 9 11 10.3431 11 12C11 13.6569 12.3431 15 14 15H21.5"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
-      <path d="M14 12V12.01" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M14 12V12.01" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Curved = () => (
     <g>
       <path
-        d="M12 6C8 6 4.5 6.33333 4 6.66667C3.63118 6.91254 3.26237 8.24663 3.09422 10C3.03442 10.6237 3 11.3004 3 12C3 14.6667 3.5 17 4 17.3333C4.5 17.6667 8 18 12 18C16 18 19.5 17.6667 20 17.3333C20.2948 17.1368 20.5895 16.2452 20.7819 15C20.9158 14.133 21 13.0946 21 12C21 11.3004 20.9656 10.6237 20.9058 10C20.872 9.64796 20.8302 9.31282 20.7819 9C20.5895 7.75478 20.2948 6.86318 20 6.66667C19.5 6.33333 16 6 12 6Z"
+        d="M12 5.5C7.77778 5.5 4.08333 5.86111 3.55556 6.22222C3.16625 6.48859 2.77694 7.93385 2.59946 9.83333C2.53633 10.509 2.5 11.2421 2.5 12C2.5 14.8889 3.02778 17.4167 3.55556 17.7778C4.08333 18.1389 7.77778 18.5 12 18.5C16.2222 18.5 19.9167 18.1389 20.4444 17.7778C20.7556 17.5649 21.0667 16.599 21.2697 15.25C21.4111 14.3108 21.5 13.1858 21.5 12C21.5 11.2421 21.4637 10.509 21.4005 9.83333C21.3649 9.45196 21.3207 9.08889 21.2697 8.75C21.0667 7.40102 20.7556 6.43511 20.4444 6.22222C19.9167 5.86111 16.2222 5.5 12 5.5Z"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
-        d="M20.7819 9H14C12.3431 9 11 10.3431 11 12C11 13.6569 12.3431 15 14 15H20.7819"
+        d="M21.31 9H14.0176C12.351 9 11 10.3431 11 12C11 13.6569 12.351 15 14.0176 15H21.31"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
-      <path d="M14 12V12.01" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M14 12V12.01" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Duotone = () => (
     <g>
       <path
         opacity="0.15"
-        d="M19 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18H19C20.1046 18 21 17.1046 21 16V15H14C12.3431 15 11 13.6569 11 12C11 10.3431 12.3431 9 14 9H21V8C21 6.89543 20.1046 6 19 6Z"
+        d="M19.3889 5H4.61111C3.44518 5 2.5 6.04467 2.5 7.33333V16.6667C2.5 17.9553 3.44518 19 4.61111 19H19.3889C20.5548 19 21.5 17.9553 21.5 16.6667V15.5V8.5V7.33333C21.5 6.04467 20.5548 5 19.3889 5Z"
         fill={color}
       />
       <path
-        d="M21 9V15M5 18H19C20.1046 18 21 17.1046 21 16V8C21 6.89543 20.1046 6 19 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18Z"
+        d="M21.5 8.5V15.5M4.61111 19H19.3889C20.5548 19 21.5 17.9553 21.5 16.6667V7.33333C21.5 6.04467 20.5548 5 19.3889 5H4.61111C3.44518 5 2.5 6.04467 2.5 7.33333V16.6667C2.5 17.9553 3.44518 19 4.61111 19Z"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
-        d="M21 9H14C12.3431 9 11 10.3431 11 12C11 13.6569 12.3431 15 14 15H21"
+        d="M21.5 9H14C12.3431 9 11 10.3431 11 12C11 13.6569 12.3431 15 14 15H21.5"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
-      <path d="M14 12V12.01" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path id="shape_3" d="M14 12V12.01" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Outline = () => (
     <g>
       <path
-        d="M21 9V15M5 18H19C20.1046 18 21 17.1046 21 16V8C21 6.89543 20.1046 6 19 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18Z"
+        d="M21.5 8.5V15.5M4.61111 19H19.3889C20.5548 19 21.5 17.9553 21.5 16.6667V7.33333C21.5 6.04467 20.5548 5 19.3889 5H4.61111C3.44518 5 2.5 6.04467 2.5 7.33333V16.6667C2.5 17.9553 3.44518 19 4.61111 19Z"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
-        d="M21 9H14C12.3431 9 11 10.3431 11 12C11 13.6569 12.3431 15 14 15H21"
+        d="M21.5 9H14C12.3431 9 11 10.3431 11 12C11 13.6569 12.3431 15 14 15H21.5"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
-      <path d="M14 12V12.01" stroke={color} stroke-width={strokeWidth} stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M14 12V12.01" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
 

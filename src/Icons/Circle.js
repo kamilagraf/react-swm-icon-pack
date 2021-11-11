@@ -8,8 +8,8 @@ const Circle = ({ color, strokeWidth, set }) => {
       <path
         d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C14.8273 3 17.35 4.30367 19 6.34267"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
       />
     </g>
   );
@@ -18,9 +18,9 @@ const Circle = ({ color, strokeWidth, set }) => {
       <path
         d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
         stroke={color}
-        stroke-width={strokeWidth}
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </g>
   );
@@ -34,7 +34,7 @@ const Circle = ({ color, strokeWidth, set }) => {
       <path
         d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
         stroke={color}
-        stroke-width={strokeWidth}
+        strokeWidth={strokeWidth}
       />
     </g>
   );
@@ -43,7 +43,7 @@ const Circle = ({ color, strokeWidth, set }) => {
       <path
         d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
         stroke={color}
-        stroke-width={strokeWidth}
+        strokeWidth={strokeWidth}
       />
     </g>
   );
