@@ -9,9 +9,9 @@ const Block2 = ({ color, strokeWidth, set }) => {
         d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 9.3345 19.8412 6.93964 18 5.29168"
         stroke={color}
         strokeWidth={strokeWidth}
-        strokeLinejoin="round"
+        strokeLinecap="round"
       />
-      <path d="M5.63605 5.63605L18.364 18.364" stroke={color} strokeWidth={strokeWidth} strokeLinejoin="round" />
+      <path d="M5.63605 5.63605L18.364 18.364" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" />
     </g>
   );
   const Curved = () => (
@@ -20,10 +20,10 @@ const Block2 = ({ color, strokeWidth, set }) => {
         d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
         stroke={color}
         strokeWidth={strokeWidth}
+        strokeLinecap="round"
         strokeLinejoin="round"
-        stroke-linejoin="round"
       />
-      <path d="M5.63605 5.63603L18.364 18.364" stroke={color} strokeWidth={strokeWidth} strokeLinejoin="round" stroke-linejoin="round" />
+      <path d="M5.63605 5.63603L18.364 18.364" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Duotone = () => (
@@ -38,7 +38,7 @@ const Block2 = ({ color, strokeWidth, set }) => {
         stroke={color}
         strokeWidth={strokeWidth}
       />
-      <path d="M5.63605 5.63605L18.364 18.364" stroke={color} strokeWidth={strokeWidth} strokeLinejoin="round" />
+      <path d="M5.63605 5.63605L18.364 18.364" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" />
     </g>
   );
   const Outline = () => (
@@ -48,7 +48,7 @@ const Block2 = ({ color, strokeWidth, set }) => {
         stroke={color}
         strokeWidth={strokeWidth}
       />
-      <path d="M5.63605 5.63605L18.364 18.364" stroke={color} strokeWidth={strokeWidth} strokeLinejoin="round" />
+      <path d="M5.63605 5.63605L18.364 18.364" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" />
     </g>
   );
 

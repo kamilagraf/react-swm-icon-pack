@@ -9,11 +9,11 @@ const Block1 = ({ color, strokeWidth, set }) => {
         d="M20.5 9.03451C19.2743 5.52092 15.9315 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C15.5337 21 18.5918 18.9634 20.0645 16"
         stroke={color}
         strokeWidth={strokeWidth}
-        strokeLinejoin="round"
+        strokeLinecap="round"
       />
-      <path d="M12.0001 12L18.364 18.364" stroke={color} strokeWidth={strokeWidth} strokeLinejoin="round" />
-      <path d="M5.63599 5.63605L10 10" stroke={color} strokeWidth={strokeWidth} strokeLinejoin="round" />
-      <path d="M5.63605 18.364L18.364 5.63603" stroke={color} strokeWidth={strokeWidth} strokeLinejoin="round" />
+      <path d="M12.0001 12L18.364 18.364" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" />
+      <path d="M5.63599 5.63605L10 10" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" />
+      <path d="M5.63605 18.364L18.364 5.63603" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" />
     </g>
   );
   const Curved = () => (
@@ -22,11 +22,11 @@ const Block1 = ({ color, strokeWidth, set }) => {
         d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
         stroke={color}
         strokeWidth={strokeWidth}
+        strokeLinecap="round"
         strokeLinejoin="round"
-        stroke-linejoin="round"
       />
-      <path d="M5.63605 18.364L18.364 5.63603" stroke={color} strokeWidth={strokeWidth} strokeLinejoin="round" stroke-linejoin="round" />
-      <path d="M5.63605 5.63603L18.364 18.364" stroke={color} strokeWidth={strokeWidth} strokeLinejoin="round" stroke-linejoin="round" />
+      <path d="M5.63605 18.364L18.364 5.63603" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M5.63605 5.63603L18.364 18.364" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Duotone = () => (
@@ -41,8 +41,8 @@ const Block1 = ({ color, strokeWidth, set }) => {
         stroke={color}
         strokeWidth={strokeWidth}
       />
-      <path d="M5.63605 5.63603L18.364 18.364" stroke={color} strokeWidth={strokeWidth} strokeLinejoin="round" />
-      <path d="M5.63605 18.364L18.364 5.63603" stroke={color} strokeWidth={strokeWidth} strokeLinejoin="round" />
+      <path d="M5.63605 5.63603L18.364 18.364" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" />
+      <path d="M5.63605 18.364L18.364 5.63603" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" />
     </g>
   );
   const Outline = () => (
@@ -52,8 +52,8 @@ const Block1 = ({ color, strokeWidth, set }) => {
         stroke={color}
         strokeWidth={strokeWidth}
       />
-      <path d="M5.63605 5.63605L18.364 18.364" stroke={color} strokeWidth={strokeWidth} strokeLinejoin="round" />
-      <path d="M5.63605 18.364L18.364 5.63605" stroke={color} strokeWidth={strokeWidth} strokeLinejoin="round" />
+      <path d="M5.63605 5.63605L18.364 18.364" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" />
+      <path d="M5.63605 18.364L18.364 5.63605" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" />
     </g>
   );
 
