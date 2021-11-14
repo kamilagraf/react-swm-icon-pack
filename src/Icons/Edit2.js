@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { iconType } from 'types';
+import { iconType } from '../types';
 import createIcon from '../helpers/createIcon';
 
 const Edit2 = ({ color, strokeWidth, set }) => {

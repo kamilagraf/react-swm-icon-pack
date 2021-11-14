@@ -1,6 +1,6 @@
 import React, { useContext, memo, forwardRef } from 'react';
 import { SWMIconContext } from './context';
-import { iconType } from 'types';
+import { iconType } from '../types';
 
 const createIcon = (Component) => {
   const IconWrapper = forwardRef(({ color, strokeWidth, size, set, style, ...props }, ref) => {

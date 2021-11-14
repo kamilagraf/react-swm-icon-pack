@@ -8,10 +8,3 @@ export const iconType = shape({
   size: oneOfType([string, number]),
   set: oneOf(['broken', 'curved', 'duotone', 'outline']),
 });
-
-// ArrowCircleRight.propTypes = {
-//   color: PropTypes.string,
-//   strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-//   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-//   set: PropTypes.string,
-// };
