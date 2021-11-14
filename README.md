@@ -7,7 +7,7 @@
 **What’s in it for you?**
 
 - 275 unique icons
-- 5 sets of icons (outline, broken, duotone, twocolor, curved)
+- 4 sets of icons (outline, broken, duotone, curved)
 - Fully vector, based on 24px grid with a pixel-perfect approach
 
 **🌐 Live preview on Figma Community:**
@@ -39,7 +39,7 @@ export default App;
 You can also pass inline props to the icon
 
 ```jsx
-<Air color="purple" secondaryColor="orange" set="twocolor" size="40" />
+<Air color="purple" set="duotone" size="40" />
 ```
 
 or even your custom styles
@@ -55,7 +55,7 @@ import React from 'react';
 import { SWMIcon } from 'react-swm-icon-pack';
 
 const App = () => {
-  return <SWMIcon name="Air" color="purple" secondaryColor="orange" set="twocolor" />;
+  return <SWMIcon name="Air" color="purple" set="duotone" />;
 };
 
 export default App;
@@ -68,7 +68,7 @@ import React from 'react';
 import * as SWMIconPack from 'react-swm-icon-pack';
 
 const App = () => {
-  return <SWMIconPack.Air color="purple" secondaryColor="orange" set="twocolor" size="40" />;
+  return <SWMIconPack.Air color="purple" set="duotone" size="40" />;
 };
 
 export default App;
@@ -83,10 +83,10 @@ import { SWMIconProvider, Air, Calendar, Cam } from 'react-swm-icon-pack';
 
 const App = () => {
   return (
-    <SWMIconProvider color="purple" secondaryColor="orange" set="twocolor" size="40" strokeWidth="1.8">
+    <SWMIconProvider color="purple" set="duotone" size="40" strokeWidth="1.8">
       <Air />
       <Calendar />
-      <Cam color="blue" secondaryColor="black" />
+      <Cam color="blue" set="curved" />
     </SWMIconProvider>
   );
 };
@@ -96,12 +96,11 @@ export default App;
 
 ### Available props
 
-| Prop             | Type                                             | Default   | Description                                     |
-| ---------------- | ------------------------------------------------ | --------- | ----------------------------------------------- |
-| `name`           | `string`                                         |           | The icon you want to render                     |
-| `style`          | `object`                                         |           | Custom styles property                          |
-| `set`            | `outline` `broken` `duotone` `twocolor` `curved` | `outline` | Icons set option                                |
-| `size`           | `string` `number`                                | `24`      | Size of icon (applies as both width and height) |
-| `strokeWidth`    | `string` `number`                                | `1.5`     | Line stroke for icons                           |
-| `color`          | `string`                                         | `#001A72` | Primary color for icons                         |
-| `secondaryColor` | `string`                                         | `#38ACDD` | Secondary color for twocolor icons set          |
+| Prop          | Type                                  | Default   | Description                                     |
+| ------------- | ------------------------------------- | --------- | ----------------------------------------------- |
+| `name`        | `string`                              |           | The icon you want to render                     |
+| `style`       | `object`                              |           | Custom styles property                          |
+| `set`         | `outline` `broken` `duotone` `curved` | `outline` | Icons set option                                |
+| `size`        | `string` `number`                     | `24`      | Size of icon (applies as both width and height) |
+| `strokeWidth` | `string` `number`                     | `1.5`     | Line stroke for icons                           |
+| `color`       | `string`                              | `#001A72` | Primary color for icons                         |

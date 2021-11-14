@@ -1,9 +1,9 @@
 import React, { useContext, memo, forwardRef } from 'react';
 import { SWMIconContext } from './context';
-import PropTypes from 'prop-types';
+import { iconType } from 'types';
 
 const createIcon = (Component) => {
-  const IconWrapper = forwardRef(({ color, secondaryColor, strokeWidth, size, set, style, ...props }, ref) => {
+  const IconWrapper = forwardRef(({ color, strokeWidth, size, set, style, ...props }, ref) => {
     const context = useContext(SWMIconContext);
 
     return (
@@ -17,22 +17,13 @@ const createIcon = (Component) => {
         {...props}
         ref={ref}
       >
-        <Component
-          color={color || context.color}
-          secondaryColor={secondaryColor || context.secondaryColor}
-          strokeWidth={strokeWidth || context.strokeWidth}
-          set={set || context.set}
-        />
+        <Component color={color || context.color} strokeWidth={strokeWidth || context.strokeWidth} set={set || context.set} />
       </svg>
     );
   });
 
   IconWrapper.propTypes = {
-    color: PropTypes.string,
-    secondaryColor: PropTypes.string,
-    strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    set: PropTypes.oneOf(['broken', 'curved', 'duotone', 'outline', 'twocolor']),
+    props: iconType,
   };
 
   const MemoIcon = memo(IconWrapper);

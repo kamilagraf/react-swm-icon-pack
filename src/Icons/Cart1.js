@@ -1,5 +1,5 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
+import { iconType } from 'types';
 import createIcon from '../helpers/createIcon';
 
 const Cart1 = ({ color, strokeWidth, set }) => {
@@ -103,10 +103,7 @@ const Cart1 = ({ color, strokeWidth, set }) => {
 };
 
 Cart1.propTypes = {
-  color: PropTypes.string,
-  strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  set: PropTypes.string,
+  props: iconType,
 };
 
 Cart1.displayName = 'Cart1';

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
+import { iconType } from 'types';
 import createIcon from '../helpers/createIcon';
 
 const Trophy = ({ color, strokeWidth, set }) => {
@@ -127,10 +127,7 @@ const Trophy = ({ color, strokeWidth, set }) => {
 };
 
 Trophy.propTypes = {
-  color: PropTypes.string,
-  strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  set: PropTypes.string,
+  props: iconType,
 };
 
 Trophy.displayName = 'Trophy';

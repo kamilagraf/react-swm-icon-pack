@@ -1,5 +1,5 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
+import { iconType } from 'types';
 import createIcon from '../helpers/createIcon';
 
 const Waterdrop = ({ color, strokeWidth, set }) => {
@@ -72,10 +72,7 @@ const Waterdrop = ({ color, strokeWidth, set }) => {
 };
 
 Waterdrop.propTypes = {
-  color: PropTypes.string,
-  strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  set: PropTypes.string,
+  props: iconType,
 };
 
 Waterdrop.displayName = 'Waterdrop';

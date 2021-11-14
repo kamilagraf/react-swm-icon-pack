@@ -1,5 +1,5 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
+import { iconType } from 'types';
 import createIcon from '../helpers/createIcon';
 
 const Trash1 = ({ color, strokeWidth, set }) => {
@@ -98,10 +98,7 @@ const Trash1 = ({ color, strokeWidth, set }) => {
 };
 
 Trash1.propTypes = {
-  color: PropTypes.string,
-  strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  set: PropTypes.string,
+  props: iconType,
 };
 
 Trash1.displayName = 'Trash1';

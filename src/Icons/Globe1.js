@@ -1,5 +1,5 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
+import { iconType } from 'types';
 import createIcon from '../helpers/createIcon';
 
 const Globe1 = ({ color, strokeWidth, set }) => {
@@ -90,10 +90,7 @@ const Globe1 = ({ color, strokeWidth, set }) => {
 };
 
 Globe1.propTypes = {
-  color: PropTypes.string,
-  strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  set: PropTypes.string,
+  props: iconType,
 };
 
 Globe1.displayName = 'Globe1';

@@ -100,6 +100,7 @@ const icons = {
   Explore: SWMIconPack.Explore,
   EyeClosed: SWMIconPack.EyeClosed,
   EyeOpen: SWMIconPack.EyeOpen,
+  Faceid: SWMIconPack.Faceid,
   Female: SWMIconPack.Female,
   Filters1: SWMIconPack.Filters1,
   Filters2: SWMIconPack.Filters2,
@@ -278,11 +279,11 @@ const icons = {
   ZoomOut: SWMIconPack.ZoomOut,
 };
 
-const SWMIcon = ({ name, color, secondaryColor, strokeWidth, size, set }) => {
+const SWMIcon = ({ name, color, strokeWidth, size, set }) => {
   const Icon = icons[name];
   if (!Icon) throw new Error(`Icon '${name}' doesn't exists`);
 
-  return <Icon color={color} secondaryColor={secondaryColor} strokeWidth={strokeWidth} size={size} set={set} />;
+  return <Icon color={color} strokeWidth={strokeWidth} size={size} set={set} />;
 };
 
 export default SWMIcon;

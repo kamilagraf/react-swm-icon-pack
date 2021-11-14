@@ -1,5 +1,5 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
+import { iconType } from 'types';
 import createIcon from '../helpers/createIcon';
 
 const CheckSmall = ({ color, strokeWidth, set }) => {
@@ -40,10 +40,7 @@ const CheckSmall = ({ color, strokeWidth, set }) => {
 };
 
 CheckSmall.propTypes = {
-  color: PropTypes.string,
-  strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  set: PropTypes.string,
+  props: iconType,
 };
 
 CheckSmall.displayName = 'CheckSmall';

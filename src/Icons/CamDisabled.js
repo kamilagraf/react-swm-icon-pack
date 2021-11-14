@@ -1,5 +1,5 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
+import { iconType } from 'types';
 import createIcon from '../helpers/createIcon';
 
 const CamDisabled = ({ color, strokeWidth, set }) => {
@@ -75,10 +75,7 @@ const CamDisabled = ({ color, strokeWidth, set }) => {
 };
 
 CamDisabled.propTypes = {
-  color: PropTypes.string,
-  strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  set: PropTypes.string,
+  props: iconType,
 };
 
 CamDisabled.displayName = 'CamDisabled';

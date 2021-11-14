@@ -1,5 +1,5 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
+import { iconType } from 'types';
 import createIcon from '../helpers/createIcon';
 
 const PhoneDown = ({ color, strokeWidth, set }) => {
@@ -77,10 +77,7 @@ const PhoneDown = ({ color, strokeWidth, set }) => {
 };
 
 PhoneDown.propTypes = {
-  color: PropTypes.string,
-  strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  set: PropTypes.string,
+  props: iconType,
 };
 
 PhoneDown.displayName = 'PhoneDown';

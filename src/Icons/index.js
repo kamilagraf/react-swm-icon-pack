@@ -96,6 +96,7 @@ export { default as EmoteSmile } from './EmoteSmile';
 export { default as Explore } from './Explore';
 export { default as EyeClosed } from './EyeClosed';
 export { default as EyeOpen } from './EyeOpen';
+export { default as Faceid } from './Faceid';
 export { default as Female } from './Female';
 export { default as Filters1 } from './Filters1';
 export { default as Filters2 } from './Filters2';

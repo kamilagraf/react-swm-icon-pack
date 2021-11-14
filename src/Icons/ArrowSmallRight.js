@@ -1,31 +1,31 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
+import { iconType } from 'types';
 import createIcon from '../helpers/createIcon';
 
 const ArrowSmallRight = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
-      <path d="M17 12L7 12" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoinn="round" />
-      <path d="M15 10L13 8" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoinn="round" />
-      <path d="M17 12L13 16" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoinn="round" />
+      <path d="M17 12L7 12" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M15 10L13 8" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M17 12L13 16" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Curved = () => (
     <g>
-      <path d="M17 12L7 12" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoinn="round" />
-      <path d="M13 16L17 12L13 8" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoinn="round" />
+      <path d="M17 12L7 12" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M13 16L17 12L13 8" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Duotone = () => (
     <g>
-      <path d="M17 12L7 12" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoinn="round" />
-      <path d="M13 16L17 12L13 8" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoinn="round" />
+      <path d="M17 12L7 12" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M13 16L17 12L13 8" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Outline = () => (
     <g>
-      <path d="M17 12L7 12" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoinn="round" />
-      <path d="M13 16L17 12L13 8" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoinn="round" />{' '}
+      <path d="M17 12L7 12" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M13 16L17 12L13 8" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />{' '}
     </g>
   );
 
@@ -44,10 +44,7 @@ const ArrowSmallRight = ({ color, strokeWidth, set }) => {
 };
 
 ArrowSmallRight.propTypes = {
-  color: PropTypes.string,
-  strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  set: PropTypes.string,
+  props: iconType,
 };
 
 ArrowSmallRight.displayName = 'ArrowSmallRight';

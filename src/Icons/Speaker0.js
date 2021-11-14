@@ -1,5 +1,5 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
+import { iconType } from 'types';
 import createIcon from '../helpers/createIcon';
 
 const Speaker0 = ({ color, strokeWidth, set }) => {
@@ -64,10 +64,7 @@ const Speaker0 = ({ color, strokeWidth, set }) => {
 };
 
 Speaker0.propTypes = {
-  color: PropTypes.string,
-  strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  set: PropTypes.string,
+  props: iconType,
 };
 
 Speaker0.displayName = 'Speaker0';

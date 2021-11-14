@@ -1,5 +1,5 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
+import { iconType } from 'types';
 import createIcon from '../helpers/createIcon';
 
 const DocumentCross = ({ color, strokeWidth, set }) => {
@@ -65,10 +65,7 @@ const DocumentCross = ({ color, strokeWidth, set }) => {
 };
 
 DocumentCross.propTypes = {
-  color: PropTypes.string,
-  strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  set: PropTypes.string,
+  props: iconType,
 };
 
 DocumentCross.displayName = 'DocumentCross';

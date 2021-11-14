@@ -1,5 +1,5 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
+import { iconType } from 'types';
 import createIcon from '../helpers/createIcon';
 
 const CalendarLink = ({ color, strokeWidth, set }) => {
@@ -137,10 +137,7 @@ const CalendarLink = ({ color, strokeWidth, set }) => {
 };
 
 CalendarLink.propTypes = {
-  color: PropTypes.string,
-  strokeWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  set: PropTypes.string,
+  props: iconType,
 };
 
 CalendarLink.displayName = 'CalendarLink';
