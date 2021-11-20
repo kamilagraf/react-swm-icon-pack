@@ -52,7 +52,7 @@ const Wallet = ({ color, strokeWidth, set }) => {
     <g>
       <path
         opacity="0.15"
-        d="M19.3889 5H4.61111C3.44518 5 2.5 6.04467 2.5 7.33333V16.6667C2.5 17.9553 3.44518 19 4.61111 19H19.3889C20.5548 19 21.5 17.9553 21.5 16.6667V15.5V8.5V7.33333C21.5 6.04467 20.5548 5 19.3889 5Z"
+        d="M19.3889 5H4.61111C3.44518 5 2.5 6.04467 2.5 7.33333V16.6667C2.5 17.9553 3.44518 19 4.61111 19H19.3889C20.5548 19 21.5 17.9553 21.5 16.6667V15H14C14 15 11 15 11 12C11 9 14 9 14 9H21.5V7.33333C21.5 6.04467 20.5548 5 19.3889 5Z"
         fill={color}
       />
       <path
@@ -69,7 +69,7 @@ const Wallet = ({ color, strokeWidth, set }) => {
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      <path id="shape_3" d="M14 12V12.01" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M14 12V12.01" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Outline = () => (
