@@ -11,7 +11,7 @@ describe('SWMIcons', () => {
     render(icon);
     expect(icon).toBeTruthy();
 
-    const icon2 = <Alarm set="broken" color="#0000" />;
+    const icon2 = <Alarm set="twocolor" color="#0000" />;
     render(icon2);
     expect(icon2).toBeTruthy();
   });
@@ -23,7 +23,7 @@ describe('SWMIcons', () => {
   });
 
   it('Renders the SWMIconPack element', () => {
-    const icon = <SWMIconPack.Air set="broken" />;
+    const icon = <SWMIconPack.Air set="twocolor" />;
     render(icon);
     expect(icon).toBeTruthy();
   });
