@@ -25,19 +25,27 @@ const Bell = ({ color, strokeWidth, set }) => {
   const Curved = () => (
     <g>
       <path
-        d="M12 3C8.68628 3 5.99999 4.68629 5.99999 8C5.99999 9.93916 5.29493 12.1133 4.56842 13.8389C3.96518 15.2717 4.97778 17 6.53237 17H17.4676C19.0222 17 20.0348 15.2717 19.4316 13.8389C18.705 12.1133 18 9.93916 18 8C18 4.68629 15.3137 3 12 3Z"
+        d="M8 4.58208C9.06151 3.86265 10.4633 3.5 12 3.5C15.3137 3.5 18 5.18629 18 8.5C18 10.4392 18.7051 12.6133 19.4316 14.3389C19.6624 14.8871 19.6566 15.4786 19.4745 16"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="M9 17V18C9 19.6569 10.3431 20.5 12 20.5C13.6569 20.5 15 19.6569 15 18V17"
+        d="M5.84215 10.21C5.59387 11.6487 5.08678 13.1073 4.56874 14.3378C3.96555 15.7706 4.97779 17.4996 6.53238 17.4996H13"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
         strokeLinejoin="round"
       />
+      <path
+        d="M9 17.5V18.5C9 20.1569 10.3431 21 12 21C13.3572 21 14.5039 20.4343 14.8743 19.319"
+        stroke={color}
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path d="M3 3.5L21 21.5" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
     </g>
   );
   const Duotone = () => (
