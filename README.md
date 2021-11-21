@@ -2,20 +2,64 @@
 
 [![NPM](https://img.shields.io/npm/v/react-swm-icon-pack.svg)](https://www.npmjs.com/package/react-swm-icon-pack)
 
-**react-swm-icon-pack** is a collection of carefully designed icons for React.js to help you with icons in your projects. Completely free and ready to use.
+![Cover art](/images/swm-icon-pack-cover.jpg)    
 
-**What’s in it for you?**
+&nbsp;
+&nbsp;
+&nbsp;
 
-- 275 unique icons
-- 4 sets of icons (outline, broken, duotone, curved)
-- Fully vector, based on 24px grid with a pixel-perfect approach
 
-**🌐 Live preview on Figma Community:**
-https://www.figma.com/community/file/942053544758339202/SWM-Icon-Pack
+## About the pack
 
-#### Based on SWM Icon Pack `v2.0.0`
+Carefully designed icons to help your projects shine like a diamond. More than 1100 icons divided into 4 styles and several categories are ready as react components to speed up building your product.
 
-### Installation
+SWM Icon Pack was originally published on [Figma Community](https://www.figma.com/community/file/942053544758339202/SWM-Icon-Pack) as SVG icon pack, now the family expanded thanks to [React Icon Pack](https://www.npmjs.com/package/react-swm-icon-pack) and [Figma Plugin], everything is free and ready to use.
+
+&nbsp;
+&nbsp;
+&nbsp;
+
+### What’s in it for you?
+
+* I’m I’m More than 1100 react components, ready to use right away;
+
+* 4 styles of icons - outline, broken, duotone, and curved;
+
+* Customization options - stroke, size, set, and color;
+
+* Easy preview on [Figma Community](https://www.figma.com/community/file/942053544758339202/SWM-Icon-Pack);
+
+&nbsp;
+&nbsp;
+&nbsp;
+
+
+![Cover art](/images/swm-icon-pack-01.jpg)
+
+![Cover art](/images/swm-icon-pack-02.jpg)
+
+![Cover art](/images/swm-icon-pack-03.jpg)
+
+![Cover art](/images/swm-icon-pack-04.jpg)
+
+&nbsp;
+&nbsp;
+&nbsp;
+
+### Related projects
+
+* [SWM Icon Pack Figma Plugin on GitHub](https://github.com/kvmxlv/figma-swm-icon-pack)
+
+* [SWM Icon Pack Figma Plugin on Figma Community]
+
+* [SWM Icon Pack on Figma Community](https://www.figma.com/community/file/942053544758339202/SWM-Icon-Pack)
+
+&nbsp;
+&nbsp;
+&nbsp;
+
+
+## Installation
 
     yarn add react-swm-icon-pack
 
@@ -23,7 +67,11 @@ or
 
     npm i react-swm-icon-pack
 
-### Usage
+&nbsp;
+&nbsp;
+&nbsp;
+
+## Usage
 
 ```jsx
 import React from 'react';
@@ -94,7 +142,11 @@ const App = () => {
 export default App;
 ```
 
-### Available props
+&nbsp;
+&nbsp;
+&nbsp;
+
+## Available props
 
 | Prop          | Type                                  | Default   | Description                                     |
 | ------------- | ------------------------------------- | --------- | ----------------------------------------------- |
