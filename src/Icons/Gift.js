@@ -2,7 +2,7 @@ import * as React from 'react';
 import { iconType } from '../types';
 import createIcon from '../helpers/createIcon';
 
-const Gift1 = ({ color, strokeWidth, set }) => {
+const Gift = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
       <path d="M19 10.0802H5V20.0802H19V14" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
@@ -114,9 +114,9 @@ const Gift1 = ({ color, strokeWidth, set }) => {
   }
 };
 
-Gift1.propTypes = {
+Gift.propTypes = {
   props: iconType,
 };
 
-Gift1.displayName = 'Gift1';
-export default createIcon(Gift1);
+Gift.displayName = 'Gift';
+export default createIcon(Gift);

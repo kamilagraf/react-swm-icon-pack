@@ -5,9 +5,9 @@ import createIcon from '../helpers/createIcon';
 const Share2 = ({ color, strokeWidth, set }) => {
   const Broken = () => (
     <g>
-      <path d="M6 20C4.89543 20 4 19.1046 4 18L4 11" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M6 20C4.89543 20 4 19.1046 4 18L4 13" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
       <path
-        d="M20 11L20 18C20 19.1046 19.1046 20 18 20L10 20"
+        d="M20 13L20 18C20 19.1046 19.1046 20 18 20L10 20"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -21,7 +21,7 @@ const Share2 = ({ color, strokeWidth, set }) => {
   const Curved = () => (
     <g>
       <path
-        d="M20 14V17.5C20 20.5577 16 20.5 12 20.5C8 20.5 4 20.5577 4 17.5V14"
+        d="M20 13V17.5C20 20.5577 16 20.5 12 20.5C8 20.5 4 20.5577 4 17.5V13"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -34,7 +34,7 @@ const Share2 = ({ color, strokeWidth, set }) => {
   const Duotone = () => (
     <g>
       <path
-        d="M20 15L20 18C20 19.1046 19.1046 20 18 20L6 20C4.89543 20 4 19.1046 4 18L4 15"
+        d="M20 13L20 18C20 19.1046 19.1046 20 18 20L6 20C4.89543 20 4 19.1046 4 18L4 13"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -47,7 +47,7 @@ const Share2 = ({ color, strokeWidth, set }) => {
   const Outline = () => (
     <g>
       <path
-        d="M20 15L20 18C20 19.1046 19.1046 20 18 20L6 20C4.89543 20 4 19.1046 4 18L4 15"
+        d="M20 13L20 18C20 19.1046 19.1046 20 18 20L6 20C4.89543 20 4 19.1046 4 18L4 13"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"

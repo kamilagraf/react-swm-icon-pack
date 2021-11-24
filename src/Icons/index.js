@@ -106,7 +106,7 @@ export { default as Flag2 } from './Flag2';
 export { default as Flag3 } from './Flag3';
 export { default as Forward } from './Forward';
 export { default as Fullscreen } from './Fullscreen';
-export { default as Gift1 } from './Gift1';
+export { default as Gift } from './Gift';
 export { default as Globe1 } from './Globe1';
 export { default as Grid2Horizontal } from './Grid2Horizontal';
 export { default as Grid2Vertical } from './Grid2Vertical';
