@@ -33,7 +33,7 @@ const Stopwatch = ({ color, strokeWidth, set }) => {
     <g>
       <path
         opacity="0.15"
-        d="M19.5 13.5C19.5 17.6421 16.1421 21 12 21C7.85786 21 4.5 17.6421 4.5 13.5C4.5 9.35786 7.85786 6 12 6C16.1421 6 19.5 9.35786 19.5 13.5Z"
+        d="M19 13C19 17.4183 15.6421 21 11.5 21C7.35786 21 4 17.4183 4 13C4 8.58172 7.35786 5 11.5 5C15.6421 5 19 8.58172 19 13Z"
         fill={color}
       />
       <path d="M10 3H14" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" />
