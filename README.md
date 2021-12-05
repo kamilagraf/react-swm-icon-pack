@@ -21,7 +21,7 @@ SWM Icon Pack was originally published on [Figma Community](https://www.figma.co
 
 ### What’s in it for you?
 
-* I’m I’m More than 1100 react components, ready to use right away;
+* More than 1100 react components, ready to use right away;
 
 * 4 styles of icons - outline, broken, duotone, and curved;
 
