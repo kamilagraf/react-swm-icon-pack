@@ -50,7 +50,7 @@ SWM Icon Pack was originally published on [Figma Community](https://www.figma.co
 
 * [SWM Icon Pack Figma Plugin on GitHub](https://github.com/kvmxlv/figma-swm-icon-pack)
 
-* [SWM Icon Pack Figma Plugin on Figma Community]
+* [SWM Icon Pack Figma Plugin on Figma Community](https://www.figma.com/community/plugin/977277388711779807/SWM-Icon-Pack)
 
 * [SWM Icon Pack on Figma Community](https://www.figma.com/community/file/942053544758339202/SWM-Icon-Pack)
 
