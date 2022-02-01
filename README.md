@@ -13,7 +13,7 @@
 
 Carefully designed icons to help your projects shine like a diamond. More than 1100 icons divided into 4 styles and several categories are ready as react components to speed up building your product.
 
-SWM Icon Pack was originally published on [Figma Community](https://www.figma.com/community/file/942053544758339202/SWM-Icon-Pack) as SVG icon pack, now the family expanded thanks to [React Icon Pack](https://www.npmjs.com/package/react-swm-icon-pack) and [Figma Plugin], everything is free and ready to use.
+SWM Icon Pack was originally published on [Figma Community](https://www.figma.com/community/file/942053544758339202/SWM-Icon-Pack) as SVG icon pack, now the family expanded thanks to [React Icon Pack](https://www.npmjs.com/package/react-swm-icon-pack) and [Figma Plugin](https://www.figma.com/community/plugin/977277388711779807/SWM-Icon-Pack), everything is free and ready to use.
 
 &nbsp;
 &nbsp;
